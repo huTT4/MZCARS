@@ -89,7 +89,7 @@ body {
 .header__lang-list-link,
 .header__social a {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   color: #bfbfbf;
   transition: .15s;
 }
@@ -171,6 +171,12 @@ body {
   }
 }
 
+@media (max-width: 1300px) {
+  .header__nav {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 1000px) {
   .header__nav {
     gap: 15px;
@@ -224,7 +230,7 @@ body:has(.burger.active) {
   overflow: hidden;
 }
 
-@media (max-width: 925px) {
+@media (max-width: 960px) {
   .burger {
     display: flex;
   }
@@ -728,7 +734,7 @@ body:has(.burger.active) {
   align-items: center;
   gap: 10px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   color: #2d2d2d;
 }
 
@@ -744,7 +750,7 @@ body:has(.burger.active) {
   padding: 10px;
   cursor: pointer;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #b8b8b8;
   display: flex;
   justify-content: space-between;
@@ -816,7 +822,7 @@ body:has(.burger.active) {
   align-items: center;
   gap: 10px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   color: #2d2d2d;
 }
 
@@ -1059,7 +1065,7 @@ body:has(.burger.active) {
 
 .catalog__card-price div {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #2d2d2d;
   display: flex;
   flex-direction: column;
