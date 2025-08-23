@@ -113,10 +113,12 @@
     <section class="catalog">
       <div class="container">
         <div class="catalog__top">
-          <h3 class="catalog__title">Авто каталог</h3>
-          <div class="catalog__found">
-            <span></span>
-            Найдено 67 авто
+          <div class="catalog__title-wrapper">
+            <h3 class="catalog__title">Авто каталог</h3>
+            <div class="catalog__found">
+              <span></span>
+              Найдено 67 авто
+            </div>
           </div>
           <div class="catalog__search">
             <input type="text" placeholder="Поиск">
@@ -130,6 +132,910 @@
             <li>Новые</li>
             <li>Со скидкой</li>
           </ul>
+        </div>
+
+        <div class="catalog__inner">
+          <aside class="catalog__left">
+            <div class="catalog__filters">
+              <h4 class="catalog__filters-title">
+                <img src="img/settings.svg" alt="settings">
+                Фильтры
+              </h4>
+
+              <div class="catalog__brand">
+                <h5 class="catalog__brand-title">
+                  <img src="img/car.svg" alt="car">
+                  Марка
+                </h5>
+
+                <div class="catalog__select">
+                  <div class="catalog__select-top">
+                    Все
+                    <img src="img/arrow.svg" alt="arrow">
+                  </div>
+                  <ul class="catalog__select-list">
+                    <label>
+                      <input type="checkbox" name="car" value="bmw">
+                      <span>BMW</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="car" value="mercedes">
+                      <span>MERCEDES</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="car" value="volvo">
+                      <span>VOLVO</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="car" value="all">
+                      <span>Все</span>
+                    </label>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__range">
+                <h5 class="catalog__range-title">
+                  <img src="img/calendar-1.svg" alt="calendar-1">
+                  Год выпуска
+                </h5>
+                <div class="catalog__range-inputs">
+                  <input type="number" id="minInputRange--year" value="1990">
+                  <input type="number" id="maxInputRange--year" value="2025">
+                </div>
+                <div class="catalog__range-slider">
+                  <div class="catalog__range-progress catalog__range-progress--year"></div>
+                </div>
+                <div class="catalog__range-input">
+                  <input type="range" id="rangeMin--year" min="1990" max="2025" value="1990">
+                  <input type="range" id="rangeMax--year" min="1990" max="2025" value="2025">
+                </div>
+              </div>
+
+              <div class="catalog__range">
+                <h5 class="catalog__range-title">
+                  <img src="img/price.svg" alt="price">
+                  Цена
+                </h5>
+                <div class="catalog__range-inputs">
+                  от
+                  <input type="number" id="minInputRange--price" value="300000">
+                  до
+                  <input type="number" id="maxInputRange--price" value="15000000">
+                </div>
+                <div class="catalog__range-slider">
+                  <div class="catalog__range-progress catalog__range-progress--price"></div>
+                </div>
+                <div class="catalog__range-input">
+                  <input type="range" id="rangeMin--price" min="300000" max="15000000" value="300000">
+                  <input type="range" id="rangeMax--price" min="300000" max="15000000" value="15000000">
+                </div>
+              </div>
+
+              <div class="catalog__select">
+                <div class="catalog__select-top catalog__select-top--other">
+                  Пробег
+                  <img src="img/arrow.svg" alt="arrow">
+                </div>
+                <ul class="catalog__select-list">
+                  <label>
+                    <input type="checkbox" name="mileage" value="50000">
+                    <span>50.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="100000">
+                    <span>100.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="73000">
+                    <span>73.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="Все">
+                    <span>Все</span>
+                  </label>
+                </ul>
+              </div>
+
+              <div class="catalog__select">
+                <div class="catalog__select-top catalog__select-top--other">
+                  Модель
+                  <img src="img/arrow.svg" alt="arrow">
+                </div>
+                <ul class="catalog__select-list">
+                  <label>
+                    <input type="checkbox" name="mileage" value="50000">
+                    <span>50.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="100000">
+                    <span>100.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="73000">
+                    <span>73.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="Все">
+                    <span>Все</span>
+                  </label>
+                </ul>
+              </div>
+
+              <div class="catalog__select">
+                <div class="catalog__select-top catalog__select-top--other">
+                  Вид топлива
+                  <img src="img/arrow.svg" alt="arrow">
+                </div>
+                <ul class="catalog__select-list">
+                  <label>
+                    <input type="checkbox" name="mileage" value="50000">
+                    <span>50.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="100000">
+                    <span>100.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="73000">
+                    <span>73.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="Все">
+                    <span>Все</span>
+                  </label>
+                </ul>
+              </div>
+
+              <div class="catalog__select">
+                <div class="catalog__select-top catalog__select-top--other">
+                  Коробка передач
+                  <img src="img/arrow.svg" alt="arrow">
+                </div>
+                <ul class="catalog__select-list">
+                  <label>
+                    <input type="checkbox" name="mileage" value="50000">
+                    <span>50.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="100000">
+                    <span>100.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="73000">
+                    <span>73.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="Все">
+                    <span>Все</span>
+                  </label>
+                </ul>
+              </div>
+
+              <div class="catalog__select">
+                <div class="catalog__select-top catalog__select-top--other">
+                  Доступность
+                  <img src="img/arrow.svg" alt="arrow">
+                </div>
+                <ul class="catalog__select-list">
+                  <label>
+                    <input type="checkbox" name="mileage" value="50000">
+                    <span>50.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="100000">
+                    <span>100.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="73000">
+                    <span>73.000 км</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="Все">
+                    <span>Все</span>
+                  </label>
+                </ul>
+              </div>
+            </div>
+
+            <button class="catalog__filters-btn">применить фильтры</button>
+          </aside>
+
+          <div class="catalog__right">
+            <div class="catalog__cards">
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="catalog__card-wrapper">
+                <a href="#" target="_blank" class="catalog__card">
+                  <div class="catalog__card-img-wrapper">
+                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
+
+                    <div class="catalog__card-img-info">
+                      <span>
+                        <img src="img/percent.svg" alt="percent">
+                        -7000$
+                      </span>
+
+                      <span>
+                        <img src="img/check-mark.svg" alt="check-mark">
+                        В наличии
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="catalog__card-title">
+                    <h5>BMW 5120</h5>
+                    <span>AP-074</span>
+                  </div>
+
+                  <div class="catalog__card-info">
+                    <span>
+                      <img src="img/calendar-2.svg" alt="calendar-2">
+                      2013
+                    </span>
+
+                    <span>
+                      <img src="img/transmission.svg" alt="transmission">
+                      Автомат
+                    </span>
+
+                    <span>
+                      <img src="img/speedometer.svg" alt="speedometer">
+                      187.513
+                    </span>
+
+                    <span>
+                      <img src="img/engine.svg" alt="engine">
+                      2.0 дизель
+                    </span>
+                  </div>
+
+                  <div class="catalog__card-price">
+                    <h6>75000€</h6>
+                    <div>
+                      Лизинг
+                      <span>113€/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <button class="catalog__show">показать еще</button>
+
+            <div class="catalog__navigation">
+              <div class="catalog__pagination">
+                <div class="catalog__pagination-item active">1</div>
+                <div class="catalog__pagination-item">2</div>
+                <div class="catalog__pagination-item">3</div>
+                <div class="catalog__pagination-item">4</div>
+                <div class="catalog__pagination-item">5</div>
+                <span>...</span>
+                <div class="catalog__pagination-item">25</div>
+              </div>
+
+              <div class="catalog__arrows">
+                <div class="catalog__arrow catalog__arrow-left">
+                  <img src="img/arrow-left.svg" alt="arrow-left">
+                  На первую страницу
+                </div>
+                <div class="catalog__arrow catalog__arrow-right">
+                  Следующая
+                  <img src="img/arrow-right.svg" alt="arrow-right">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
