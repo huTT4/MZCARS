@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Шрифт -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>MZCARS</title>
+
+  <!-- Стили, скрипты -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="header__logo">
+          <img src="img/logo.png" alt="logo">
+        </a>
+
+        <div class="header__content">
+          <nav class="header__nav">
+            <a href="#" target="_blank">Авто каталог</a>
+            <a href="#" target="_blank">Авто лизинг</a>
+            <a href="#" target="_blank">Реализация</a>
+            <a href="#" target="_blank">О нас</a>
+            <a href="#" target="_blank">Контакты</a>
+            <div class="header__langs">
+              <button class="header__lang">
+                <img src="img/lang.svg" alt="lang">
+                RU
+              </button>
+              <div class="header__lang-list">
+                <a class="header__lang-list-link" href="#ru">RU</a>
+                <a class="header__lang-list-link" href="#lv">LV</a>
+                <a class="header__lang-list-link" href="#eng">ENG</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header__social">
+            <a href="tel:+37127710202">+371-27-710202</a>
+            <a href="mailto:mzcars@gmail.com">mzcars@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__slider">
+          <div class="hero__slider-wrapper">
+            <img class="hero__slider-slide" src="img/bg-1.jpg" alt="bg-1">
+            <img class="hero__slider-slide" src="img/bg-2.jpg" alt="bg-2">
+            <img class="hero__slider-slide" src="img/bg-1.jpg" alt="bg-1">
+            <img class="hero__slider-slide" src="img/bg-2.jpg" alt="bg-2">
+            <img class="hero__slider-slide" src="img/bg-1.jpg" alt="bg-1">
+          </div>
+          <div class="hero__slider-pagination"></div>
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title">Продажа качественных авто из Европы в Риге</h1>
+          <h2 class="hero__subtitle">Авто лизинг и реализация вашего авто у нас на стоянке</h2>
+          <div class="hero__btns">
+            <a class="hero__btn-1" href="#" target="_blank" disabled>
+              Подробнее
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31192 15.6667L16 1M16 1H0M16 1V17" stroke="white" stroke-width="2" />
+              </svg>
+            </a>
+            <a class="hero__btn-2" href="#" target="_blank">Авто каталог</a>
+          </div>
+          <div class="hero__social">
+            <a href="#" target="_blank">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M36 18.1094C36 27.1475 29.409 34.6403 20.805 36V23.3792H24.9885L25.785 18.1577H20.805V14.7697C20.805 13.3406 21.501 11.9492 23.73 11.9492H25.9935V7.50333C25.9935 7.50333 23.9385 7.1502 21.975 7.1502C17.874 7.1502 15.195 9.65081 15.195 14.1767V18.1562H10.6365V23.3777H15.195V35.9985C6.5925 34.6373 0 27.146 0 18.1094C0 8.10849 8.0595 0 18 0C27.9405 0 36 8.10698 36 18.1094Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18 0C27.9411 0 36 8.05887 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18C0 8.05887 8.05887 0 18 0ZM18.7476 7.29114L18.7454 22.0479C18.6843 23.7005 17.3569 25.0267 15.73 25.0268C15.2239 25.0268 14.7476 24.897 14.3286 24.6712C13.3671 24.1527 12.7083 23.1204 12.7083 21.9317C12.7083 20.2245 14.0638 18.8357 15.7291 18.8357C16.04 18.8357 16.3378 18.8885 16.62 18.9786V15.2195C16.3283 15.1794 16.0322 15.1537 15.7291 15.1537C12.0814 15.1537 9.11392 18.1942 9.11392 21.9317C9.11394 24.2244 10.2322 26.254 11.9375 27.4811C13.0115 28.2539 14.319 28.7089 15.7282 28.7089C19.3749 28.7088 22.3424 25.6692 22.3425 21.9317V14.4483C23.7517 15.4853 25.4787 16.0958 27.3418 16.0958L27.3409 12.4146C26.3375 12.4146 25.4021 12.1085 24.6183 11.5847C23.4921 10.8324 22.6796 9.62852 22.4261 8.22567C22.3721 7.92224 22.3416 7.61063 22.3416 7.29114H18.7476Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__top">
+          <h3 class="catalog__title">Авто каталог</h3>
+          <div class="catalog__found">
+            <span></span>
+            Найдено 67 авто
+          </div>
+          <div class="catalog__search">
+            <input type="text" placeholder="Поиск">
+            <button>
+              <img src="img/search.svg" alt="search">
+            </button>
+          </div>
+          <ul class="catalog__filter-cards">
+            <li>Дешевле</li>
+            <li>Дороже</li>
+            <li>Новые</li>
+            <li>Со скидкой</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
