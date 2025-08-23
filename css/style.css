@@ -940,6 +940,9 @@ body:has(.burger.active) {
 .catalog__card-wrapper {
   position: relative;
   z-index: 1;
+  flex: 1;
+  max-width: 334px;
+  min-width: 265px;
 }
 
 .catalog__card {
@@ -948,7 +951,7 @@ body:has(.burger.active) {
   border-radius: 10px;
   background: #fff;
   padding: 15px;
-  max-width: 334px;
+  width: 100%;
   transition: .15s;
 }
 
@@ -978,6 +981,7 @@ body:has(.burger.active) {
 
 .catalog__card-img {
   width: 100%;
+  border-radius: 15px;
 }
 
 .catalog__card-img-info {
@@ -1087,6 +1091,13 @@ body:has(.burger.active) {
   padding: 15px;
   width: 100%;
   margin-bottom: 83px;
+  cursor: pointer;
+  transition: .15s;
+}
+
+.catalog__show:hover {
+  background: #b20f1c;
+  color: #fff;
 }
 
 .catalog__navigation {
@@ -1115,6 +1126,11 @@ body:has(.burger.active) {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: .15s;
+}
+
+.catalog__pagination-item:hover {
+  background: #dfdfdf;
 }
 
 .catalog__pagination-item span {
@@ -1196,6 +1212,12 @@ body:has(.burger.active) {
   }
 }
 
+@media (max-width: 943px) {
+  .catalog__card-wrapper {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 650px) {
   .catalog__inner {
     flex-direction: column;
@@ -1207,10 +1229,6 @@ body:has(.burger.active) {
   }
 
   .catalog__filters-btn {
-    max-width: 100%;
-  }
-
-  .catalog__card {
     max-width: 100%;
   }
 }
