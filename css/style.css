@@ -941,7 +941,7 @@ body:has(.burger.active) {
   position: relative;
   z-index: 1;
   flex: 1;
-  max-width: 334px;
+  max-width: 100%;
   min-width: 265px;
 }
 
@@ -1209,12 +1209,6 @@ body:has(.burger.active) {
 
   .catalog__top {
     gap: 15px;
-  }
-}
-
-@media (max-width: 943px) {
-  .catalog__card-wrapper {
-    max-width: 100%;
   }
 }
 
