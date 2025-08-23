@@ -165,7 +165,7 @@ body {
   transform: translateY(-50%);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .header__nav {
     gap: 25px;
   }
