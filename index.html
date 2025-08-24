@@ -17,11 +17,6 @@
   <!-- Стили, скрипты -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
-
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 </head>
 
 <body>
@@ -34,20 +29,20 @@
 
         <div class="header__content">
           <nav class="header__nav">
-            <a href="#" target="_blank">Авто каталог</a>
-            <a href="#" target="_blank">Авто лизинг</a>
-            <a href="#" target="_blank">Реализация</a>
-            <a href="#" target="_blank">О нас</a>
-            <a href="#" target="_blank">Контакты</a>
-            <div class="header__langs">
-              <button class="header__lang">
+            <a href="#catalog">Авто каталог</a>
+            <a href="#lizing">Авто лизинг</a>
+            <a href="#realization">Реализация</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+            <div class="langs">
+              <button class="lang">
                 <img src="img/lang.svg" alt="lang">
                 RU
               </button>
-              <div class="header__lang-list">
-                <a class="header__lang-list-link" href="#ru">RU</a>
-                <a class="header__lang-list-link" href="#lv">LV</a>
-                <a class="header__lang-list-link" href="#eng">ENG</a>
+              <div class="lang__list">
+                <a class="lang__list-link" href="#ru">RU</a>
+                <a class="lang__list-link" href="#lv">LV</a>
+                <a class="lang__list-link" href="#eng">ENG</a>
               </div>
             </div>
           </nav>
@@ -68,28 +63,28 @@
   <main>
     <section class="hero">
       <div class="container">
-        <div class="hero__slider">
-          <div class="hero__slider-wrapper">
-            <img class="hero__slider-slide" src="img/bg-1.jpg" alt="bg-1">
-            <img class="hero__slider-slide" src="img/bg-2.jpg" alt="bg-2">
-            <img class="hero__slider-slide" src="img/bg-1.jpg" alt="bg-1">
-            <img class="hero__slider-slide" src="img/bg-2.jpg" alt="bg-2">
-            <img class="hero__slider-slide" src="img/bg-1.jpg" alt="bg-1">
+        <div class="hero__bg">
+          <img class="hero__img" src="img/bg-1.jpg" alt="bg-1">
+          <div class="hero__pagination">
+            <span class="hero__pagination-bullet active"></span>
+            <span class="hero__pagination-bullet"></span>
+            <span class="hero__pagination-bullet"></span>
+            <span class="hero__pagination-bullet"></span>
+            <span class="hero__pagination-bullet"></span>
           </div>
-          <div class="hero__slider-pagination"></div>
         </div>
 
         <div class="hero__content">
           <h1 class="hero__title">Продажа качественных авто из Европы в Риге</h1>
           <h2 class="hero__subtitle">Авто лизинг и реализация вашего авто у нас на стоянке</h2>
           <div class="hero__btns">
-            <a class="hero__btn-1" href="#" target="_blank" disabled>
+            <a class="hero__btn-1" href="#about">
               Подробнее
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.31192 15.6667L16 1M16 1H0M16 1V17" stroke="white" stroke-width="2" />
               </svg>
             </a>
-            <a class="hero__btn-2" href="#" target="_blank">Авто каталог</a>
+            <a class="hero__btn-2" href="#catalog">Авто каталог</a>
           </div>
           <div class="hero__social">
             <a href="#" target="_blank">
@@ -110,7 +105,8 @@
         </div>
       </div>
     </section>
-    <section class="catalog">
+
+    <section class="catalog" id="catalog">
       <div class="container">
         <div class="catalog__top">
           <div class="catalog__title-wrapper">
@@ -218,34 +214,6 @@
               <div class="catalog__select">
                 <div class="catalog__select-top catalog__select-top--other">
                   Пробег
-                  <img src="img/arrow.svg" alt="arrow">
-                </div>
-                <ul class="catalog__select-list">
-                  <label>
-                    <input type="checkbox" name="mileage" value="50000">
-                    <span>50.000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="100000">
-                    <span>100.000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="73000">
-                    <span>73.000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="Все">
-                    <span>Все</span>
-                  </label>
-                </ul>
-              </div>
-
-              <div class="catalog__select">
-                <div class="catalog__select-top catalog__select-top--other">
-                  Модель
                   <img src="img/arrow.svg" alt="arrow">
                 </div>
                 <ul class="catalog__select-list">
@@ -1039,7 +1007,175 @@
         </div>
       </div>
     </section>
+
+    <section class="form" id="lizing">
+      <div class="form__wrapper">
+        <div class="container">
+          <div class="form__inner">
+            <img src="img/form-bg.jpg" alt="form-img">
+            <h3>Оставьте свою заявку на авто лизинг</h3>
+            <h4>Авто лизинг и реализация вашего авто у нас на стоянке</h4>
+            <form>
+              <div class="form__inputs">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Номер телефона" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Арт. автомобиля" required>
+              </div>
+
+              <label class="form__checkbox">
+                <input type="checkbox">
+                <span class="form__checkbox-checkmark">
+                  <img src="img/form-checkmark.svg" alt="form-checkmark">
+                </span>
+                Я согласен с <a href="#" target="_blank">политикой безопасности</a> и <a href="#"
+                  target="_blank">правилами
+                  пользования</a>
+              </label>
+
+              <button type="submit" class="form__btn">отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="realization" id="realization">
+      <div class="realization__wrapper">
+        <div class="container">
+          <img class="realization__img" src="img/realization-img.jpg" alt="realization-img">
+          <h3 class="realization__title">реализация</h3>
+          <h4 class="realization__subtitle">Хотите продать ваш авто у нас на стоянке ?</h4>
+          <h5 class="realization__subtitle-2">Тогда наша услуга - реализация вам идеально подходит. </h5>
+          <h5 class="realization__list-title">Мы осуществляем всю работу за вас: </h5>
+          <ul class="realization__list">
+            <li>
+              <img src="img/photo.svg" alt="photo">
+              Фотографии автомобиля
+            </li>
+            <li>
+              <img src="img/posting.svg" alt="posting">
+              Постинг объявления
+            </li>
+            <li>
+              <img src="img/best-price.svg" alt="best-price">
+              Определение лучшей цены для реализации
+            </li>
+            <li>
+              <img src="img/show-car.svg" alt="show-car">
+              Связь с клиентами и показ автомобиля
+            </li>
+          </ul>
+          <h5 class="realization__descr">Подайте свою заявку и получите наше лучшее предложение. </h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__text">
+            <h3>О нас</h3>
+
+            <p>
+              <span>MZ Cars - продажа качественных автомобилей из Европы.</span> Наш опыт и компетенция, позволяет нам
+              выбирать достойные
+              автомобили со всей Европы и привозить их в Латвию для дальнейшей реализации.
+            </p>
+
+            <p>
+              <span>
+                В нашем автопарке, вы всегда сможете найти интересные автомобили на практически на любой вкус, того что
+                нет в
+                наличии, мы всегда можем привезти под заказ.
+              </span> Купить автомобиль у нас можно как за полную сумму, так и получить
+              финансирование от наших постоянных партнеров.
+            </p>
+
+            <p>
+              <span>
+                Ваш текущий автомобиль, может быть так же как часть оплаты за
+                новый,
+              </span>
+              но только после нашего физического осмотра. После покупки у нас автомобиля
+              вы можете его обслуживать у нас с нашими постоянными партнерами.
+              Также принимаем автомобиля на реализацию у нас на стоянке.
+            </p>
+
+            <p><span class="italic">Мы за долгосрочное сотрудничество, за прозрачный и доверительный подход.</span></p>
+
+            <p>По всем вопросам, пожалуйста, обращайтесь, будем рады помочь. </p>
+
+            <p>С ув.<br>MZ Cars</p>
+          </div>
+          <img class="about__img" src="img/about-img.jpg" alt="about-img">
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <a href="/">
+            <img class="footer__logo" src="img/logo.png" alt="logo">
+          </a>
+
+          <div class="footer__info">
+            <nav class="footer__nav">
+              <a href="#catalog">Авто каталог</a>
+              <a href="#about">О нас</a>
+              <a href="#lizing">Авто лизинг</a>
+              <a href="#contacts">Контакты</a>
+              <a href="#realization">Реализация</a>
+              <div class="langs">
+                <button class="lang lang--white">
+                  <img src="img/lang-white.svg" alt="lang-white">
+                  RU
+                </button>
+                <div class="lang__list">
+                  <a class="lang__list-link" href="#ru">RU</a>
+                  <a class="lang__list-link" href="#lv">LV</a>
+                  <a class="lang__list-link" href="#eng">ENG</a>
+                </div>
+              </div>
+            </nav>
+
+            <div class="footer__data">
+              <h4>SIA MZ MOTORS</h4>
+              <p><span>REG.NR.:</span> 40203053835<br>VAT.NR.: <span>LV40203053835</span> </p>
+            </div>
+
+            <ul class="footer__social">
+              <li>
+                <img src="img/tel.svg" alt="tel">
+                <h5>Tel.</h5>
+                <a href="tel:+37127710202">+(371) 27 710 202</a>
+              </li>
+              <li>
+                <img src="img/email.svg" alt="email">
+                <h5>Email:</h5>
+                <a href="mailto:+macars@gmail.com">macars@gmail.com</a>
+              </li>
+              <li>
+                <img src="img/web.svg" alt="web">
+                <h5>WEB:</h5>
+                <a href="http://www.mzcars.lv/">www.mzcars.lv</a>
+              </li>
+            </ul>
+
+            <div class="footer__address">
+              <img src="img/mark.svg" alt="mark">
+              Beberbeķu Iela 58 (LV-1029)<br>Riga, Latvia
+            </div>
+          </div>
+          </a>
+        </div>
+        <img class="footer__map" src="img/map.jpg" alt="map">
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

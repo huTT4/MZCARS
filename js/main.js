@@ -1,10 +1,10 @@
 // SWITCH LANG
-const langList = document.querySelector('.header__lang-list')
-
+let langList
 document.addEventListener('click', (e) => {
-  if (e.target.closest('.header__lang')) {
+  if (e.target.closest('.lang')) {
+    langList = e.target.closest('.langs').querySelector('.lang__list')
     langList.classList.toggle('active')
-  } else if (!e.target.closest('.header__lang') && e.target !== langList) {
+  } else if (!e.target.closest('.lang') && e.target !== langList) {
     langList.classList.remove('active')
   }
 })
@@ -17,22 +17,6 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('active')
   nav.classList.toggle('active')
 })
-
-// SWIPER SLIDER
-const swiper = new Swiper('.hero__slider', {
-  wrapperClass: 'hero__slider-wrapper',
-  slideClass: 'hero__slider-slide',
-  pagination: {
-    el: '.hero__slider-pagination',
-    clickable: true,
-  },
-
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
-  effect: 'fade',
-});
 
 // LISTS
 const titleList = document.querySelectorAll('.catalog__select-top')
