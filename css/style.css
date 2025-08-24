@@ -248,7 +248,7 @@ body:has(.burger.active) {
     left: 0;
     right: 0;
     z-index: -10;
-    padding: 125px 40px 50px;
+    padding: 125px 40px;
     background-color: #1d1d1d;
     border-radius: 0;
     opacity: 0;
@@ -542,8 +542,8 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 420px) {
-  .hero__content {
-    top: 50%;
+  .hero, .hero__bg {
+    height: 90vh;
   }
 
   .hero__title {
