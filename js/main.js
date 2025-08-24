@@ -1,21 +1,64 @@
 // SWITCH LANG
-let langList
+let langList = null
+
 document.addEventListener('click', (e) => {
-  if (e.target.closest('.lang')) {
-    langList = e.target.closest('.langs').querySelector('.lang__list')
-    langList.classList.toggle('active')
-  } else if (!e.target.closest('.lang') && e.target !== langList) {
-    langList.classList.remove('active')
+  const langButton = e.target.closest('.lang')
+  const langList = e.target.closest('.lang__list')
+  const langLink = e.target.closest('.lang__list-link')
+
+  // Если кликнули по кнопке языка
+  if (langButton) {
+    const container = langButton.closest('.langs')
+    const list = container.querySelector('.lang__list')
+    list.classList.toggle('active')
   }
+  // Если кликнули по ссылке в списке
+  else if (langLink) {
+    const list = langLink.closest('.lang__list')
+    list.classList.remove('active')
+
+    // Здесь можно добавить логику смены языка
+    console.log('Выбран язык:', langLink.textContent)
+  }
+  // Если кликнули вне области языкового меню 
+  else if (!langList) {
+    document.querySelectorAll('.lang__list.active').forEach(list => {
+      list.classList.remove('active')
+    })
+  }
+})
+
+// ARROW TO TOP
+const arrowToTop = document.querySelector('.arrow__to-top')
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 200) {
+    arrowToTop.classList.add('show')
+  } else {
+    arrowToTop.classList.remove('show')
+  }
+})
+
+arrowToTop.addEventListener('click', function (e) {
+  e.preventDefault()
+  window.scrollTo({ top: 0 })
 })
 
 // BURGER
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.header__content')
+const burgerLinks = document.querySelectorAll('.header__nav a')
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active')
   nav.classList.toggle('active')
+})
+
+burgerLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('active')
+    nav.classList.remove('active')
+  })
 })
 
 // LISTS

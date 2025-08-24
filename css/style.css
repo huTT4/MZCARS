@@ -146,7 +146,7 @@ body {
 .header__social {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   gap: 5px;
 }
 
@@ -261,6 +261,10 @@ body:has(.burger.active) {
     visibility: visible;
     opacity: 1;
     z-index: 50;
+  }
+
+  .header__social {
+    margin: auto 0;
   }
 
   .header__nav a,
@@ -538,6 +542,10 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 420px) {
+  .hero__content {
+    top: 50%;
+  }
+
   .hero__title {
     font-size: 25px;
     max-width: 250px;
@@ -1081,7 +1089,7 @@ body:has(.burger.active) {
 }
 
 .catalog__show:hover {
-  background: #b20f1c;
+  background: linear-gradient(172deg, #2d2d2d 0%, #821e26 100%);
   color: #fff;
 }
 
@@ -1290,8 +1298,12 @@ body:has(.burger.active) {
   background: #fff;
   font-weight: 500;
   font-size: 18px;
-  color: #000;
+  color: #2d2d2d;
   outline: none;
+}
+
+.form__inputs input:focus {
+  border-color: #616161;
 }
 
 .form__inputs input::placeholder {
@@ -1790,4 +1802,44 @@ body:has(.burger.active) {
   .footer__map {
     height: 438px;
   }
+}
+
+/* ============================================= ARROW TO TOP ============================================= */
+/* ============================================= ARROW TO TOP ============================================= */
+/* ============================================= ARROW TO TOP ============================================= */
+
+.arrow__to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 5px;
+  background: #b20f1c;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0);
+  transition: .15s;
+}
+
+.arrow__to-top img {
+  transform: rotate(-90deg);
+  width: 80%;
+}
+
+.arrow__to-top.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow__to-top:hover {
+  background: #e83643;
+}
+
+.arrow__to-top:active {
+  transform: scale(.9);
 }
