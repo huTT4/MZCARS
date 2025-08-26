@@ -61,115 +61,6 @@ burgerLinks.forEach(link => {
   })
 })
 
-// LISTS
-const titleList = document.querySelectorAll('.catalog__select-top')
-
-titleList.forEach(item => {
-  item.addEventListener('click', (e) => {
-    const catalogSelect = e.target.closest('.catalog__select')
-    catalogSelect.classList.toggle('active')
-  })
-})
-
-// RANGE YEAR
-const rangeMinYear = document.getElementById('rangeMin--year')
-const rangeMaxYear = document.getElementById('rangeMax--year')
-const minInputRangeYear = document.getElementById('minInputRange--year')
-const maxInputRangeYear = document.getElementById('maxInputRange--year')
-const progressYear = document.querySelector('.catalog__range-progress--year')
-
-let minGap = 1
-const minYear = 1990
-const maxYear = 2025
-
-function updateProgressYear() {
-  let minVal = parseInt(rangeMinYear.value)
-  let maxVal = parseInt(rangeMaxYear.value)
-
-  progressYear.style.left = ((minVal - minYear) / (maxYear - minYear)) * 100 + "%"
-  progressYear.style.right = 100 - ((maxVal - minYear) / (maxYear - minYear)) * 100 + "%"
-
-  minInputRangeYear.value = minVal
-  maxInputRangeYear.value = maxVal
-}
-
-rangeMinYear.addEventListener('input', () => {
-  if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
-    rangeMinYear.value = parseInt(rangeMaxYear.value) - minGap
-  }
-  updateProgressYear()
-})
-
-rangeMaxYear.addEventListener('input', () => {
-  if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
-    rangeMaxYear.value = parseInt(rangeMinYear.value) + minGap
-  }
-  updateProgressYear()
-})
-
-minInputRangeYear.addEventListener('input', () => {
-  let val = parseInt(minInputRangeYear.value)
-  rangeMinYear.value = Math.max(minYear, Math.min(val, parseInt(rangeMaxYear.value) - minGap))
-  updateProgressYear()
-})
-
-maxInputRangeYear.addEventListener('input', () => {
-  let val = parseInt(maxInputRangeYear.value)
-  rangeMaxYear.value = Math.min(maxYear, Math.max(val, parseInt(rangeMinYear.value) + minGap))
-  updateProgressYear()
-})
-
-updateProgressYear()
-
-// RANGE PRICE
-const rangeMinPrice = document.getElementById('rangeMin--price')
-const rangeMaxPrice = document.getElementById('rangeMax--price')
-const minInputRangePrice = document.getElementById('minInputRange--price')
-const maxInputRangePrice = document.getElementById('maxInputRange--price')
-const progressPrice = document.querySelector('.catalog__range-progress--price')
-
-const minPrice = 300000
-const maxPrice = 15000000
-
-function updateProgressPrice() {
-  let minVal = parseInt(rangeMinPrice.value)
-  let maxVal = parseInt(rangeMaxPrice.value)
-
-  progressPrice.style.left = ((minVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
-  progressPrice.style.right = 100 - ((maxVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
-
-  minInputRangePrice.value = minVal
-  maxInputRangePrice.value = maxVal
-}
-
-rangeMinPrice.addEventListener('input', () => {
-  if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
-    rangeMinPrice.value = parseInt(rangeMaxPrice.value) - minGap
-  }
-  updateProgressPrice()
-})
-
-rangeMaxPrice.addEventListener('input', () => {
-  if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
-    rangeMaxPrice.value = parseInt(rangeMinPrice.value) + minGap
-  }
-  updateProgressPrice()
-})
-
-minInputRangePrice.addEventListener('change', () => {
-  let val = parseInt(minInputRangePrice.value)
-  rangeMinPrice.value = Math.max(minPrice, Math.min(val, parseInt(rangeMaxPrice.value) - minGap))
-  updateProgressPrice()
-})
-
-maxInputRangePrice.addEventListener('change', () => {
-  let val = parseInt(maxInputRangePrice.value)
-  rangeMaxPrice.value = Math.min(maxPrice, Math.max(val, parseInt(rangeMinPrice.value) + minGap))
-  updateProgressPrice()
-})
-
-updateProgressPrice()
-
 // Form Validation
 
 const lang = document.documentElement.getAttribute('lang')
@@ -184,19 +75,19 @@ const messages = {
   },
 
   lv: {
-    required: 'LV.Это поле обязательно для заполнения.',
-    email: 'LV.Введите корректный адрес электронной почты.',
+    required: 'Šis lauks ir obligāts aizpildīšanai.',
+    email: 'Ievadiet derīgu e-pasta adresi.',
     captcha: 'Pabeidziet reCAPTCHA',
-    success: 'LV.Сообщение успешно отправлено.',
-    failed: 'LV.Сообщение не отправлено, попробуйте ещё раз.'
+    success: 'Ziņojums veiksmīgi nosūtīts.',
+    failed: 'Ziņojumu neizdevās nosūtīt, lūdzu, mēģiniet vēlreiz.'
   },
 
   en: {
-    required: 'EN.Это поле обязательно для заполнения.',
-    email: 'EN.Введите корректный адрес электронной почты.',
+    required: 'This field is required.',
+    email: 'Please enter a valid email address.',
     captcha: 'Complete reCAPTCHA.',
-    success: 'EN.Сообщение успешно отправлено.',
-    failed: 'EN.Сообщение не отправлено, попробуйте ещё раз.'
+    success: 'Message sent successfully.',
+    failed: 'Message not sent, please try again.'
   }
 }
 
@@ -222,31 +113,31 @@ function validateEmail(email) {
 function validateForm(form) {
   let isValid = true
   const inputs = form.querySelectorAll('input[name], textarea[name]')
-  
+
   // Сброс предыдущих ошибок
   const errorElements = form.querySelectorAll('.error-message')
   errorElements.forEach(el => el.remove())
-  
+
   inputs.forEach(input => {
     const value = input.value.trim()
     const name = input.getAttribute('name')
     const formGroup = input.closest('.form-group')
-    
+
     if (!formGroup) return
-    
+
     // Проверка обязательных полей
     if (input.hasAttribute('required') && !value) {
       showError(formGroup, msg.required)
       isValid = false
       return
     }
-    
+
     // Проверка email
     if (name === 'email' && value && !validateEmail(value)) {
       showError(formGroup, msg.email)
       isValid = false
     }
-    
+
     // Проверка reCAPTCHA
     if (name === 'g-recaptcha-response') {
       const recaptchaResponse = grecaptcha.getResponse()
@@ -256,7 +147,7 @@ function validateForm(form) {
       }
     }
   })
-  
+
   return isValid
 }
 
@@ -272,28 +163,28 @@ function showError(formGroup, message) {
 function serializeForm(form) {
   const formData = new FormData(form)
   const params = new URLSearchParams()
-  
+
   for (const [key, value] of formData.entries()) {
     params.append(key, value)
   }
-  
+
   return params.toString()
 }
 
 function handleFormSubmit(event) {
   event.preventDefault()
-  
+
   const form = event.target
   const notification = document.querySelector('.form-notification')
   const preloader = document.querySelector('.preloader')
-  
+
   if (!validateForm(form)) return
-  
+
   const formData = serializeForm(form)
-  
+
   // Показать прелоадер
   if (preloader) preloader.style.display = 'block'
-  
+
   fetch('../php/sendEmail.php', {
     method: 'POST',
     headers: {
@@ -301,37 +192,37 @@ function handleFormSubmit(event) {
     },
     body: formData
   })
-  .then(response => response.text())
-  .then(data => {
-    if (notification) {
-      notification.style.display = 'block'
-      if (data === 'success') {
-        notification.textContent = msg.success
-        setTimeout(() => {
-          window.location.href = ''
-        }, 5000)
-      } else if (data === 'captcha') {
-        notification.textContent = msg.captcha
-      } else {
+    .then(response => response.text())
+    .then(data => {
+      if (notification) {
+        notification.style.display = 'block'
+        if (data === 'success') {
+          notification.textContent = msg.success
+          setTimeout(() => {
+            window.location.href = ''
+          }, 5000)
+        } else if (data === 'captcha') {
+          notification.textContent = msg.captcha
+        } else {
+          notification.textContent = msg.failed
+        }
+      }
+    })
+    .catch(error => {
+      if (notification) {
+        notification.style.display = 'block'
         notification.textContent = msg.failed
       }
-    }
-  })
-  .catch(error => {
-    if (notification) {
-      notification.style.display = 'block'
-      notification.textContent = msg.failed
-    }
-    console.error('Error:', error)
-  })
-  .finally(() => {
-    // Скрыть прелоадер
-    if (preloader) preloader.style.display = 'none'
-  })
+      console.error('Error:', error)
+    })
+    .finally(() => {
+      // Скрыть прелоадер
+      if (preloader) preloader.style.display = 'none'
+    })
 }
 
 // Инициализация формы
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const contactForm = document.querySelector('.contact-form')
   if (contactForm) {
     contactForm.addEventListener('submit', handleFormSubmit)
