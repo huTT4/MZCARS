@@ -4,7 +4,7 @@ import cars from './cars.js'
 // Получаем параметры из URL
 const params = new URLSearchParams(window.location.search)
 const carId = params.get('id')
-const lang = params.get('lang') || 'ru' // язык по умолчанию ru
+const lang = document.documentElement.getAttribute('lang')
 
 // Выбираем массив машин для текущего языка
 const carsByLang = cars[lang]
@@ -74,12 +74,12 @@ document.querySelectorAll('.lang__list-link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault()
     const newLang = link.dataset.lang
-    let page = 'index.html' // язык по умолчанию ru
+    let page = 'index.html'
 
     if (newLang === 'lv') page = 'lv.html'
     if (newLang === 'eng') page = 'eng.html'
 
-    window.location.href = `/product/${page}?lang=${newLang}&id=${carId}`
+    window.location.href = `/product/${page}?&id=${carId}`
   })
 })
 

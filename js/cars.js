@@ -20,7 +20,7 @@ const cars = {
       leasing: 166,
       leasing_text: 'Лизинг',
       leasing_month_text: 'мес',
-      url: '/product/index.html?lang=ru&id=0',
+      url: '/product/index.html?id=0',
 
       imgs: [
         '../img/car-img.jpg',
@@ -96,7 +96,7 @@ const cars = {
       leasing: 115,
       leasing_text: 'Līzings',
       leasing_month_text: 'mēnesī',
-      url: '/product/index.html?lang=lv&id=0',
+      url: '/product/lv.html?id=0',
 
       imgs: [
         '../img/car-img.jpg',
@@ -172,7 +172,7 @@ const cars = {
       leasing: 113,
       leasing_text: 'Leasing',
       leasing_month_text: 'per month',
-      url: '/product/index.html?lang=eng&id=0',
+      url: '/product/eng.html?id=0',
 
       imgs: [
         '../img/car-img.jpg',
