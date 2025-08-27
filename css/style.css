@@ -112,6 +112,8 @@ body {
 
 .header__social a {
   transition: .15s;
+  width: 36px;
+  height: 36px;
 }
 
 .header__social a:active {
@@ -2229,6 +2231,12 @@ body:has(.burger.active) {
   }
 }
 
+@media (max-width: 875px) {
+  .catalog__card-wrapper--product {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .product {
     padding-top: 35px;
@@ -2245,10 +2253,6 @@ body:has(.burger.active) {
   .catalog__title--product {
     font-size: 35px;
     margin-bottom: 25px;
-  }
-
-  .catalog__card-wrapper--product {
-    max-width: 100%;
   }
 }
 

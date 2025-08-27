@@ -1,18 +1,20 @@
 import cars from './cars.js'
 
 // ============================== Фильтрация ==============================
-const carsPerPage = 12
-let currentIndex = 0
-let filteredCars = null // сюда сохраняем результат поиска + фильтра
-let activeFilter = null // текущий выбранный фильтр
+const carsPerPage = 12 // количество карточек на странице
+let currentIndex = 0 // текущий индекс
+let filteredCars = null // сюда сохраняем результат поиска + фильтров
+let activeFilter = null // текущий выбранный фильтр (сортировки (4 шт.))
 
 const currentLang = document.documentElement.getAttribute('lang')
+
 const cardsContainer = document.querySelector('.catalog__cards')
+const foundCountEl = document.querySelector('[data-quantity]')
 const showMore = document.querySelector('.catalog__show')
+
 const searchInput = document.querySelector('.catalog__search input')
 const searchBtn = document.querySelector('.catalog__search button')
 const filterBtns = document.querySelectorAll('.catalog__filter-cards li')
-const foundCountEl = document.querySelector('[data-quantity]') // элемент с количеством
 const applyBtn = document.querySelector('#apply-filters')
 const clearBtn = document.querySelector('#clear-filters')
 
@@ -22,11 +24,13 @@ const noResultsText = {
   eng: 'No results found'
 }
 
+// При загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
   renderCars(currentLang)
   toggleClearBtnVisibility()
 })
 
+// Функция рендера карточек
 function renderCars(lang) {
   const carsList = filteredCars || cars[lang] || []
 
@@ -93,17 +97,14 @@ function renderCars(lang) {
   }
 }
 
-// кнопка "Показать ещё"
-showMore.addEventListener('click', () => renderCars(currentLang))
-
-// ================== 🔍 ПОИСК + ФИЛЬТР ===================
+// Функция применения фильтров
 function applyFilters() {
   const query = searchInput.value.trim().toLowerCase()
   const allCars = cars[currentLang] || []
 
   let result = allCars
 
-  // ======= ПОИСК =======
+  // Поиск
   if (query) {
     result = result.filter(car => {
       return (
@@ -114,23 +115,23 @@ function applyFilters() {
     })
   }
 
-  // ======= БРЕНД =======
+  // Бренд
   const brandInput = document.querySelector('.catalog__brand input[name="brand"]:checked')
   if (brandInput && brandInput.value !== 'all') {
     result = result.filter(car => car.brand.toLowerCase() === brandInput.value.toLowerCase())
   }
 
-  // ======= ГОД =======
+  // Год
   const minYear = Number(document.getElementById('minInputRange--year').value)
   const maxYear = Number(document.getElementById('maxInputRange--year').value)
   result = result.filter(car => car.year >= minYear && car.year <= maxYear)
 
-  // ======= ЦЕНА =======
+  // Цена
   const minPrice = Number(document.getElementById('minInputRange--price').value)
   const maxPrice = Number(document.getElementById('maxInputRange--price').value)
   result = result.filter(car => car.price >= minPrice && car.price <= maxPrice)
 
-  // ======= ПРОБЕГ =======
+  // Пробег
   const mileageChecks = document.querySelectorAll('.catalog__select input[name="mileage"]:checked')
   if (mileageChecks.length > 0) {
     const mileageValues = Array.from(mileageChecks).map(c => c.value)
@@ -142,28 +143,28 @@ function applyFilters() {
     })
   }
 
-  // ======= ТОПЛИВО =======
+  // Топливо
   const fuelChecks = document.querySelectorAll('.catalog__select input[name="fuel"]:checked')
   if (fuelChecks.length > 0) {
     const fuelValues = Array.from(fuelChecks).map(c => c.value.toLowerCase())
     result = result.filter(car => fuelValues.includes(car.fuel.toLowerCase()))
   }
 
-  // ======= КОРОБКА ПЕРЕДАЧ =======
+  // Коробка передач
   const transChecks = document.querySelectorAll('.catalog__select input[name="transmission"]:checked')
   if (transChecks.length > 0) {
     const transValues = Array.from(transChecks).map(c => c.value.toLowerCase())
     result = result.filter(car => transValues.includes(car.transmission.toLowerCase()))
   }
 
-  // ======= ДОСТУПНОСТЬ =======
+  // Доступность
   const availChecks = document.querySelectorAll('.catalog__select input[name="availability"]:checked')
   if (availChecks.length > 0) {
     const availValues = Array.from(availChecks).map(c => c.value.toLowerCase())
     result = result.filter(car => availValues.includes(car.availability.toLowerCase()))
   }
 
-  // ======= СОРТИРОВКА =======
+  // Сортировка (4 шт.)
   if (activeFilter) {
     switch (activeFilter) {
       case 'cheap':
@@ -234,6 +235,10 @@ function clearFilters() {
   toggleClearBtnVisibility()
 }
 
+// При клике на "Показать еще" рендерим следующие карточки
+showMore.addEventListener('click', () => renderCars(currentLang))
+
+// Применяем фильтры
 applyBtn.addEventListener('click', applyFilters)
 clearBtn.addEventListener('click', clearFilters)
 searchBtn.addEventListener('click', applyFilters)
@@ -244,13 +249,13 @@ searchInput.addEventListener('keydown', e => {
   }
 })
 
-// ================== 🎛 ФИЛЬТРЫ ===================
+// Сортировка (4 шт.)
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => b.classList.remove('active'))
 
     if (activeFilter === btn.dataset.filter) {
-      // если нажали повторно → убираем фильтр
+      // если нажали повторно -> убираем фильтр
       activeFilter = null
     } else {
       btn.classList.add('active')
@@ -261,6 +266,7 @@ filterBtns.forEach(btn => {
   })
 })
 
+// Функция определения видимости кнопки "Сбросить фильтры"
 function toggleClearBtnVisibility() {
   const query = searchInput.value.trim().toLowerCase()
 
@@ -275,7 +281,7 @@ function toggleClearBtnVisibility() {
   const transChecks = document.querySelectorAll('.catalog__select input[name="transmission"]:checked')
   const availChecks = document.querySelectorAll('.catalog__select input[name="availability"]:checked')
 
-  // Условие: есть ли активные фильтры?
+  // Условие: есть ли активные фильтры ?
   const hasFilters =
     query ||
     (brandInput && brandInput.value !== 'all') ||

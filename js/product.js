@@ -26,11 +26,9 @@ if (!car) {
     paginationWrapper.innerHTML += `<div><img src="${img}" alt="car-img"></div>`
   })
 
-  // Информаицонные плашки
-
+  // Информационные плашки
   const infoWrapper = document.querySelector('[data-car-info]')
 
-  // собираем плашку
   let badgeHtml = ''
   if (car.isNew) {
     badgeHtml = `<span class="product__card-img-info-new">NEW</span>`
@@ -40,7 +38,6 @@ if (!car) {
                </span>`
   }
 
-  // финальная сборка
   infoWrapper.innerHTML = `
   ${badgeHtml}
   <span class="product__card-img-info-availability">
@@ -77,7 +74,7 @@ document.querySelectorAll('.lang__list-link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault()
     const newLang = link.dataset.lang
-    let page = 'index.html' // default ru
+    let page = 'index.html' // язык по умолчанию ru
 
     if (newLang === 'lv') page = 'lv.html'
     if (newLang === 'eng') page = 'eng.html'
@@ -128,7 +125,11 @@ function createCatalogCard(car) {
 }
 
 function renderRelatedCars(currentCarId, lang) {
-  const container = document.querySelector('#catalog .catalog__cards')
+  const container = document.querySelector('.catalog__cards')
+  const catalogSection = document.querySelector('.catalog--product')
+
+  if (!container || !catalogSection) return
+
   container.innerHTML = ''
 
   // Берем массив машин для текущего языка
@@ -136,14 +137,20 @@ function renderRelatedCars(currentCarId, lang) {
 
   const related = carsByLang
     .filter(c => String(c.id) !== String(currentCarId))
-    .slice(-8) // последние 10
+    .slice(-8) // последние 8 без учета текущей
+
+  // Скрываем секцию если нет машин
+  if (related.length === 0) {
+    catalogSection.style.display = 'none'
+    return
+  } else {
+    catalogSection.style.display = ''
+  }
 
   related.forEach(car => {
     container.insertAdjacentHTML('beforeend', createCatalogCard(car))
   })
 }
-
-
 
 // ============================== Информация о цене (при наведении) ==============================
 const productInfo = document.querySelector('.product__price-left-info')
@@ -164,7 +171,7 @@ $('.product__slider').slick({
   arrows: false,
   infinite: false,
   asNavFor: '.product__pagination',
-});
+})
 
 // ============================== Миниатюры (пагинация) ==============================
 $('.product__pagination').slick({
@@ -177,7 +184,7 @@ $('.product__pagination').slick({
   centerMode: false,
   prevArrow: '<button type="button" class="product-arrow prev">‹</button>',
   nextArrow: '<button type="button" class="product-arrow next">›</button>',
-});
+})
 
 // ============================== Галерея картинок (Fancybox) ==============================
 Fancybox.bind("[data-fancybox='gallery']", {
