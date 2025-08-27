@@ -1,4 +1,4 @@
-// SWITCH LANG
+// ============================== Переключение языка ==============================
 let langList = null
 
 document.addEventListener('click', (e) => {
@@ -12,14 +12,13 @@ document.addEventListener('click', (e) => {
     const list = container.querySelector('.lang__list')
     list.classList.toggle('active')
   }
+
   // Если кликнули по ссылке в списке
   else if (langLink) {
     const list = langLink.closest('.lang__list')
     list.classList.remove('active')
-
-    // Здесь можно добавить логику смены языка
-    console.log('Выбран язык:', langLink.textContent)
   }
+
   // Если кликнули вне области языкового меню 
   else if (!langList) {
     document.querySelectorAll('.lang__list.active').forEach(list => {
@@ -28,7 +27,7 @@ document.addEventListener('click', (e) => {
   }
 })
 
-// ARROW TO TOP
+// ============================== Кнопка для скролла(ARROW TO TOP) ==============================
 const arrowToTop = document.querySelector('.arrow__to-top')
 
 window.addEventListener('scroll', () => {
@@ -44,7 +43,7 @@ arrowToTop.addEventListener('click', function (e) {
   window.scrollTo({ top: 0 })
 })
 
-// BURGER
+// ============================== Бургер - меню ==============================
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.header__content')
 const burgerLinks = document.querySelectorAll('.header__nav a')
@@ -61,7 +60,7 @@ burgerLinks.forEach(link => {
   })
 })
 
-// Form Validation
+// ============================== Валидация формы ==============================
 
 const lang = document.documentElement.getAttribute('lang')
 

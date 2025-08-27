@@ -29,7 +29,7 @@
   <!-- Стили, скрипты -->
   <link rel="stylesheet" href="css/style.css">
   <script src="https://www.google.com/recaptcha/api.js" defer></script>
-  <script src="js/filters.js" defer></script>
+  <script type="module" src="js/filters.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 
@@ -84,6 +84,23 @@
           </nav>
 
           <div class="header__social">
+            <a href="#" target="_blank">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M36 18.1094C36 27.1475 29.409 34.6403 20.805 36V23.3792H24.9885L25.785 18.1577H20.805V14.7697C20.805 13.3406 21.501 11.9492 23.73 11.9492H25.9935V7.50333C25.9935 7.50333 23.9385 7.1502 21.975 7.1502C17.874 7.1502 15.195 9.65081 15.195 14.1767V18.1562H10.6365V23.3777H15.195V35.9985C6.5925 34.6373 0 27.146 0 18.1094C0 8.10849 8.0595 0 18 0C27.9405 0 36 8.10698 36 18.1094Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18 0C27.9411 0 36 8.05887 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18C0 8.05887 8.05887 0 18 0ZM18.7476 7.29114L18.7454 22.0479C18.6843 23.7005 17.3569 25.0267 15.73 25.0268C15.2239 25.0268 14.7476 24.897 14.3286 24.6712C13.3671 24.1527 12.7083 23.1204 12.7083 21.9317C12.7083 20.2245 14.0638 18.8357 15.7291 18.8357C16.04 18.8357 16.3378 18.8885 16.62 18.9786V15.2195C16.3283 15.1794 16.0322 15.1537 15.7291 15.1537C12.0814 15.1537 9.11392 18.1942 9.11392 21.9317C9.11394 24.2244 10.2322 26.254 11.9375 27.4811C13.0115 28.2539 14.319 28.7089 15.7282 28.7089C19.3749 28.7088 22.3424 25.6692 22.3425 21.9317V14.4483C23.7517 15.4853 25.4787 16.0958 27.3418 16.0958L27.3409 12.4146C26.3375 12.4146 25.4021 12.1085 24.6183 11.5847C23.4921 10.8324 22.6796 9.62852 22.4261 8.22567C22.3721 7.92224 22.3416 7.61063 22.3416 7.29114H18.7476Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header__personal">
             <a href="tel:+37127710202">+37127710202</a>
             <a href="mailto:mzcars@mzcars.lv">mzcars@mzcars.lv</a>
           </div>
@@ -122,22 +139,6 @@
             </a>
             <a class="hero__btn-2" href="#catalog">Car Catalog</a>
           </div>
-          <div class="hero__social">
-            <a href="#" target="_blank">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M36 18.1094C36 27.1475 29.409 34.6403 20.805 36V23.3792H24.9885L25.785 18.1577H20.805V14.7697C20.805 13.3406 21.501 11.9492 23.73 11.9492H25.9935V7.50333C25.9935 7.50333 23.9385 7.1502 21.975 7.1502C17.874 7.1502 15.195 9.65081 15.195 14.1767V18.1562H10.6365V23.3777H15.195V35.9985C6.5925 34.6373 0 27.146 0 18.1094C0 8.10849 8.0595 0 18 0C27.9405 0 36 8.10698 36 18.1094Z"
-                  fill="white" />
-              </svg>
-            </a>
-            <a href="#" target="_blank">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M18 0C27.9411 0 36 8.05887 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18C0 8.05887 8.05887 0 18 0ZM18.7476 7.29114L18.7454 22.0479C18.6843 23.7005 17.3569 25.0267 15.73 25.0268C15.2239 25.0268 14.7476 24.897 14.3286 24.6712C13.3671 24.1527 12.7083 23.1204 12.7083 21.9317C12.7083 20.2245 14.0638 18.8357 15.7291 18.8357C16.04 18.8357 16.3378 18.8885 16.62 18.9786V15.2195C16.3283 15.1794 16.0322 15.1537 15.7291 15.1537C12.0814 15.1537 9.11392 18.1942 9.11392 21.9317C9.11394 24.2244 10.2322 26.254 11.9375 27.4811C13.0115 28.2539 14.319 28.7089 15.7282 28.7089C19.3749 28.7088 22.3424 25.6692 22.3425 21.9317V14.4483C23.7517 15.4853 25.4787 16.0958 27.3418 16.0958L27.3409 12.4146C26.3375 12.4146 25.4021 12.1085 24.6183 11.5847C23.4921 10.8324 22.6796 9.62852 22.4261 8.22567C22.3721 7.92224 22.3416 7.61063 22.3416 7.29114H18.7476Z"
-                  fill="white" />
-              </svg>
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -148,8 +149,8 @@
           <div class="catalog__title-wrapper">
             <h3 class="catalog__title">Car Catalog</h3>
             <div class="catalog__found">
-              <span></span>
-              67 cars found
+              <span class="catalog__found-circle"></span>
+              <span data-quantity></span> cars found
             </div>
           </div>
           <div class="catalog__search">
@@ -159,10 +160,10 @@
             </button>
           </div>
           <ul class="catalog__filter-cards">
-            <li>Cheaper</li>
-            <li>More expensive</li>
-            <li>New</li>
-            <li>On sale</li>
+            <li data-filter="cheap">Cheaper</li>
+            <li data-filter="expensive">More expensive</li>
+            <li data-filter="new">New</li>
+            <li data-filter="discount">On sale</li>
           </ul>
         </div>
 
@@ -182,28 +183,28 @@
 
                 <div class="catalog__select">
                   <div class="catalog__select-top">
-                    All
+                    <span class="catalog__brand-choise">All</span>
                     <img src="img/arrow.svg" alt="arrow">
                   </div>
                   <ul class="catalog__select-list">
                     <label>
-                      <input type="checkbox" name="car" value="bmw">
+                      <input type="radio" name="brand" value="bmw">
                       <span>BMW</span>
                     </label>
 
                     <label>
-                      <input type="checkbox" name="car" value="mercedes">
+                      <input type="radio" name="brand" value="mercedes">
                       <span>MERCEDES</span>
                     </label>
 
                     <label>
-                      <input type="checkbox" name="car" value="volvo">
+                      <input type="radio" name="brand" value="volvo">
                       <span>VOLVO</span>
                     </label>
 
                     <label>
-                      <input type="checkbox" name="car" value="all">
-                      <span>Все</span>
+                      <input type="radio" name="brand" value="all" checked>
+                      <span>Visi</span>
                     </label>
                   </ul>
                 </div>
@@ -234,16 +235,16 @@
                 </h5>
                 <div class="catalog__range-inputs">
                   from
-                  <input type="number" id="minInputRange--price" value="300000">
+                  <input type="number" id="minInputRange--price" value="500">
                   to
-                  <input type="number" id="maxInputRange--price" value="15000000">
+                  <input type="number" id="maxInputRange--price" value="100000">
                 </div>
                 <div class="catalog__range-slider">
                   <div class="catalog__range-progress catalog__range-progress--price"></div>
                 </div>
                 <div class="catalog__range-input">
-                  <input type="range" id="rangeMin--price" min="300000" max="15000000" value="300000">
-                  <input type="range" id="rangeMax--price" min="300000" max="15000000" value="15000000">
+                  <input type="range" id="rangeMin--price" min="500" max="100000" value="500">
+                  <input type="range" id="rangeMax--price" min="500" max="100000" value="100000">
                 </div>
               </div>
 
@@ -254,23 +255,28 @@
                 </div>
                 <ul class="catalog__select-list">
                   <label>
-                    <input type="checkbox" name="mileage" value="50000">
-                    <span>50.000 км</span>
-                  </label>
-
-                  <label>
                     <input type="checkbox" name="mileage" value="100000">
-                    <span>100.000 км</span>
+                    <span>up to 100 000 km</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="mileage" value="73000">
-                    <span>73.000 км</span>
+                    <input type="checkbox" name="mileage" value="150000">
+                    <span>up to 150 000 km</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="mileage" value="Все">
-                    <span>Все</span>
+                    <input type="checkbox" name="mileage" value="200000">
+                    <span>up to 200 000 km</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="250000">
+                    <span>up to 250 000 km</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="more250k">
+                    <span>more then 250 000 km</span>
                   </label>
                 </ul>
               </div>
@@ -282,23 +288,18 @@
                 </div>
                 <ul class="catalog__select-list">
                   <label>
-                    <input type="checkbox" name="mileage" value="50000">
-                    <span>50.000 км</span>
+                    <input type="checkbox" name="fuel" value="Petrol">
+                    <span>Petrol</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="mileage" value="100000">
-                    <span>100.000 км</span>
+                    <input type="checkbox" name="fuel" value="Diesel">
+                    <span>Diesel</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="mileage" value="73000">
-                    <span>73.000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="Все">
-                    <span>Все</span>
+                    <input type="checkbox" name="fuel" value="Other">
+                    <span>Other</span>
                   </label>
                 </ul>
               </div>
@@ -310,23 +311,13 @@
                 </div>
                 <ul class="catalog__select-list">
                   <label>
-                    <input type="checkbox" name="mileage" value="50000">
-                    <span>50.000 км</span>
+                    <input type="checkbox" name="transmission" value="Automatic">
+                    <span>Automatic</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="mileage" value="100000">
-                    <span>100.000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="73000">
-                    <span>73.000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="Все">
-                    <span>Все</span>
+                    <input type="checkbox" name="transmission" value="Mechanical">
+                    <span>Mechanical</span>
                   </label>
                 </ul>
               </div>
@@ -338,113 +329,31 @@
                 </div>
                 <ul class="catalog__select-list">
                   <label>
-                    <input type="checkbox" name="mileage" value="50000">
-                    <span>50.000 км</span>
+                    <input type="checkbox" name="availability" value="In stock">
+                    <span>In stock</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="mileage" value="100000">
-                    <span>100.000 км</span>
+                    <input type="checkbox" name="availability" value="Soon">
+                    <span>Soon</span>
                   </label>
 
                   <label>
-                    <input type="checkbox" name="mileage" value="73000">
-                    <span>73.000 км</span>
-                  </label>
-
-                  <label>
-                    <input type="checkbox" name="mileage" value="Все">
-                    <span>Все</span>
+                    <input type="checkbox" name="availability" value="Per order">
+                    <span>Per order</span>
                   </label>
                 </ul>
               </div>
             </div>
 
-            <button class="catalog__filters-btn">Apply filters</button>
+            <button class="catalog__filters-btn" id="apply-filters">Apply filters</button>
+            <button class="catalog__filters-btn catalog__filters-btn--reverse" id="clear-filters">Clear filters</button>
           </aside>
 
           <div class="catalog__right">
-            <div class="catalog__cards">
-              <div class="catalog__card-wrapper">
-                <a href="/product/eng.html" target="_blank" class="catalog__card">
-                  <div class="catalog__card-img-wrapper">
-                    <img class="catalog__card-img" src="img/car-img.jpg" alt="car-img">
-
-                    <div class="catalog__card-img-info">
-                      <span>
-                        <img src="img/percent.svg" alt="percent">
-                        -7000$
-                      </span>
-
-                      <span>
-                        <img src="img/check-mark.svg" alt="check-mark">
-                        Available
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="catalog__card-title">
-                    <h5>BMW 5120</h5>
-                    <span>AP-074</span>
-                  </div>
-
-                  <div class="catalog__card-info">
-                    <span>
-                      <img src="img/calendar-2.svg" alt="calendar-2">
-                      2013
-                    </span>
-
-                    <span>
-                      <img src="img/transmission.svg" alt="transmission">
-                      Automatic
-                    </span>
-
-                    <span>
-                      <img src="img/speedometer.svg" alt="speedometer">
-                      187.513
-                    </span>
-
-                    <span>
-                      <img src="img/engine.svg" alt="engine">
-                      2.0 Diesel
-                    </span>
-                  </div>
-
-                  <div class="catalog__card-price">
-                    <h6>75000€</h6>
-                    <div>
-                      Leasing
-                      <span>113€/per month</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <div class="catalog__cards"></div>
 
             <button class="catalog__show">Show more</button>
-
-            <div class="catalog__navigation">
-              <div class="catalog__pagination">
-                <div class="catalog__pagination-item active">1</div>
-                <div class="catalog__pagination-item">2</div>
-                <div class="catalog__pagination-item">3</div>
-                <div class="catalog__pagination-item">4</div>
-                <div class="catalog__pagination-item">5</div>
-                <span>...</span>
-                <div class="catalog__pagination-item">25</div>
-              </div>
-
-              <div class="catalog__arrows">
-                <div class="catalog__arrow catalog__arrow-left">
-                  <img src="img/arrow-left.svg" alt="arrow-left">
-                  First page
-                </div>
-                <div class="catalog__arrow catalog__arrow-right">
-                  Next
-                  <img src="img/arrow-right.svg" alt="arrow-right">
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

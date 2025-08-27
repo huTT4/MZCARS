@@ -1,4 +1,151 @@
-// Product info
+import cars from './cars.js'
+
+// ============================== Показываем конкретную машину ==============================
+// Получаем параметры из URL
+const params = new URLSearchParams(window.location.search)
+const carId = params.get('id')
+const lang = params.get('lang') || 'ru' // язык по умолчанию ru
+
+// Выбираем массив машин для текущего языка
+const carsByLang = cars[lang]
+
+// Ищем конкретную машину
+const car = carsByLang.find(c => String(c.id) === carId)
+
+if (!car) {
+  console.error('Car not found')
+} else {
+  // Слева
+  const mainImgWrapper = document.querySelector('.product__slider')
+  const paginationWrapper = document.querySelector('.product__pagination')
+  mainImgWrapper.innerHTML = ''
+  paginationWrapper.innerHTML = ''
+
+  car.imgs.forEach(img => {
+    mainImgWrapper.innerHTML += `<img class="product__card-img" src="${img}" alt="car-img" data-fancybox="gallery">`
+    paginationWrapper.innerHTML += `<div><img src="${img}" alt="car-img"></div>`
+  })
+
+  // Информаицонные плашки
+
+  const infoWrapper = document.querySelector('[data-car-info]')
+
+  // собираем плашку
+  let badgeHtml = ''
+  if (car.isNew) {
+    badgeHtml = `<span class="product__card-img-info-new">NEW</span>`
+  } else if (car.discount > 0) {
+    badgeHtml = `<span class="product__card-img-info-discount">
+                 <img src="../img/percent.svg" alt="percent"> -${car.discount}$
+               </span>`
+  }
+
+  // финальная сборка
+  infoWrapper.innerHTML = `
+  ${badgeHtml}
+  <span class="product__card-img-info-availability">
+    <img src="../img/check-mark.svg" alt="check-mark">
+    ${car.availability}
+  </span>
+`
+
+  // Ссылки
+  const links = document.querySelectorAll('.product__links a')
+  links[0].href = car.linkVideo
+  links[1].href = car.linkReport
+
+  // Справа
+  document.querySelector('[data-car-title]').textContent = car.title
+  document.querySelector('[data-car-price]').textContent = car.price.toLocaleString('ru-RU') + ' €'
+  document.querySelector('[data-car-leasing]').textContent = car.leasing + '€'
+
+  const infoSpans = document.querySelectorAll('.product__info li span')
+  infoSpans[0].textContent = car.year
+  infoSpans[1].textContent = car.mileage_text
+  infoSpans[2].textContent = car.article
+  infoSpans[3].textContent = car.transmission
+  infoSpans[4].textContent = car.engine
+  infoSpans[5].textContent = car.vin
+
+  // Описание
+  document.querySelector('.product__descr').innerHTML = car.descr
+
+  renderRelatedCars(carId, lang)
+}
+
+document.querySelectorAll('.lang__list-link').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault()
+    const newLang = link.dataset.lang
+    let page = 'index.html' // default ru
+
+    if (newLang === 'lv') page = 'lv.html'
+    if (newLang === 'eng') page = 'eng.html'
+
+    window.location.href = `/product/${page}?lang=${newLang}&id=${carId}`
+  })
+})
+
+function createCatalogCard(car) {
+  return `
+      <div class="catalog__card-wrapper catalog__card-wrapper--product">
+        <a href="${car.url}" target="_blank" class="catalog__card">
+          <div class="catalog__card-img-wrapper">
+            <img class="catalog__card-img" src="${car.imgs[0]}" alt="car-img">
+
+            <div class="catalog__card-img-info">
+              ${car.isNew ? `<span class="catalog__card-img-info-new">NEW</span>` : (car.discount > 0 ? `<span class="catalog__card-img-info-discount"><img src="../img/percent.svg" alt="percent">-${car.discount}$</span>` : '')}
+
+              <span class="catalog__card-img-info-availability">
+                <img src="../img/check-mark.svg" alt="check-mark">
+                ${car.availability}
+              </span>
+            </div>
+          </div>
+
+          <div class="catalog__card-title">
+            <h5>${car.title}</h5>
+            <span>${car.article}</span>
+          </div>
+
+          <div class="catalog__card-info">
+            <span><img src="../img/calendar-2.svg" alt="calendar">${car.year}</span>
+            <span><img src="../img/transmission.svg" alt="transmission">${car.transmission}</span>
+            <span><img src="../img/speedometer.svg" alt="speedometer">${car.mileage_text}</span>
+            <span><img src="../img/engine.svg" alt="engine">${car.engine}</span>
+          </div>
+
+          <div class="catalog__card-price">
+            <h6>${car.price}€</h6>
+            <div>
+              ${car.leasing_text}
+              <span>${car.leasing}€/${car.leasing_month_text}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    `
+}
+
+function renderRelatedCars(currentCarId, lang) {
+  const container = document.querySelector('#catalog .catalog__cards')
+  container.innerHTML = ''
+
+  // Берем массив машин для текущего языка
+  const carsByLang = cars[lang]
+
+  const related = carsByLang
+    .filter(c => String(c.id) !== String(currentCarId))
+    .slice(-8) // последние 10
+
+  related.forEach(car => {
+    container.insertAdjacentHTML('beforeend', createCatalogCard(car))
+  })
+}
+
+
+
+// ============================== Информация о цене (при наведении) ==============================
 const productInfo = document.querySelector('.product__price-left-info')
 const productInfoText = document.querySelector('.product__price-left-info-text')
 
@@ -10,29 +157,30 @@ productInfo.addEventListener('mouseleave', () => {
   productInfoText.classList.remove('active')
 })
 
-// Главный слайдер
+// ============================== Главный слайдер ==============================
 $('.product__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   infinite: false,
-  asNavFor: '.product__pagination'
+  asNavFor: '.product__pagination',
 });
 
-// Миниатюры
+// ============================== Миниатюры (пагинация) ==============================
 $('.product__pagination').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  asNavFor: '.product__slider',
   focusOnSelect: true,
+  asNavFor: '.product__slider',
   infinite: false,
   arrows: true,
   centerMode: false,
   prevArrow: '<button type="button" class="product-arrow prev">‹</button>',
-  nextArrow: '<button type="button" class="product-arrow next">›</button>'
+  nextArrow: '<button type="button" class="product-arrow next">›</button>',
 });
 
-// Fancybox
+// ============================== Галерея картинок (Fancybox) ==============================
 Fancybox.bind("[data-fancybox='gallery']", {
   placeFocusBack: false
 })
+
