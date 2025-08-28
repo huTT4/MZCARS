@@ -47,9 +47,24 @@ if (!car) {
 `
 
   // Ссылки
-  const links = document.querySelectorAll('.product__links a')
-  links[0].href = car.linkVideo
-  links[1].href = car.linkReport
+  const videoLink = document.querySelector('[data-car-link-video]')
+  const reportLink = document.querySelector('[data-car-link-report]')
+
+  // Видео
+  if (car.linkVideo && car.linkVideo.trim() !== '') {
+    videoLink.href = car.linkVideo
+    videoLink.style.display = ''
+  } else {
+    videoLink.style.display = 'none'
+  }
+
+  // Отчет
+  if (car.linkReport && car.linkReport.trim() !== '') {
+    reportLink.href = car.linkReport
+    reportLink.style.display = ''
+  } else {
+    reportLink.style.display = 'none'
+  }
 
   // Справа
   document.querySelector('[data-car-title]').textContent = car.title
