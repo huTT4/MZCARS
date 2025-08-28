@@ -14,11 +14,11 @@ const cars = {
 
       mainImg: 'img/cars/Volvo XC 60 2015 god/1 (1).jpeg',
       title: 'Volvo XC 60',
-      article: 'MZ-020',
+      article: 'Арт. MZ-020',
       mileage_text: '270.000',
       engine: '2.0 дизель',
       leasing: 135,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=9',
 
@@ -74,11 +74,11 @@ USB-выход<br>
 
       mainImg: 'img/cars/Volvo XC 90 2008 god/1.jpeg',
       title: 'Volvo XC 90',
-      article: 'MZ-013',
+      article: 'Арт. MZ-013',
       mileage_text: '179.000',
       engine: '2.4 дизель',
       leasing: 85,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=8',
 
@@ -140,11 +140,11 @@ USB-выход<br>
 
       mainImg: 'img/cars/Volkswagen Touareg 2007 god/1.jpeg',
       title: 'Volkswagen Touareg',
-      article: 'MZ-008',
+      article: 'Арт. MZ-008',
       mileage_text: '230.000',
       engine: '3.0 дизель',
       leasing: 80,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=7',
 
@@ -211,11 +211,11 @@ Webasto (подогреватель двигателя)<br>
 
       mainImg: 'img/cars/Ford S Max 2010 god/1.jpeg',
       title: 'Ford S-Max',
-      article: 'MZ-012',
+      article: 'Арт. MZ-012',
       mileage_text: '240.000',
       engine: '2.0 дизель',
       leasing: 75,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=6',
 
@@ -276,11 +276,11 @@ Bluetooth / Handsfree<br>
 
       mainImg: 'img/cars/BMW X3 2010 god/1.jpeg',
       title: 'Bmw X3',
-      article: 'MZ-011',
+      article: 'Арт. MZ-011',
       mileage_text: '189.000',
       engine: '2.0 дизель',
       leasing: 75,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=5',
 
@@ -334,11 +334,11 @@ Bluetooth-аудио<br>
 
       mainImg: 'img/cars/BMW 740 2013 god/1.jpeg',
       title: 'Bmw 740',
-      article: 'MZ-18',
+      article: 'Арт. MZ-18',
       mileage_text: '262.000',
       engine: '3.0 дизель',
       leasing: 130,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=4',
 
@@ -404,11 +404,11 @@ LED / биксеноновые фары<br>
 
       mainImg: 'img/cars/bmw 520 2014 g/1.jpeg',
       title: 'Bmw 520',
-      article: 'MZ-18',
+      article: 'Арт. MZ-18',
       mileage_text: '374.150',
       engine: '2.0 дизель',
       leasing: 90,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=3',
 
@@ -468,11 +468,11 @@ Auto Hold функция<br>
 
       mainImg: 'img/cars/Kia Sorento 2021 god/1.jpeg',
       title: 'Kia Sorento',
-      article: 'MZ-025',
+      article: 'Арт. MZ-025',
       mileage_text: '136.000',
       engine: '1.6 гибрид',
       leasing: 340,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=2',
 
@@ -556,11 +556,11 @@ Keyless Go (бесключевой доступ и запуск)<br>
 
       mainImg: 'img/cars/Audi A5 2017 god/1.jpeg',
       title: 'Audi A5',
-      article: 'MZ-016',
+      article: 'Арт. MZ-016',
       mileage_text: '137.000',
       engine: '3.0 дизель',
       leasing: 245,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=1',
 
@@ -628,11 +628,11 @@ CarPlay / Android Auto<br>
 
       mainImg: 'img/cars/MB GL350 2014 god/1.jpeg',
       title: 'Mercedes GL350',
-      article: 'MZ-015',
+      article: 'Арт. MZ-015',
       mileage_text: '298.000',
       engine: '3.0 дизель',
       leasing: 230,
-      leasing_text: 'Лизинг',
+      leasing_text: 'Лизинг от',
       leasing_month_text: 'мес',
       url: '/product/index.html?id=0',
 
@@ -704,11 +704,11 @@ Keyless Go (бесключевой доступ и запуск)<br>
 
       mainImg: 'img/cars/Volvo XC 60 2015 god/1 (1).jpeg',
       title: 'Volvo XC 60',
-      article: 'MZ-020',
+      article: 'Art. MZ-020',
       mileage_text: '270.000',
       engine: '2.0 dīzelis',
       leasing: 135,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=9',
 
@@ -764,11 +764,11 @@ Jumta reliņi<br>
 
       mainImg: 'img/cars/Volvo XC 90 2008 god/1.jpeg',
       title: 'Volvo XC 90',
-      article: 'MZ-013',
+      article: 'Art. MZ-013',
       mileage_text: '179.000',
       engine: '2.4 dīzelis',
       leasing: 85,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=8',
 
@@ -830,11 +830,11 @@ Jumta reliņi<br>
 
       mainImg: 'img/cars/Volkswagen Touareg 2007 god/1.jpeg',
       title: 'Volkswagen Touareg',
-      article: 'MZ-008',
+      article: 'Art. MZ-008',
       mileage_text: '230.000',
       engine: '3.0 dīzelis',
       leasing: 80,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=7',
 
@@ -903,11 +903,11 @@ Apsildāmi spoguļi</p>
 
       mainImg: 'img/cars/Ford S Max 2010 god/1.jpeg',
       title: 'Ford S-Max',
-      article: 'MZ-012',
+      article: 'Art. MZ-012',
       mileage_text: '240.000',
       engine: '2.0 dīzelis',
       leasing: 75,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=6',
 
@@ -966,11 +966,11 @@ Lietus sensors<br>
 
       mainImg: 'img/cars/BMW X3 2010 god/1.jpeg',
       title: 'Bmw X3',
-      article: 'MZ-011',
+      article: 'Art. MZ-011',
       mileage_text: '189.000',
       engine: '2.0 dīzelis',
       leasing: 75,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=5',
 
@@ -1021,11 +1021,11 @@ Lietus sensors<br>
 
       mainImg: 'img/cars/BMW 740 2013 god/1.jpeg',
       title: 'Bmw 740',
-      article: 'MZ-18',
+      article: 'Art. MZ-18',
       mileage_text: '262.000',
       engine: '3.0 dīzelis',
       leasing: 130,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=4',
 
@@ -1091,11 +1091,11 @@ Lietus sensors<br>
 
       mainImg: 'img/cars/bmw 520 2014 g/1.jpeg',
       title: 'Bmw 520',
-      article: 'MZ-18',
+      article: 'Art. MZ-18',
       mileage_text: '374.150',
       engine: '2.0 dīzelis',
       leasing: 90,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=3',
 
@@ -1154,11 +1154,11 @@ Pilna servisa vēsture no pirmā līdz pēdējam kilometram, motoram mainītas �
 
       mainImg: 'img/cars/Kia Sorento 2021 god/1.jpeg',
       title: 'Kia Sorento',
-      article: 'MZ-025',
+      article: 'Art. MZ-025',
       mileage_text: '136.000',
       engine: '1.6 hibrīds',
       leasing: 340,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=2',
 
@@ -1239,11 +1239,11 @@ Ideāls auto ceļošanai gan mazām, gan lielām distancēm, pārdod licenzēts 
 
       mainImg: 'img/cars/Audi A5 2017 god/1.jpeg',
       title: 'Audi A5',
-      article: 'MZ-016',
+      article: 'Art. MZ-016',
       mileage_text: '137.000',
       engine: '3.0 dīzelis',
       leasing: 245,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=1',
 
@@ -1311,11 +1311,11 @@ Audi Drive Select</p>
 
       mainImg: 'img/cars/MB GL350 2014 god/1.jpeg',
       title: 'Mercedes GL350',
-      article: 'MZ-015',
+      article: 'Art. MZ-015',
       mileage_text: '298.000',
       engine: '3.0 dīzelis',
       leasing: 230,
-      leasing_text: 'Līzings',
+      leasing_text: 'Līzings no',
       leasing_month_text: 'mēnesī',
       url: '/product/lv.html?id=0',
 
@@ -1386,11 +1386,11 @@ El. reg. visas sēdekļu rindas<br>
 
       mainImg: 'img/cars/Volvo XC 60 2015 god/1 (1).jpeg',
       title: 'Volvo XC 60',
-      article: 'MZ-020',
+      article: 'Art. MZ-020',
       mileage_text: '270.000',
       engine: '2.0 diesel',
       leasing: 135,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=9',
 
@@ -1446,11 +1446,11 @@ Roof rails<br>
 
       mainImg: 'img/cars/Volvo XC 90 2008 god/1.jpeg',
       title: 'Volvo XC 90',
-      article: 'MZ-013',
+      article: 'Art. MZ-013',
       mileage_text: '179.000',
       engine: '2.4 diesel',
       leasing: 85,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=8',
 
@@ -1512,11 +1512,11 @@ Front armrest with storage compartment</p>
 
       mainImg: 'img/cars/Volkswagen Touareg 2007 god/1.jpeg',
       title: 'Volkswagen Touareg',
-      article: 'MZ-008',
+      article: 'Art. MZ-008',
       mileage_text: '230.000',
       engine: '3.0 diesel',
       leasing: 80,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=7',
 
@@ -1584,11 +1584,11 @@ Heated mirrors</p>
 
       mainImg: 'img/cars/Ford S Max 2010 god/1.jpeg',
       title: 'Ford S-Max',
-      article: 'MZ-012',
+      article: 'Art. MZ-012',
       mileage_text: '240.000',
       engine: '2.0 diesel',
       leasing: 75,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=6',
 
@@ -1649,11 +1649,11 @@ Rain sensor<br>
 
       mainImg: 'img/cars/BMW X3 2010 god/1.jpeg',
       title: 'Bmw X3',
-      article: 'MZ-011',
+      article: 'Art. MZ-011',
       mileage_text: '189.000',
       engine: '2.0 diesel',
       leasing: 75,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=5',
 
@@ -1705,11 +1705,11 @@ Sold by a licensed car dealership. Your old car can be used as part of the payme
 
       mainImg: 'img/cars/BMW 740 2013 god/1.jpeg',
       title: 'Bmw 740',
-      article: 'MZ-18',
+      article: 'Art. MZ-18',
       mileage_text: '262.000',
       engine: '3.0 diesel',
       leasing: 130,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=4',
 
@@ -1775,11 +1775,11 @@ Wood interior trim</p>
 
       mainImg: 'img/cars/bmw 520 2014 g/1.jpeg',
       title: 'Bmw 520',
-      article: 'MZ-18',
+      article: 'Art. MZ-18',
       mileage_text: '374.150',
       engine: '2.0 diesel',
       leasing: 90,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=3',
 
@@ -1839,11 +1839,11 @@ Black headliner</p>
 
       mainImg: 'img/cars/Kia Sorento 2021 god/1.jpeg',
       title: 'Kia Sorento',
-      article: 'MZ-025',
+      article: 'Art. MZ-025',
       mileage_text: '136.000',
       engine: '1.6 hybrid',
       leasing: 340,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=2',
 
@@ -1928,11 +1928,11 @@ Sold by a licensed car dealership. Your old car can be used as part of the payme
 
       mainImg: 'img/cars/Audi A5 2017 god/1.jpeg',
       title: 'Audi A5',
-      article: 'MZ-016',
+      article: 'Art. MZ-016',
       mileage_text: '137.000',
       engine: '3.0 diesel',
       leasing: 245,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=1',
 
@@ -2001,11 +2001,11 @@ Audi Drive Select</p>
 
       mainImg: 'img/cars/MB GL350 2014 god/1.jpeg',
       title: 'Mercedes GL350',
-      article: 'MZ-015',
+      article: 'Art. MZ-015',
       mileage_text: '298.000',
       engine: '3.0 diesel',
       leasing: 230,
-      leasing_text: 'Leasing',
+      leasing_text: 'Leasing from',
       leasing_month_text: 'per month',
       url: '/product/eng.html?id=0',
 
