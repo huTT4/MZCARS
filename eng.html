@@ -169,10 +169,9 @@
             </button>
           </div>
           <ul class="catalog__filter-cards">
-            <li data-filter="cheap">Cheaper</li>
-            <li data-filter="expensive">More expensive</li>
             <li data-filter="new">New</li>
             <li data-filter="discount">On sale</li>
+            <li data-filter="all">All</li>
           </ul>
         </div>
 
@@ -187,7 +186,7 @@
               <div class="catalog__brand">
                 <h5 class="catalog__brand-title">
                   <img src="img/car.svg" alt="car">
-                  Make
+                  Mark
                 </h5>
 
                 <div class="catalog__select">
@@ -212,8 +211,28 @@
                     </label>
 
                     <label>
+                      <input type="radio" name="brand" value="audi">
+                      <span>AUDI</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="ford">
+                      <span>FORD</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="volkswagen">
+                      <span>VOLKSWAGEN</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="volvo">
+                      <span>VOLVO</span>
+                    </label>
+
+                    <label>
                       <input type="radio" name="brand" value="all" checked>
-                      <span>Visi</span>
+                      <span>All</span>
                     </label>
                   </ul>
                 </div>
@@ -355,8 +374,7 @@
               </div>
             </div>
 
-            <button class="catalog__filters-btn" id="apply-filters">Apply filters</button>
-            <button class="catalog__filters-btn catalog__filters-btn--reverse" id="clear-filters">Clear filters</button>
+            <button class="catalog__filters-btn" id="clear-filters">Clear filters</button>
           </aside>
 
           <div class="catalog__right">

@@ -101,7 +101,7 @@ body {
   display: flex;
   align-items: center;
   gap: 52px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 
 .header__social {
@@ -594,6 +594,7 @@ body:has(.burger.active) {
 
 .catalog {
   padding: 140px 0 70px;
+  scroll-margin-top: -70px;
 }
 
 .catalog__top {
@@ -663,13 +664,17 @@ body:has(.burger.active) {
 
 .catalog__search input::placeholder {
   color: #a2a2a2;
-
 }
 
 .catalog__search button {
   cursor: pointer;
   background: none;
   padding: 12px 15px;
+}
+
+.catalog__search button img {
+  width: 18px;
+  height: 18px;
 }
 
 .catalog__filter-cards {
@@ -917,10 +922,6 @@ body:has(.burger.active) {
   cursor: pointer;
   margin-bottom: 10px;
   transition: .15s;
-}
-
-.catalog__filters-btn--reverse {
-  background: linear-gradient(172deg, #821e26 0%, #2d2d2d 100%);
 }
 
 .catalog__filters-btn:hover {
@@ -1250,6 +1251,7 @@ body:has(.burger.active) {
 @media (max-width: 1000px) {
   .catalog {
     padding: 80px 0 40px;
+    scroll-margin-top: -40px;
   }
 
   .catalog__title-wrapper {
@@ -1291,6 +1293,7 @@ body:has(.burger.active) {
 /* ============================================= FORM ============================================= */
 .form {
   padding: 70px 0;
+  scroll-margin-top: -70px;
 }
 
 .form__wrapper {
@@ -1500,6 +1503,7 @@ body:has(.burger.active) {
 @media (max-width: 420px) {
   .form {
     padding: 40px 0;
+    scroll-margin-top: -40px;
   }
 
   .form__inner h3 {
@@ -1529,6 +1533,7 @@ body:has(.burger.active) {
 
 .realization {
   padding: 70px 0 64px;
+  scroll-margin-top: -35px;
 }
 
 .realization__wrapper {
@@ -1638,6 +1643,7 @@ body:has(.burger.active) {
 @media (max-width: 420px) {
   .realization {
     padding: 40px 0 35px;
+    scroll-margin-top: -20px;
   }
 
   .realization__wrapper {
@@ -1918,7 +1924,7 @@ body:has(.burger.active) {
   font-weight: 600;
   font-size: 13px;
   border-radius: 5px;
-  padding: 3px;
+  padding: 3px 6px 3px 3px;
 }
 
 .product__card-img-info-new {
@@ -2174,7 +2180,7 @@ body:has(.burger.active) {
 .product__descr {
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 20px;
 }
 
 .product__descr p {

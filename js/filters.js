@@ -4,7 +4,7 @@ import cars from './cars.js'
 const carsPerPage = 12 // количество карточек на странице
 let currentIndex = 0 // текущий индекс
 let filteredCars = null // сюда сохраняем результат поиска + фильтров
-let activeFilter = null // текущий выбранный фильтр (сортировки (4 шт.))
+let activeFilter = 'all' // текущий выбранный фильтр (сортировки (3 шт.))
 
 const currentLang = document.documentElement.getAttribute('lang')
 
@@ -15,7 +15,6 @@ const showMore = document.querySelector('.catalog__show')
 const searchInput = document.querySelector('.catalog__search input')
 const searchBtn = document.querySelector('.catalog__search button')
 const filterBtns = document.querySelectorAll('.catalog__filter-cards li')
-const applyBtn = document.querySelector('#apply-filters')
 const clearBtn = document.querySelector('#clear-filters')
 
 const noResultsText = {
@@ -28,6 +27,7 @@ const noResultsText = {
 document.addEventListener('DOMContentLoaded', () => {
   renderCars(currentLang)
   toggleClearBtnVisibility()
+  document.querySelector('[data-filter="all"]').classList.add('active')
 })
 
 // Функция рендера карточек
@@ -44,7 +44,7 @@ function renderCars(lang) {
   slice.forEach(car => {
     cardsContainer.insertAdjacentHTML('beforeend', `
       <div class="catalog__card-wrapper">
-        <a href="${car.url}" target="_blank" class="catalog__card">
+        <a href="/product/${currentLang === 'ru' ? 'index.html' : currentLang === 'lv' ? 'lv.html' : 'eng.html'}?id=${car.id}" target="_blank" class="catalog__card">
           <div class="catalog__card-img-wrapper">
             <img class="catalog__card-img" src="${car.mainImg}" alt="car-img">
 
@@ -66,15 +66,15 @@ function renderCars(lang) {
           <div class="catalog__card-info">
             <span><img src="img/calendar-2.svg" alt="calendar">${car.year}</span>
             <span><img src="img/transmission.svg" alt="transmission">${car.transmission}</span>
-            <span><img src="img/speedometer.svg" alt="speedometer">${car.mileage_text}</span>
+            <span><img src="img/speedometer.svg" alt="speedometer">${car.mileage.toLocaleString('de-DE')}</span>
             <span><img src="img/engine.svg" alt="engine">${car.engine}</span>
           </div>
 
           <div class="catalog__card-price">
             <h6>${car.price}€</h6>
             <div>
-              ${car.leasing_text}
-              <span>${car.leasing}€/${car.leasing_month_text}</span>
+              ${currentLang === 'ru' ? 'Лизинг от' : currentLang === 'lv' ? 'Līzings no' : 'Leasing from'}
+              <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēnesī' : 'per month'}</span>
             </div>
           </div>
         </a>
@@ -164,15 +164,9 @@ function applyFilters() {
     result = result.filter(car => availValues.includes(car.availability.toLowerCase()))
   }
 
-  // Сортировка (4 шт.)
+  // Сортировка (3 шт.)
   if (activeFilter) {
     switch (activeFilter) {
-      case 'cheap':
-        result = result.slice().sort((a, b) => a.price - b.price)
-        break
-      case 'expensive':
-        result = result.slice().sort((a, b) => b.price - a.price)
-        break
       case 'new':
         result = result.slice().sort((a, b) => {
           const numA = parseInt(a.article.match(/\d+/)?.[0] || 0, 10)
@@ -182,6 +176,12 @@ function applyFilters() {
         break
       case 'discount':
         result = result.slice().sort((a, b) => b.discount - a.discount)
+        break
+      case 'all':
+        result = result.slice()
+        break
+      default:
+        result = result.slice()
         break
     }
   }
@@ -224,7 +224,8 @@ function clearFilters() {
 
   // Сброс сортировки
   filterBtns.forEach(b => b.classList.remove('active'))
-  activeFilter = null
+  activeFilter = 'all'
+  document.querySelector('[data-filter="all"]').classList.add('active')
 
   // Обновляем список
   filteredCars = null
@@ -239,7 +240,6 @@ function clearFilters() {
 showMore.addEventListener('click', () => renderCars(currentLang))
 
 // Применяем фильтры
-applyBtn.addEventListener('click', applyFilters)
 clearBtn.addEventListener('click', clearFilters)
 searchBtn.addEventListener('click', applyFilters)
 searchInput.addEventListener('keydown', e => {
@@ -249,22 +249,28 @@ searchInput.addEventListener('keydown', e => {
   }
 })
 
-// Сортировка (4 шт.)
+// Сортировка (3 шт.)
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => b.classList.remove('active'))
 
-    if (activeFilter === btn.dataset.filter) {
-      // если нажали повторно -> убираем фильтр
-      activeFilter = null
-    } else {
-      btn.classList.add('active')
-      activeFilter = btn.dataset.filter
-    }
+    btn.classList.add('active')
+    activeFilter = btn.dataset.filter
 
     applyFilters()
   })
 })
+
+// Фильтры слева
+document.querySelectorAll(
+  '.catalog__brand input, .catalog__select input, #rangeMin--year, #rangeMax--year, #rangeMin--price, #rangeMax--price').forEach(el => {
+    el.addEventListener('input', applyFilters)
+  })
+
+document.querySelectorAll(
+  '#minInputRange--year, #maxInputRange--year, #minInputRange--price, #maxInputRange--price').forEach(el => {
+    el.addEventListener('change', applyFilters)
+  })
 
 // Функция определения видимости кнопки "Сбросить фильтры"
 function toggleClearBtnVisibility() {
@@ -293,7 +299,7 @@ function toggleClearBtnVisibility() {
     fuelChecks.length > 0 ||
     transChecks.length > 0 ||
     availChecks.length > 0 ||
-    activeFilter !== null
+    activeFilter !== 'all'
 
   if (hasFilters) {
     clearBtn.style.display = 'block'
@@ -367,13 +373,13 @@ rangeMaxYear.addEventListener('input', () => {
   updateProgressYear()
 })
 
-minInputRangeYear.addEventListener('input', () => {
+minInputRangeYear.addEventListener('change', () => {
   let val = parseInt(minInputRangeYear.value)
   rangeMinYear.value = Math.max(minYear, Math.min(val, parseInt(rangeMaxYear.value) - minGap))
   updateProgressYear()
 })
 
-maxInputRangeYear.addEventListener('input', () => {
+maxInputRangeYear.addEventListener('change', () => {
   let val = parseInt(maxInputRangeYear.value)
   rangeMaxYear.value = Math.min(maxYear, Math.max(val, parseInt(rangeMinYear.value) + minGap))
   updateProgressYear()

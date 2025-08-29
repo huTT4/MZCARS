@@ -73,7 +73,7 @@ if (!car) {
 
   const infoSpans = document.querySelectorAll('.product__info li span')
   infoSpans[0].textContent = car.year
-  infoSpans[1].textContent = car.mileage_text
+  infoSpans[1].textContent = car.mileage.toLocaleString('de-DE')
   infoSpans[2].textContent = car.article
   infoSpans[3].textContent = car.transmission
   infoSpans[4].textContent = car.engine
@@ -101,7 +101,7 @@ document.querySelectorAll('.lang__list-link').forEach(link => {
 function createCatalogCard(car) {
   return `
       <div class="catalog__card-wrapper catalog__card-wrapper--product">
-        <a href="${car.url}" target="_blank" class="catalog__card">
+        <a href="/product/${lang === 'ru' ? 'index.html' : lang === 'lv' ? 'lv.html' : 'eng.html'}?id=${car.id}" target="_blank" class="catalog__card">
           <div class="catalog__card-img-wrapper">
             <img class="catalog__card-img" src="${car.imgs[0]}" alt="car-img">
 
@@ -123,15 +123,15 @@ function createCatalogCard(car) {
           <div class="catalog__card-info">
             <span><img src="../img/calendar-2.svg" alt="calendar">${car.year}</span>
             <span><img src="../img/transmission.svg" alt="transmission">${car.transmission}</span>
-            <span><img src="../img/speedometer.svg" alt="speedometer">${car.mileage_text}</span>
+            <span><img src="../img/speedometer.svg" alt="speedometer">${car.mileage.toLocaleString('de-DE')}</span>
             <span><img src="../img/engine.svg" alt="engine">${car.engine}</span>
           </div>
 
           <div class="catalog__card-price">
             <h6>${car.price}€</h6>
             <div>
-              ${car.leasing_text}
-              <span>${car.leasing}€/${car.leasing_month_text}</span>
+              ${lang === 'ru' ? 'Лизинг от' : lang === 'lv' ? 'Līzings no' : 'Leasing from'}
+              <span>${car.leasing}€/${lang === 'ru' ? 'мес' : lang === 'lv' ? 'mēnesī' : 'per month'}</span>
             </div>
           </div>
         </a>
