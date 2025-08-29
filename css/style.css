@@ -1023,7 +1023,7 @@ body:has(.burger.active) {
   font-weight: 600;
   font-size: 13px;
   border-radius: 5px;
-  padding: 3px;
+  padding: 3px 6px 3px 3px;
 }
 
 .catalog__card-img-info-new {
