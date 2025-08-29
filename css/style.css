@@ -2318,6 +2318,10 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 420px) {
+  .product__title {
+    font-size: 30px;
+  }
+
   .product__info li {
     width: 100%;
   }
