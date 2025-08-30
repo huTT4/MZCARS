@@ -275,14 +275,11 @@ filterBtns.forEach(btn => {
 
 // Фильтры слева
 document.querySelectorAll(
-  '.catalog__brand input, .catalog__select input, #rangeMin--year, #rangeMax--year, #rangeMin--price, #rangeMax--price').forEach(el => {
+  '.catalog__brand input, .catalog__select input').forEach(el => {
     el.addEventListener('input', applyFilters)
   })
 
-document.querySelectorAll(
-  '#minInputRange--year, #maxInputRange--year, #minInputRange--price, #maxInputRange--price').forEach(el => {
-    el.addEventListener('change', applyFilters)
-  })
+// Фильтры года и цены применяются в функции updateProgressYear и updateProgressPrice
 
 // Функция определения видимости кнопки "Сбросить фильтры"
 function toggleClearBtnVisibility() {
@@ -369,6 +366,8 @@ function updateProgressYear() {
 
   minInputRangeYear.value = minVal
   maxInputRangeYear.value = maxVal
+
+  applyFilters()
 }
 
 rangeMinYear.addEventListener('input', () => {
@@ -418,6 +417,8 @@ function updateProgressPrice() {
 
   minInputRangePrice.value = minVal
   maxInputRangePrice.value = maxVal
+
+  applyFilters()
 }
 
 rangeMinPrice.addEventListener('input', () => {
