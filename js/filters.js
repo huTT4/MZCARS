@@ -73,13 +73,19 @@ function renderCars(lang) {
             <span><img src="img/engine.svg" alt="engine">${car.engine}</span>
           </div>
 
-          <div class="catalog__card-price">
+          ${car.isSold ? `<div class="catalog__card-price hidden">
             <h6>${car.price}€</h6>
             <div>
               ${currentLang === 'ru' ? 'Лизинг от' : currentLang === 'lv' ? 'Līzings no' : 'Leasing from'}
               <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēnesī' : 'per month'}</span>
             </div>
-          </div>
+          </div>` : `<div class="catalog__card-price">
+            <h6>${car.price}€</h6>
+            <div>
+              ${currentLang === 'ru' ? 'Лизинг от' : currentLang === 'lv' ? 'Līzings no' : 'Leasing from'}
+              <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēnesī' : 'per month'}</span>
+            </div>
+          </div>`}
         </a>
       </div>
     `)

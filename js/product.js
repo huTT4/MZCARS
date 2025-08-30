@@ -29,22 +29,17 @@ if (!car) {
   // Информационные плашки
   const infoWrapper = document.querySelector('[data-car-info]')
 
-  let badgeHtml = ''
-  if (car.isNew) {
-    badgeHtml = `<span class="product__card-img-info-new">NEW</span>`
-  } else if (car.discount > 0) {
-    badgeHtml = `<span class="product__card-img-info-discount">
-                 <img src="../img/percent.svg" alt="percent"> -${car.discount}$
-               </span>`
-  }
-
   infoWrapper.innerHTML = `
-  ${badgeHtml}
-  <span class="product__card-img-info-availability">
-    <img src="../img/check-mark.svg" alt="check-mark">
-    ${car.availability}
-  </span>
-`
+    ${car.isSold ? `<span class="product__card-img-info-sold">SOLD</span>` : ''}
+    ${car.isNew ? `<span class="product__card-img-info-new">NEW</span>` : ''}
+    ${car.discount > 0 ? `<span class="product__card-img-info-discount">
+      <img src="../img/percent.svg" alt="percent"> -${car.discount}€
+    </span>` : ''}
+    ${car.availability ? `<span class="product__card-img-info-availability">
+      <img src="../img/check-mark.svg" alt="check-mark">
+      ${car.availability}
+    </span>` : ''}
+  `
 
   // Ссылки
   const videoLink = document.querySelector('[data-car-link-video]')
@@ -78,6 +73,10 @@ if (!car) {
   infoSpans[3].textContent = car.transmission
   infoSpans[4].textContent = car.engine
   infoSpans[5].textContent = car.vin
+
+  if (car.isSold) {
+    document.querySelector('.product__price').style.display = 'none'
+  }
 
   // Описание
   document.querySelector('.product__descr').innerHTML = car.descr
