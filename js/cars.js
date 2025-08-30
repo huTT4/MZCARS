@@ -1,6 +1,73 @@
 const cars = {
   ru: [
     {
+      id: 10,
+      brand: 'JAGUAR',
+      year: 2012,
+      price: 8990,
+      mileage: 215000,
+      fuel: 'Дизель',
+      transmission: 'Автомат',
+      availability: 'В наличии',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Jaguar XF 2012 goda/_compressed.jpeg',
+      title: 'Jaguar XF',
+      article: 'MZ-011',
+      engine: '3.0 дизель',
+      leasing: 95,
+
+      imgs: [
+        '/img/cars/Jaguar XF 2012 goda/1 (1).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/1 (2).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/1 (4).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/1 (5).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/2.jpg',
+        '/img/cars/Jaguar XF 2012 goda/3.jpg',
+        '/img/cars/Jaguar XF 2012 goda/4.jpg',
+        '/img/cars/Jaguar XF 2012 goda/5.jpg',
+        '/img/cars/Jaguar XF 2012 goda/6.jpg',
+        '/img/cars/Jaguar XF 2012 goda/7.jpg',
+        '/img/cars/Jaguar XF 2012 goda/8.jpg',
+        '/img/cars/Jaguar XF 2012 goda/9.jpg',
+        '/img/cars/Jaguar XF 2012 goda/10.jpg',
+        '/img/cars/Jaguar XF 2012 goda/11.jpg',
+        '/img/cars/Jaguar XF 2012 goda/12.jpg',
+      ],
+      vin: 'SAJAA0625CNS40969',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Facelift Jaguar XF 3.0dS R-Sport 275zs</p>
+      <p>Оригинальный пробег.<br>
+Пакет R-Sport<br>
+2 ключа<br>
+Полная кожаная отделка (панель, двери, сиденья и т.д.)<br>
+Электрически регулируемые сиденья R-Sport<br>
+Память сидений<br>
+Электрическая регулировка руля<br>
+Электрически складывающиеся зеркала<br>
+Обогрев и вентиляция сидений<br>
+Обогрев переднего и заднего стекол<br>
+Полный световой пакет в салоне<br>
+Круиз-контроль<br>
+Система экстренного торможения<br>
+Датчик слепых зон<br>
+Адаптивные фары<br>
+Автоматические дальние фары<br>
+Bluetooth аудио и Hands Free<br>
+Keyless Go (система безключевого доступа)<br>
+Парковочные сенсоры спереди и сзади<br>
+Педали переключения передач на руле (палу)<br>
+Складные задние сиденья<br>
+Диски R19 R-Sport<br>
+Отделка Piano Black</p>
+      <p>Продается лицензированной автомобильной торговой компанией, ваш старый автомобиль может быть использован в качестве части оплаты.</p>
+      `
+    },
+    {
       id: 9,
       brand: 'VOLVO',
       year: 2015,
@@ -661,6 +728,73 @@ Keyless Go (бесключевой доступ и запуск)<br>
   ],
   lv: [
     {
+      id: 10,
+      brand: 'JAGUAR',
+      year: 2012,
+      price: 8990,
+      mileage: 215000,
+      fuel: 'Dīzelis',
+      transmission: 'Automātiskā',
+      availability: 'Uz vietas',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Jaguar XF 2012 goda/_compressed.jpeg',
+      title: 'Jaguar XF',
+      article: 'MZ-011',
+      engine: '3.0 dīzelis',
+      leasing: 95,
+
+      imgs: [
+        '/img/cars/Jaguar XF 2012 goda/1 (1).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/1 (2).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/1 (4).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/1 (5).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/2.jpg',
+        '/img/cars/Jaguar XF 2012 goda/3.jpg',
+        '/img/cars/Jaguar XF 2012 goda/4.jpg',
+        '/img/cars/Jaguar XF 2012 goda/5.jpg',
+        '/img/cars/Jaguar XF 2012 goda/6.jpg',
+        '/img/cars/Jaguar XF 2012 goda/7.jpg',
+        '/img/cars/Jaguar XF 2012 goda/8.jpg',
+        '/img/cars/Jaguar XF 2012 goda/9.jpg',
+        '/img/cars/Jaguar XF 2012 goda/10.jpg',
+        '/img/cars/Jaguar XF 2012 goda/11.jpg',
+        '/img/cars/Jaguar XF 2012 goda/12.jpg',
+      ],
+      vin: 'SAJAA0625CNS40969',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Facelift Jaguar XF 3.0dS R-Sport 275zs</p>
+      <p>Oriģinālais nobraukums.</p>
+      <p>- R sport pakotne<br>
+- 2 atslēgas<br>
+- Pilna ādas apdare (panelis, durvis, krēsli utt)<br>
+- Elektriski regulējami R-Sport sēdekļi<br>
+- Sēdekļu atmiņa<br>
+- El. vadāma stūre<br>
+- Elektriski nolokāmi spoguļi<br>
+- Sēdekļu apsilde un ventilācija<br>
+- Priekšējā un aizmugurējā loga apsilde<br>
+- Pilnā gaismu pakotne salonā<br>
+- Kruīza kontrole<br>
+- Ārkārtas bremzēšanas sistēma<br>
+- Aklo zonu detektors<br>
+- Adaptīvie lukturi<br>
+- Automātiskie tālie lukturi<br>
+- Bluetooth audio un hands free<br>
+- Keyless go<br>
+- Parkošanās sensori priekšā un aizmugurē<br>
+- Ātruma pārslēdzēji pie stūres (lāpstiņas)<br>
+- Nolokāmi aizmugurējie sēdekļi<br>
+- R19 R Sport diski<br>
+- Piano Black apdare</p>
+      <p>Pārdod licenzēts auto tirzniecības uzņēmums, jūsu vecais auto var kalpot kā daļa apmaksas.</p>
+      `
+    },
+    {
       id: 9,
       brand: 'VOLVO',
       year: 2015,
@@ -1312,6 +1446,73 @@ El. reg. visas sēdekļu rindas<br>
     },
   ],
   eng: [
+    {
+      id: 10,
+      brand: 'JAGUAR',
+      year: 2012,
+      price: 8990,
+      mileage: 215000,
+      fuel: 'Diesel',
+      transmission: 'Automatic',
+      availability: 'In stock',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Jaguar XF 2012 goda/_compressed.jpeg',
+      title: 'Jaguar XF',
+      article: 'MZ-011',
+      engine: '3.0 diesel',
+      leasing: 95,
+
+      imgs: [
+        '/img/cars/Jaguar XF 2012 goda/1 (1).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/1 (2).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/1 (4).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/1 (5).jpeg',
+        '/img/cars/Jaguar XF 2012 goda/2.jpg',
+        '/img/cars/Jaguar XF 2012 goda/3.jpg',
+        '/img/cars/Jaguar XF 2012 goda/4.jpg',
+        '/img/cars/Jaguar XF 2012 goda/5.jpg',
+        '/img/cars/Jaguar XF 2012 goda/6.jpg',
+        '/img/cars/Jaguar XF 2012 goda/7.jpg',
+        '/img/cars/Jaguar XF 2012 goda/8.jpg',
+        '/img/cars/Jaguar XF 2012 goda/9.jpg',
+        '/img/cars/Jaguar XF 2012 goda/10.jpg',
+        '/img/cars/Jaguar XF 2012 goda/11.jpg',
+        '/img/cars/Jaguar XF 2012 goda/12.jpg',
+      ],
+      vin: 'SAJAA0625CNS40969',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Facelift Jaguar XF 3.0dS R-Sport 275zs</p>
+      <p>Original mileage.<br>
+R-Sport package<br>
+2 keys<br>
+Full leather interior (dashboard, doors, seats, etc.)<br>
+Electrically adjustable R-Sport seats<br>
+Seat memory<br>
+Electrically adjustable steering wheel<br>
+Electrically folding mirrors<br>
+Heated and ventilated seats<br>
+Front and rear window heating<br>
+Full lighting package in the cabin<br>
+Cruise control<br>
+Emergency braking system<br>
+Blind spot detection<br>
+Adaptive headlights<br>
+Automatic high beams<br>
+Bluetooth audio and hands-free<br>
+Keyless go<br>
+Parking sensors front and rear<br>
+Paddle shifters on the steering wheel<br>
+Folding rear seats<br>
+R19 R-Sport wheels<br>
+Piano Black trim</p>
+      <p>Sold by a licensed car dealership; your old car can be used as part of the payment.</p>
+      `
+    },
     {
       id: 9,
       brand: 'VOLVO',

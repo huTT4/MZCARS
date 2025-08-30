@@ -129,13 +129,19 @@ function createCatalogCard(car) {
             <span><img src="../img/engine.svg" alt="engine">${car.engine}</span>
           </div>
 
-          <div class="catalog__card-price">
+          ${car.isSold ? `<div class="catalog__card-price hidden">
             <h6>${car.price}€</h6>
             <div>
               ${lang === 'ru' ? 'Лизинг от' : lang === 'lv' ? 'Līzings no' : 'Leasing from'}
               <span>${car.leasing}€/${lang === 'ru' ? 'мес' : lang === 'lv' ? 'mēnesī' : 'per month'}</span>
             </div>
-          </div>
+          </div>` : `<div class="catalog__card-price">
+            <h6>${car.price}€</h6>
+            <div>
+              ${lang === 'ru' ? 'Лизинг от' : lang === 'lv' ? 'Līzings no' : 'Leasing from'}
+              <span>${car.leasing}€/${lang === 'ru' ? 'мес' : lang === 'lv' ? 'mēnesī' : 'per month'}</span>
+            </div>
+          </div>`}
         </a>
       </div>
     `
