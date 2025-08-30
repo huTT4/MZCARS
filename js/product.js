@@ -103,7 +103,7 @@ function createCatalogCard(car) {
       <div class="catalog__card-wrapper catalog__card-wrapper--product">
         <a href="/product/${lang === 'ru' ? 'index.html' : lang === 'lv' ? 'lv.html' : 'eng.html'}?id=${car.id}" target="_blank" class="catalog__card">
           <div class="catalog__card-img-wrapper">
-            <img class="catalog__card-img" src="${car.imgs[0]}" alt="car-img">
+            <img class="catalog__card-img" src="${car.mainImg}" alt="car-img">
 
             <div class="catalog__card-img-info">
               ${car.isNew ? `<span class="catalog__card-img-info-new">NEW</span>` : (car.discount > 0 ? `<span class="catalog__card-img-info-discount"><img src="../img/percent.svg" alt="percent">-${car.discount}$</span>` : '')}

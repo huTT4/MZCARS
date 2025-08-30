@@ -601,7 +601,7 @@ body:has(.burger.active) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 35px 0;
+  gap: 35px;
   flex-wrap: wrap;
   margin-bottom: 34px;
 }
@@ -644,12 +644,12 @@ body:has(.burger.active) {
 .catalog__search {
   border: 1px solid #dfdfdf;
   border-radius: 100px;
-  max-width: 353px;
-  width: 100%;
   background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1;
+  min-width: 250px;
 }
 
 .catalog__search input {
@@ -1259,7 +1259,7 @@ body:has(.burger.active) {
   }
 
   .catalog__top {
-    gap: 15px 0;
+    gap: 15px;
   }
 }
 

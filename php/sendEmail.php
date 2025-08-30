@@ -40,19 +40,13 @@ try {
   $resultJson = json_decode($result);
 
   $fromAddress = 'zm3158589525lt@bpauto.lv';
-  $to2 = 'mzcars@mzcars.lv';
+  $toAddress = 'mzcars@mzcars.lv';
 
   $mail = new PHPMailer();
-  $mail->addAddress($to2, '');
+  $mail->addAddress($toAddress, '');
   $mail->setFrom($fromAddress, 'Запрос MZ Cars');
 
-  if (filter_var($contact, FILTER_VALIDATE_EMAIL)) {
-    // Если contact - email, используем его для ответа
-    $mail->addReplyTo($contact, $name);
-  } else {
-    // Если contact не email (телефон), используем no-reply
-    $mail->addReplyTo('no-reply@example.com', 'No Reply');
-  }
+  $mail->addReplyTo($email, $name);
 
   $mail->CharSet = 'utf-8';
   $mail->isHTML(true);
@@ -64,7 +58,7 @@ try {
                             <p style="color: #021a58; background: #f0f0f0; margin: 0; padding: 20px;"><b>Имя:</b>' . $name . '</p>
                             <p style="color: #021a58; background: #f9f9f9; margin: 0; padding: 20px;"><b>Номер телефона:</b> ' . $phone . '</p>
                             <p style="color: #021a58; background: #f9f9f9; margin: 0; padding: 20px;"><b>Адрес эл.почты:</b> ' . $email . '</p>
-                            <p style="color: #021a58; background: #f0f0f0; margin: 0; padding: 20px;"><b>Арт. автомобиля:</b>' . $carId . '</p>';
+                            <p style="color: #021a58; background: #f0f0f0; margin: 0; padding: 20px;"><b>Арт. автомобиля:</b>' . $idCar . '</p>';
 
   if ($resultJson->success != true) {
     // Неуспех, reCAPTCHA не пройдена
