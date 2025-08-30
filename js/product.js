@@ -106,12 +106,15 @@ function createCatalogCard(car) {
             <img class="catalog__card-img" src="${car.mainImg}" alt="car-img">
 
             <div class="catalog__card-img-info">
-              ${car.isNew ? `<span class="catalog__card-img-info-new">NEW</span>` : (car.discount > 0 ? `<span class="catalog__card-img-info-discount"><img src="../img/percent.svg" alt="percent">-${car.discount}$</span>` : '')}
-
-              <span class="catalog__card-img-info-availability">
+              ${car.isSold ? `<span class="catalog__card-img-info-sold">SOLD</span>` : ''}
+              ${car.isNew ? `<span class="catalog__card-img-info-new">NEW</span>` : ''}
+              ${car.discount > 0 ? `<span class="catalog__card-img-info-discount">
+                <img src="../img/percent.svg" alt="percent">-${car.discount}€
+              </span>` : ''}
+              ${car.availability ? `<span class="catalog__card-img-info-availability">
                 <img src="../img/check-mark.svg" alt="check-mark">
                 ${car.availability}
-              </span>
+              </span>` : ''}
             </div>
           </div>
 
@@ -152,7 +155,7 @@ function renderRelatedCars(currentCarId, lang) {
 
   const related = carsByLang
     .filter(c => String(c.id) !== String(currentCarId))
-    .slice(-8) // последние 8 без учета текущей
+    .slice(0, 8) // последние 8 без учета текущей
 
   // Скрываем секцию если нет машин
   if (related.length === 0) {

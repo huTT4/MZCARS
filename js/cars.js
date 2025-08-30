@@ -11,6 +11,7 @@ const cars = {
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Volvo XC 60 2015 god/_compressed.jpeg',
       title: 'Volvo XC 60',
@@ -67,6 +68,7 @@ USB-выход<br>
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Volvo XC 90 2008 god/_compressed.jpeg',
       title: 'Volvo XC 90',
@@ -129,6 +131,7 @@ USB-выход<br>
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Volkswagen Touareg 2007 god/_compressed.jpeg',
       title: 'Volkswagen Touareg',
@@ -196,6 +199,7 @@ Webasto (подогреватель двигателя)<br>
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Ford S Max 2010 god/_compressed.jpeg',
       title: 'Ford S-Max',
@@ -257,6 +261,7 @@ Bluetooth / Handsfree<br>
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/BMW X3 2010 god/_compressed.jpeg',
       title: 'Bmw X3',
@@ -311,6 +316,7 @@ Bluetooth-аудио<br>
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/BMW 740 2013 god/_compressed.jpeg',
       title: 'Bmw 740',
@@ -377,6 +383,7 @@ LED / биксеноновые фары<br>
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/bmw 520 2014 g/_compressed.jpeg',
       title: 'Bmw 520',
@@ -437,6 +444,7 @@ Auto Hold функция<br>
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Kia Sorento 2021 god/_compressed.jpeg',
       title: 'Kia Sorento',
@@ -521,6 +529,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Audi A5 2017 god/_compressed.jpeg',
       title: 'Audi A5',
@@ -589,6 +598,7 @@ CarPlay / Android Auto<br>
       availability: 'В наличии',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/MB GL350 2014 god/_compressed.jpeg',
       title: 'Mercedes GL350',
@@ -661,6 +671,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Volvo XC 60 2015 god/_compressed.jpeg',
       title: 'Volvo XC 60',
@@ -717,6 +728,7 @@ Jumta reliņi<br>
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Volvo XC 90 2008 god/_compressed.jpeg',
       title: 'Volvo XC 90',
@@ -779,6 +791,7 @@ Jumta reliņi<br>
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Volkswagen Touareg 2007 god/_compressed.jpeg',
       title: 'Volkswagen Touareg',
@@ -848,6 +861,7 @@ Apsildāmi spoguļi</p>
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Ford S Max 2010 god/_compressed.jpeg',
       title: 'Ford S-Max',
@@ -907,6 +921,7 @@ Lietus sensors<br>
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/BMW X3 2010 god/_compressed.jpeg',
       title: 'Bmw X3',
@@ -958,6 +973,7 @@ Lietus sensors<br>
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/BMW 740 2013 god/_compressed.jpeg',
       title: 'Bmw 740',
@@ -1024,6 +1040,7 @@ Lietus sensors<br>
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/bmw 520 2014 g/_compressed.jpeg',
       title: 'Bmw 520',
@@ -1083,6 +1100,7 @@ Pilna servisa vēsture no pirmā līdz pēdējam kilometram, motoram mainītas �
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Kia Sorento 2021 god/_compressed.jpeg',
       title: 'Kia Sorento',
@@ -1164,6 +1182,7 @@ Ideāls auto ceļošanai gan mazām, gan lielām distancēm, pārdod licenzēts 
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Audi A5 2017 god/_compressed.jpeg',
       title: 'Audi A5',
@@ -1232,6 +1251,7 @@ Audi Drive Select</p>
       availability: 'Uz vietas',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/MB GL350 2014 god/_compressed.jpeg',
       title: 'Mercedes GL350',
@@ -1303,6 +1323,7 @@ El. reg. visas sēdekļu rindas<br>
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Volvo XC 60 2015 god/_compressed.jpeg',
       title: 'Volvo XC 60',
@@ -1359,6 +1380,7 @@ Roof rails<br>
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Volvo XC 90 2008 god/_compressed.jpeg',
       title: 'Volvo XC 90',
@@ -1421,6 +1443,7 @@ Front armrest with storage compartment</p>
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Volkswagen Touareg 2007 god/_compressed.jpeg',
       title: 'Volkswagen Touareg',
@@ -1489,6 +1512,7 @@ Heated mirrors</p>
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Ford S Max 2010 god/_compressed.jpeg',
       title: 'Ford S-Max',
@@ -1550,6 +1574,7 @@ Rain sensor<br>
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/BMW X3 2010 god/_compressed.jpeg',
       title: 'Bmw X3',
@@ -1602,6 +1627,7 @@ Sold by a licensed car dealership. Your old car can be used as part of the payme
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/BMW 740 2013 god/_compressed.jpeg',
       title: 'Bmw 740',
@@ -1668,6 +1694,7 @@ Wood interior trim</p>
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/bmw 520 2014 g/_compressed.jpeg',
       title: 'Bmw 520',
@@ -1728,6 +1755,7 @@ Black headliner</p>
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Kia Sorento 2021 god/_compressed.jpeg',
       title: 'Kia Sorento',
@@ -1813,6 +1841,7 @@ Sold by a licensed car dealership. Your old car can be used as part of the payme
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/Audi A5 2017 god/_compressed.jpeg',
       title: 'Audi A5',
@@ -1882,6 +1911,7 @@ Audi Drive Select</p>
       availability: 'In stock',
       isNew: false,
       discount: 0,
+      isSold: false,
 
       mainImg: '/img/cars/MB GL350 2014 god/_compressed.jpeg',
       title: 'Mercedes GL350',

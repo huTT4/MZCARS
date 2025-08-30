@@ -4,7 +4,7 @@ import cars from './cars.js'
 const carsPerPage = 12 // количество карточек на странице
 let currentIndex = 0 // текущий индекс
 let filteredCars = null // сюда сохраняем результат поиска + фильтров
-let activeFilter = 'all' // текущий выбранный фильтр (сортировки (3 шт.))
+let activeFilter = 'all' // текущий выбранный фильтр (сортировки (4 шт.))
 
 const currentLang = document.documentElement.getAttribute('lang')
 
@@ -49,12 +49,15 @@ function renderCars(lang) {
             <img class="catalog__card-img" src="${car.mainImg}" alt="car-img">
 
             <div class="catalog__card-img-info">
-              ${car.isNew ? `<span class="catalog__card-img-info-new">NEW</span>` : (car.discount > 0 ? `<span class="catalog__card-img-info-discount"><img src="img/percent.svg" alt="percent">-${car.discount}$</span>` : '')}
-
-              <span class="catalog__card-img-info-availability">
+              ${car.isSold ? `<span class="catalog__card-img-info-sold">SOLD</span>` : ''}
+              ${car.isNew ? `<span class="catalog__card-img-info-new">NEW</span>` : ''}
+              ${car.discount > 0 ? `<span class="catalog__card-img-info-discount">
+                <img src="img/percent.svg" alt="percent">-${car.discount}€
+              </span>` : ''}
+              ${car.availability ? `<span class="catalog__card-img-info-availability">
                 <img src="img/check-mark.svg" alt="check-mark">
                 ${car.availability}
-              </span>
+              </span>` : ''}
             </div>
           </div>
 
@@ -164,7 +167,7 @@ function applyFilters() {
     result = result.filter(car => availValues.includes(car.availability.toLowerCase()))
   }
 
-  // Сортировка (3 шт.)
+  // Сортировка (4 шт.)
   if (activeFilter) {
     switch (activeFilter) {
       case 'new':
@@ -177,9 +180,12 @@ function applyFilters() {
       case 'discount':
         result = result.slice().sort((a, b) => b.discount - a.discount)
         break
-      case 'all':
-        result = result.slice()
+      case 'sold':
+        result = result.slice().sort((a, b) => {
+          return (b.isSold === true) - (a.isSold === true)
+        })
         break
+      case 'all':
       default:
         result = result.slice()
         break
@@ -249,7 +255,7 @@ searchInput.addEventListener('keydown', e => {
   }
 })
 
-// Сортировка (3 шт.)
+// Сортировка (4 шт.)
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => b.classList.remove('active'))

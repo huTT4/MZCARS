@@ -1038,6 +1038,12 @@ body:has(.burger.active) {
   background: #b20f1c;
 }
 
+.catalog__card-img-info-sold {
+  color: #fff;
+  background: #d30c1d;
+  padding: 5px !important;
+}
+
 .catalog__card-img-info-availability {
   color: #2d2d2d;
   background: #fff;
@@ -1937,6 +1943,12 @@ body:has(.burger.active) {
 .product__card-img-info-discount {
   color: #fff;
   background: #b20f1c;
+}
+
+.product__card-img-info-sold {
+  color: #fff;
+  background: #d30c1d;
+  padding: 5px !important;
 }
 
 .product__card-img-info-availability {
