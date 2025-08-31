@@ -508,6 +508,63 @@ body:has(.burger.active) {
   background-color: #B20F1C;
 }
 
+@media ((min-width: 1100px) and (max-width: 1436px)) {
+  .header__logo img {
+    max-width: 121px;
+  }
+
+  .header__social {
+    gap: 5px;
+  }
+
+  .hero__pagination {
+    bottom: 20px;
+  }
+
+  .hero__pagination-bullet.active {
+    width: 50px;
+    height: 3.5px;
+  }
+
+  .hero__pagination-bullet {
+    width: 3.5px;
+    height: 3.5px;
+  }
+
+  .header__social a svg {
+    width: 25px;
+  }
+
+  .header__nav a,
+  .lang,
+  .header__lang-list-link,
+  .header__personal a {
+    font-size: 14px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  .hero__btns {
+    gap: 15px;
+  }
+
+  .hero__btn-1 {
+    font-size: 14px;
+    padding: 12px 27px 13px 13px;
+    gap: 6px;
+    max-width: 200px;
+  }
+
+  .hero__btn-2 {
+    font-size: 14px;
+    padding: 13px;
+    max-width: 200px;
+  }
+}
+
 @media (max-width: 1300px) {
   .hero__content {
     max-width: 630px;
@@ -1877,6 +1934,7 @@ body:has(.burger.active) {
   font-size: 18px;
   color: #fff;
   white-space: nowrap;
+  width: fit-content;
   transition: .15s;
 }
 
@@ -1944,17 +2002,46 @@ body:has(.burger.active) {
   height: 100%;
 }
 
-@media (max-width: 1300px) {
+@media ((min-width: 1100px) and (max-width: 1436px)) {
+  .footer__logo {
+    max-width: 140px;
+  }
+
+  .footer__nav {
+    gap: 8px 15px;
+  }
+
+  .footer__nav a {
+    font-size: 14px;
+  }
+
+  .footer__data h4 {
+    font-size: 14px;
+  }
+
+  .footer__address {
+    font-size: 14px;
+  }
+
+  .footer__data p {
+    font-size: 14px;
+  }
+
+  .footer__social li h5,
+  .footer__social li a {
+    font-size: 14px;
+  }
+
   .footer__content {
     padding: 45px 0;
   }
 
   .footer__info {
-    gap: 20px;
+    gap: 30px 0;
   }
 
   .footer__map {
-    width: 40%;
+    width: 50%;
   }
 }
 
