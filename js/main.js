@@ -227,3 +227,5 @@ document.addEventListener('DOMContentLoaded', function () {
     contactForm.addEventListener('submit', handleFormSubmit)
   }
 })
+
+// ============================== Гугл карта ==============================

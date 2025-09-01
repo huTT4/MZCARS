@@ -16,7 +16,7 @@ $idCar = $_POST['carId'];
 $mail = new PHPMailer(true);
 
 try {
-  $secret = '6Lc-bzEqAAAAAHETFEdi_PoBtO_uDZR4JpaaA2rG';
+  $secret = '6LemRborAAAAAKgXpY2kaQA0A3k3IrQbQGQkohIu';
   $response = $_POST['g-recaptcha-response'];
   $remoteip = $_SERVER['REMOTE_ADDR'];
 

@@ -214,6 +214,12 @@ body {
   transform: translateY(-50%);
 }
 
+@media (max-width: 420px) {
+  .header__logo img {
+    max-width: 128px;
+  }
+}
+
 /* ============================================= BURGER ============================================= */
 /* ============================================= BURGER ============================================= */
 /* ============================================= BURGER ============================================= */
@@ -324,6 +330,16 @@ body:has(.burger.active) {
   }
 }
 
+@media (max-width: 420px) {
+
+  .header__nav a,
+  .lang,
+  .header__lang-list-link,
+  .header__personal a {
+    font-size: 17px;
+  }
+}
+
 /* ============================================= HERO ============================================= */
 /* ============================================= HERO ============================================= */
 /* ============================================= HERO ============================================= */
@@ -360,6 +376,8 @@ body:has(.burger.active) {
 .hero__btns {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+  justify-content: start;
   gap: 29px;
 }
 
@@ -491,7 +509,7 @@ body:has(.burger.active) {
 
 @media (max-width: 650px) {
   .hero__btns {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 15px;
   }
 
@@ -555,11 +573,13 @@ body:has(.burger.active) {
   }
 
   .hero__btn-1 {
-    font-size: 15px;
+    font-size: 14px;
+    padding: 12px 20px 12px 12px;
   }
 
   .hero__btn-2 {
-    font-size: 15px;
+    font-size: 14px;
+    padding: 12px;
   }
 
   .hero__pagination {
@@ -1107,8 +1127,7 @@ body:has(.burger.active) {
   padding: 15px;
   width: 100%;
   cursor: pointer;
-  opacity: 0;
-  transform: scale(0);
+  display: none;
   transition: .15s;
 }
 
@@ -1118,8 +1137,7 @@ body:has(.burger.active) {
 }
 
 .catalog__show.active {
-  opacity: 1;
-  transform: scale(1);
+  display: block;
 }
 
 .catalog__empty {
@@ -1176,6 +1194,101 @@ body:has(.burger.active) {
 
   .catalog__title {
     font-size: 25px;
+  }
+
+  .catalog__found {
+    padding: 10px 7px;
+    font-size: 14px;
+  }
+
+  .catalog__found-circle {
+    width: 7px;
+    height: 7px;
+  }
+
+  .catalog__search input {
+    padding: 10px 0 10px 12px;
+    font-size: 13px;
+  }
+
+  .catalog__search button {
+    padding: 8px 12px;
+  }
+
+  .catalog__filter-cards li {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .catalog__filters-title {
+    font-size: 20px;
+  }
+
+  .catalog__title-wrapper {
+    gap: 10px;
+  }
+
+  .catalog__filter-cards {
+    gap: 6px;
+  }
+
+  .catalog__brand-title {
+    font-size: 14px;
+  }
+
+  .catalog__range-title {
+    font-size: 14px;
+  }
+
+  .catalog__range-inputs input {
+    font-size: 14px;
+  }
+
+  .catalog__range-inputs {
+    font-size: 14px;
+  }
+
+  .catalog__select-top {
+    font-size: 14px;
+  }
+
+  .catalog__select-list label {
+    font-size: 14px;
+  }
+
+  .catalog__filters img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .catalog__card-price h6 {
+    font-size: 18px;
+  }
+
+  .catalog__card-price div {
+    font-size: 14px;
+  }
+
+  .catalog__card-info span img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .catalog__card-title h5 {
+    font-size: 18px;
+  }
+
+  .catalog__card-info span {
+    font-size: 13px;
+  }
+  
+  .catalog__card-img-info span {
+    font-size: 12px;
+  }
+
+  .catalog__card-img-info-availability img {
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -1398,24 +1511,35 @@ body:has(.burger.active) {
     scroll-margin-top: -40px;
   }
 
+  .form__inner {
+    padding: 40px 0;
+  }
+
   .form__inner h3 {
     font-size: 25px;
   }
 
   .form__inner h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .form__inputs input {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 12px;
   }
 
   .form__checkbox {
-    font-size: 14px;
+    font-size: 13px;
+  }
+
+  .form__checkbox-checkmark {
+    width: 15px;
+    height: 15px;
   }
 
   .form__btn {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 12px;
   }
 }
 
@@ -1541,6 +1665,35 @@ body:has(.burger.active) {
   .realization__wrapper {
     padding: 30px 0 45px;
   }
+
+  .realization__title {
+    font-size: 25px;
+  }
+
+  .realization__subtitle {
+    font-size: 15px;
+  }
+
+  .realization__subtitle-2 {
+    font-size: 15px;
+  }
+
+  .realization__list-title {
+    font-size: 15px;
+  }
+
+  .realization__list li {
+    font-size: 14px;
+  }
+
+  .realization__list li img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .realization__descr {
+    font-size: 15px;
+  }
 }
 
 /* ============================================= ABOUT ============================================= */
@@ -1610,11 +1763,11 @@ body:has(.burger.active) {
   }
 
   .about__text h3 {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .about__text p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1718,6 +1871,7 @@ body:has(.burger.active) {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  white-space: nowrap;
 }
 
 .footer__map {
@@ -1729,6 +1883,12 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 1100px) {
+  .footer__map {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1000px) {
   .footer__inner {
     align-items: center;
   }
@@ -1747,6 +1907,7 @@ body:has(.burger.active) {
     object-fit: cover;
     object-position: left;
     margin-top: 29px;
+    height: 300px;
   }
 }
 
@@ -1757,6 +1918,31 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 420px) {
+  .footer__logo {
+    max-width: 175px;
+    margin-bottom: 35px;
+  }
+
+  .footer__nav a {
+    font-size: 16px;
+  }
+
+  .lang {
+    font-size: 16px;
+  }
+
+  .footer__data h4 {
+    font-size: 16px;
+  }
+
+  .footer__social li {
+    font-size: 16px;
+  }
+
+  .footer__address {
+    font-size: 16px;
+  }
+
   .footer__map {
     height: 438px;
   }
