@@ -53,12 +53,10 @@ try {
 
   $mail->Subject = 'Запрос MZ Cars';
   $mail->Body = '
-                            <h1 style="color: #F4522F;">ISPACE</h1>
-                            <h2 style="color: #021a58;">Заявка</h2>
-                            <p style="color: #021a58; background: #f0f0f0; margin: 0; padding: 20px;"><b>Имя:</b>' . $name . '</p>
-                            <p style="color: #021a58; background: #f9f9f9; margin: 0; padding: 20px;"><b>Номер телефона:</b> ' . $phone . '</p>
-                            <p style="color: #021a58; background: #f9f9f9; margin: 0; padding: 20px;"><b>Адрес эл.почты:</b> ' . $email . '</p>
-                            <p style="color: #021a58; background: #f0f0f0; margin: 0; padding: 20px;"><b>Арт. автомобиля:</b>' . $idCar . '</p>';
+                            <p><b>Имя: </b>' . $name . '</p>
+                            <p><b>Номер телефона: </b> ' . $phone . '</p>
+                            <p><b>Адрес эл.почты: </b> ' . $email . '</p>
+                            <p><b>Арт. автомобиля: </b>' . $idCar . '</p>';
 
   if ($resultJson->success != true) {
     // Неуспех, reCAPTCHA не пройдена

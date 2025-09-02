@@ -193,13 +193,12 @@ function handleFormSubmit(event) {
   })
     .then(response => response.text())
     .then(data => {
+      data = data.trim()
       if (notification) {
         notification.style.display = 'block'
         if (data === 'success') {
           notification.textContent = msg.success
-          setTimeout(() => {
-            window.location.href = ''
-          }, 5000)
+          setTimeout(() => window.location.href = '', 5000)
         } else if (data === 'captcha') {
           notification.textContent = msg.captcha
         } else {
@@ -227,5 +226,3 @@ document.addEventListener('DOMContentLoaded', function () {
     contactForm.addEventListener('submit', handleFormSubmit)
   }
 })
-
-// ============================== Гугл карта ==============================

@@ -68,7 +68,7 @@ if (!car) {
 
   const infoSpans = document.querySelectorAll('.product__info li span')
   infoSpans[0].textContent = car.year
-  infoSpans[1].textContent = car.mileage.toLocaleString('de-DE')
+  infoSpans[1].textContent = car.mileage.toLocaleString('ru-RU')
   infoSpans[2].textContent = car.article
   infoSpans[3].textContent = car.transmission
   infoSpans[4].textContent = car.engine
@@ -100,7 +100,7 @@ document.querySelectorAll('.lang__list-link').forEach(link => {
 function createCatalogCard(car) {
   return `
       <div class="catalog__card-wrapper catalog__card-wrapper--product">
-        <a href="/product/${lang === 'ru' ? 'index.html' : lang === 'lv' ? 'lv.html' : 'eng.html'}?id=${car.id}" target="_blank" class="catalog__card">
+        <a href="/product/${lang === 'ru' ? 'index.html' : lang === 'lv' ? 'lv.html' : 'eng.html'}?id=${car.id}" class="catalog__card">
           <div class="catalog__card-img-wrapper">
             <img class="catalog__card-img" src="${car.mainImg}" alt="car-img">
 
@@ -125,7 +125,7 @@ function createCatalogCard(car) {
           <div class="catalog__card-info">
             <span><img src="../img/calendar-2.svg" alt="calendar">${car.year}</span>
             <span><img src="../img/transmission.svg" alt="transmission">${car.transmission}</span>
-            <span><img src="../img/speedometer.svg" alt="speedometer">${car.mileage.toLocaleString('de-DE')}</span>
+            <span><img src="../img/speedometer.svg" alt="speedometer">${car.mileage.toLocaleString('ru-RU')}</span>
             <span><img src="../img/engine.svg" alt="engine">${car.engine}</span>
           </div>
 
@@ -158,9 +158,14 @@ function renderRelatedCars(currentCarId, lang) {
   // Берем массив машин для текущего языка
   const carsByLang = cars[lang]
 
-  const related = carsByLang
-    .filter(c => String(c.id) !== String(currentCarId))
-    .slice(0, 8) // последние 8 без учета текущей
+  // Фильтруем текущую машину
+  const otherCars = carsByLang.filter(c => String(c.id) !== String(currentCarId))
+
+  // Перемешиваем массив случайным образом
+  const shuffled = otherCars.sort(() => 0.5 - Math.random())
+
+  // Берем первые 8
+  const related = shuffled.slice(0, 8)
 
   // Скрываем секцию если нет машин
   if (related.length === 0) {
@@ -214,3 +219,61 @@ Fancybox.bind("[data-fancybox='gallery']", {
   placeFocusBack: false
 })
 
+// ============================== Диапазон суммы и срока кулькулятора ==============================
+const rangeAmount = document.getElementById('range-amount')
+const progressAmount = document.querySelector('.catalog__range-progress--amount')
+const outputAmount = document.querySelector("[data-calc-amount]")
+
+const rangeTerm = document.getElementById('range-term')
+const progressTerm = document.querySelector('.catalog__range-progress--term')
+const outputTerm = document.querySelector("[data-calc-term]")
+
+const outputFinish = document.querySelector('[data-calc-finish]')
+
+const minAmount = 1000
+const maxAmount = car.price
+
+rangeAmount.max = maxAmount
+rangeAmount.value = maxAmount
+
+const minTerm = 12
+const maxTerm = 84
+
+// ============================== Высчитываем сумму калькулятора ==============================
+function updateMonthlyPayment() {
+  const C = parseFloat(rangeAmount.value) // цена
+  const n = parseInt(rangeTerm.value)     // срок в месяцах
+  const r = 0.08                          // 8% годовых
+  const monthlyRate = r / 12
+
+  const payment = (C * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -n))
+  outputFinish.textContent = payment.toFixed(2)
+}
+
+function updateProgressAmount() {
+  const val = parseInt(rangeAmount.value)
+
+  const percent = ((val - minAmount) / (maxAmount - minAmount)) * 100
+  progressAmount.style.width = percent + "%"
+
+  outputAmount.textContent = val
+
+  updateMonthlyPayment()
+}
+
+function updateProgressTerm() {
+  const val = parseInt(rangeTerm.value)
+
+  const percent = ((val - minTerm) / (maxTerm - minTerm)) * 100
+  progressTerm.style.width = percent + "%"
+
+  outputTerm.textContent = val
+
+  updateMonthlyPayment()
+}
+
+rangeAmount.addEventListener('input', updateProgressAmount)
+rangeTerm.addEventListener('input', updateProgressTerm)
+
+updateProgressAmount()
+updateProgressTerm()

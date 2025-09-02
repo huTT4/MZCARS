@@ -592,8 +592,8 @@ body:has(.burger.active) {
 /* ============================================= CATALOG ============================================= */
 
 .catalog {
-  padding: 140px 0 70px;
-  scroll-margin-top: -70px;
+  padding: 70px 0 70px;
+  scroll-margin-top: -35px;
 }
 
 .catalog__top {
@@ -888,6 +888,10 @@ body:has(.burger.active) {
   -webkit-appearance: none;
 }
 
+.catalog__range-input--product input {
+  top: -16px;
+}
+
 .catalog__range-input input::-webkit-slider-thumb {
   pointer-events: auto;
   -webkit-appearance: none;
@@ -1159,8 +1163,8 @@ body:has(.burger.active) {
 
 @media (max-width: 1000px) {
   .catalog {
-    padding: 80px 0 40px;
-    scroll-margin-top: -40px;
+    padding: 50px 0 40px;
+    scroll-margin-top: -25px;
   }
 
   .catalog__title-wrapper {
@@ -1188,8 +1192,12 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 420px) {
+  .catalog {
+    padding-bottom: 10px;
+  }
+
   .catalog__top {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   .catalog__title {
@@ -1261,6 +1269,10 @@ body:has(.burger.active) {
     height: 14px;
   }
 
+  .catalog__filters {
+    margin-bottom: 5px;
+  }
+
   .catalog__card-price h6 {
     font-size: 18px;
   }
@@ -1281,7 +1293,7 @@ body:has(.burger.active) {
   .catalog__card-info span {
     font-size: 13px;
   }
-  
+
   .catalog__card-img-info span {
     font-size: 12px;
   }
@@ -1296,8 +1308,8 @@ body:has(.burger.active) {
 /* ============================================= FORM ============================================= */
 /* ============================================= FORM ============================================= */
 .form {
-  padding: 70px 0;
-  scroll-margin-top: -70px;
+  padding: 50px 0;
+  scroll-margin-top: -25px;
 }
 
 .form__wrapper {
@@ -1507,7 +1519,7 @@ body:has(.burger.active) {
 
 @media (max-width: 420px) {
   .form {
-    padding: 40px 0;
+    padding: 20px 0;
     scroll-margin-top: -40px;
   }
 
@@ -1520,7 +1532,7 @@ body:has(.burger.active) {
   }
 
   .form__inner h4 {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .form__inputs input {
@@ -1671,11 +1683,12 @@ body:has(.burger.active) {
   }
 
   .realization__subtitle {
-    font-size: 15px;
+    font-size: 14.5px;
   }
 
   .realization__subtitle-2 {
     font-size: 15px;
+    margin-bottom: 20px;
   }
 
   .realization__list-title {
@@ -1755,7 +1768,7 @@ body:has(.burger.active) {
 
 @media (max-width: 420px) {
   .about {
-    padding: 35px 0 80px;
+    padding: 35px 0 40px;
   }
 
   .about__text {
@@ -1810,7 +1823,7 @@ body:has(.burger.active) {
 
 .footer__nav a {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   white-space: nowrap;
   width: fit-content;
@@ -1819,6 +1832,7 @@ body:has(.burger.active) {
 
 .lang--white {
   color: #fff;
+  font-size: 16px;
 }
 
 .footer__nav a:hover {
@@ -1826,37 +1840,37 @@ body:has(.burger.active) {
 }
 
 .footer__data h4 {
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   color: #fff;
   margin-bottom: 15px;
 }
 
 .footer__data p {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   color: #fff;
 }
 
 .footer__data p span {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .footer__social li {
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: 8px;
 }
 
 .footer__social li h5,
 .footer__social li a {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
 }
 
 .footer__social li a {
-  font-weight: 300;
+  font-weight: 400;
   transition: .15s;
 }
 
@@ -1868,10 +1882,14 @@ body:has(.burger.active) {
   display: flex;
   align-items: start;
   gap: 8px;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   color: #fff;
   white-space: nowrap;
+}
+
+.footer__address img {
+  padding-top: 3px;
 }
 
 .footer__map {
@@ -1889,12 +1907,8 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 1000px) {
-  .footer__inner {
-    align-items: center;
-  }
-
   .footer__content {
-    padding-bottom: 0;
+    padding: 60px 0 0;
   }
 
   .footer__info {
@@ -1915,9 +1929,21 @@ body:has(.burger.active) {
   .footer__info {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .footer__inner {
+    align-items: center;
+  }
+
+  .footer__content {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 420px) {
+  .footer__inner {
+    align-items: normal;
+  }
+
   .footer__logo {
     max-width: 175px;
     margin-bottom: 35px;
@@ -1945,6 +1971,15 @@ body:has(.burger.active) {
 
   .footer__map {
     height: 438px;
+  }
+
+  .footer__content {
+    padding: 40px 0 0;
+    max-width: 250px;
+  }
+
+  .footer__inner {
+    gap: 20px;
   }
 }
 
@@ -2135,6 +2170,64 @@ body:has(.burger.active) {
   fill: #b20f1c;
 }
 
+.product__calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding: 20px 30px;
+  border-radius: 5px;
+  max-width: 360px;
+}
+
+.product__calculator-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.product__calculator-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.product__calculator-row div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__calculator-row-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #252525;
+}
+
+.product__calculator-row-price {
+  color: #b20f1c;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product__calculator-info {
+  font-size: 16px;
+  font-weight: 400;
+  color: #252525;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.product__calculator-info span {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 .product__title {
   font-style: italic;
   font-weight: 900;
@@ -2266,11 +2359,11 @@ body:has(.burger.active) {
 .product__descr {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .product__descr p {
-  font-size: 18px;
+  font-size: 17px;
   color: #2d2d2d;
   font-weight: 400;
 }
@@ -2280,7 +2373,7 @@ body:has(.burger.active) {
 }
 
 .catalog--product {
-  padding-top: 0;
+  padding-top: 40px;
 }
 
 .catalog__title--product {
@@ -2292,7 +2385,7 @@ body:has(.burger.active) {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 
 .catalog__card-wrapper--product {
@@ -2406,15 +2499,68 @@ body:has(.burger.active) {
 @media (max-width: 420px) {
   .product__title {
     font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .product__price {
+    margin-bottom: 15px;
   }
 
   .product__info li {
     width: 100%;
   }
 
+  .product__info {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
   .catalog__title--product {
     font-size: 25px;
     margin-bottom: 20px;
+  }
+
+  .product__descr {
+    gap: 10px;
+  }
+
+  .product__descr-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .product__descr p {
+    font-size: 15px;
+  }
+
+  .catalog--product {
+    padding-top: 0;
+  }
+
+  .product__info li h4 {
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .product__info li span {
+    font-size: 16px;
+  }
+
+  .product__info li h4 img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .product__inner {
+    gap: 15px;
+  }
+
+  .product__left {
+    gap: 15px;
+  }
+
+  .product__calculator {
+    max-width: 100%;
   }
 }
 
@@ -2668,8 +2814,8 @@ body:has(.burger.active) {
 
   /* ============================== CATALOG ============================== */
   .catalog {
-    padding: 70px 0 35px;
-    scroll-margin-top: -35px;
+    padding: 40px 0 35px;
+    scroll-margin-top: -20px;
   }
 
   .catalog__title {
@@ -2804,7 +2950,18 @@ body:has(.burger.active) {
     font-size: 12px;
   }
 
+  .catalog__show {
+    font-size: 12px;
+    border-radius: 7px;
+    padding: 12px;
+  }
+
   /* ============================== FORM ============================== */
+  .form {
+    padding: 25px 0;
+    scroll-margin-top: -12.5px;
+  }
+
   .form__inner {
     padding: 64px 0;
   }
@@ -2984,6 +3141,162 @@ body:has(.burger.active) {
   .footer__address img {
     width: 8px;
     height: 10px;
+  }
+
+  /* ============================== PRODUCT ============================== */
+  .header.bg .header__inner {
+    padding: 15px 0;
+  }
+
+  .product__card-img-info {
+    left: 16px;
+    top: 16px;
+    gap: 5px;
+  }
+
+  .product__card-img-info span {
+    gap: 5px;
+    font-size: 9px;
+    padding: 2px 4px 2px 2px;
+  }
+
+  .product__card-img-info span img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .product__title {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+
+  .product__price {
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .product__price-left {
+    font-size: 20px;
+    gap: 6px;
+  }
+
+  .product__price-right {
+    font-size: 12px;
+  }
+
+  .product__price-left-info {
+    font-size: 8px;
+    width: 13px;
+    height: 13px;
+  }
+
+  .product__price-left-info-text {
+    top: -43px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 114px;
+    padding: 7px;
+  }
+
+  .product__info li {
+    border-radius: 7px;
+    padding: 10px;
+    gap: 7px;
+  }
+
+  .product__info li img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .product__info li h4 {
+    gap: 7px;
+    font-size: 10.5px;
+  }
+
+  .product {
+    padding-top: 25px;
+  }
+
+  .product__info li span {
+    font-size: 13px;
+  }
+
+  .product__info {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .product__descr-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .product__descr {
+    gap: 10px;
+  }
+
+  .product__descr p {
+    font-size: 13px;
+  }
+
+  .product-arrow {
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .product-arrow.prev {
+    left: -9px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+  }
+
+  .product-arrow.next {
+    right: -10px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+  }
+
+  .product__left {
+    max-width: 480px;
+  }
+
+  .product__pagination img {
+    border-radius: 7px;
+  }
+
+  .product__pagination {
+    margin: 0 -4px;
+  }
+
+  .product__pagination .slick-slide {
+    margin: 0 4px;
+  }
+
+  .product__card-img {
+    border-radius: 15px;
+  }
+
+  .catalog--product {
+    padding: 0;
+  }
+
+  .product__calculator {
+    gap: 10px;
+    padding: 15px 25px;
+  }
+
+  .product__calculator-title {
+    font-size: 16px;
+  }
+
+  .product__calculator-row-text {
+    font-size: 14px;
+  }
+
+  .product__calculator-info {
+    font-size: 14px;
   }
 
   /* ============================== ARROW TOP TOP ============================================= */

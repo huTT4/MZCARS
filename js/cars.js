@@ -1,6 +1,194 @@
 const cars = {
   ru: [
     {
+      id: 13,
+      brand: 'BMW',
+      year: 2015,
+      price: 9990,
+      mileage: 219514,
+      fuel: 'Дизель',
+      transmission: 'Автомат',
+      availability: 'В наличии',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Bmw 116 (F20) 2015 god/_compressed.jpg',
+      title: 'Bmw 116 (F20)',
+      article: 'MZ-014',
+      engine: '1.5 дизель',
+      leasing: 120,
+
+      imgs: [
+        '/img/cars/Bmw 116 (F20) 2015 god/1.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/2.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/3.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/4.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/5.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/6.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (2).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (3).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (4).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (6).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/12.jpg',
+      ],
+      vin: 'WBA1V710505B90247',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>BMW 116d (F20). Надеждный B мотор, 85 kW.</p>
+      <p>Машина из Италии, без пробега по Латвии.</p>
+      <p>Отличное визуальное и техническое состояние. Читсый, не ржавый низ.</p>
+      <p>Комплектация:</p>
+      <p>- галогеновые фары<br>
+- ручной климат-контроль с опцией кондиционера<br>
+- датчик дождя<br>
+- текстильный салон<br>
+- круиз-контроль<br>
+- мультируль<br>
+- борт компьютер<br>
+- парковочные датчики сзади<br>
+- start-stop<br>
+- навигация по всей Европе<br>
+- радио/cd/usb/mp3<br>
+- M+S резина с зимним протектором (снежинка) с дисками на 17<br>
+- hands free (bluetooth) можно подключить телефон и слушать музыку<br>
+- 2 ориг. ключа и др. опции.</p>
+      <p>Ухоженный салон, в авто не курили.</p>
+      <p>Общая информация:</p>
+      <p>- машина на учете (гос.номер OE-8224), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 120 EUR/мес.</p>
+      <p>Посмотреть и купить машину можно в любой день, только заранее нужно договориться по встрече.</p>
+      `
+    },
+    {
+      id: 12,
+      brand: 'BMW',
+      year: 2014,
+      price: 13990,
+      mileage: 248801,
+      fuel: 'Дизель',
+      transmission: 'Автомат',
+      availability: 'В наличии',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/BMW 220d (F22) 2014 god/_compressed.jpg',
+      title: 'Bmw 220d (F22)',
+      article: 'MZ-013',
+      engine: '2.0 дизель',
+      leasing: 150,
+
+      imgs: [
+        '/img/cars/BMW 220d (F22) 2014 god/1.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/2.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/3.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/4.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/5.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/6.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/7.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (1).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (2).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (3).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (4).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (5).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (6).jpg',
+      ],
+      vin: 'WBA1H110X0VZ98918',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>BMW 220d (F22). Мотор 135 Kw/184 л.с. Машина из Голландии.</p>
+      <p>Чистый кузов, без окрасов. Красивый белый цвет.</p>
+      <p>Богатая, насыщенная комплектация:</p>
+      <p>- ксеноновые/led фары<br>
+- система Start-Stop automatic<br>
+- keyless go<br>
+- м-руль с лепестками<br>
+- авто свет<br>
+- климат-контроль с опцией кондиционера<br>
+- кожанный салон с подогревом сидений (recaro)<br>
+- черный потолок<br>
+- датчик дождя<br>
+- световое приветствие на дверных ручках<br>
+- круиз-контроль<br>
+- фаркоп (механический)<br>
+- чистый по низу автомобиль, без ржавчины<br>
+- 8-ми ступенчатый автомат (Sport-Automatic)<br>
+- борт компьютер<br>
+- парковочные датчики спереди и сзади<br>
+- навигация по всей Европе<br>
+- hands free (bluetooth) также можно подключить телефон и слушать музыку</p>
+      <p>Ухоженный салон, в авто не курили.</p>
+      <p>Общая информация:</p>
+      <p>- машина на учете (гос.номер OE-8151), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 150 EUR/мес.</p>
+      <p>Посмотреть и купить машину можно в любой день, только заранее нужно договориться по встрече.</p>
+      <p>По всем вопросам, пожалуйста звоните.</p>
+      `
+    },
+    {
+      id: 11,
+      brand: 'BMW',
+      year: 2012,
+      price: 9990,
+      mileage: 247813,
+      fuel: 'Дизель',
+      transmission: 'Автомат',
+      availability: 'В наличии',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Bmw 318 (F30) 2012 god/_compressed.jpg',
+      title: 'Bmw 318 (F30)',
+      article: 'MZ-012',
+      engine: '2.0 дизель',
+      leasing: 120,
+
+      imgs: [
+        '/img/cars/Bmw 318 (F30) 2012 god/1.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/2.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/3.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/4.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/5.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/6.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/7.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (3).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (4).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (5).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (6).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/12.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/13.jpg',
+      ],
+      vin: 'WBA3D11070F389395',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>BMW F30 318d. Мотор 105 kW. Машина из Европы, без пробега по Латвии.</p>
+      <p>Отличное визуальное и техническое состояние. Редкий цвет для этого кузова.</p>
+      <p>Комплектация:</p>
+      <p>- Xenon (LED) фары<br>
+- климат-контроль с опцией кондиционера<br>
+- датчик дождя<br>
+- текстильный салон (Recaro) с подогревом сидений<br>
+- круиз-контроль<br>
+- мультируль с обогревом<br>
+- борт компьютер<br>
+- парковочные датчики сзади<br>
+- start-stop<br>
+- навигация по всей Европе<br>
+- радио/cd/usb/mp3<br>
+- летняя резина с дисками BMW на 18 (можно купить сразу на зимней)<br>
+- hands free (bluetooth) можно подключить телефон и слушать музыку<br>
+- 2 ориг. ключа и др. опции.</p>
+      <p>Ухоженный салон, в авто не курили.</p>
+      <p>Общая информация:</p>
+      <p>- машина на учете (гос.номер OE-8223), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 120 EUR/мес.</p>
+      <p>Посмотреть и купить машину можно в любой день, только заранее нужно договориться по встрече.</p>
+      <p>По всем вопросам, пожалуйста звоните.</p>
+      `
+    },
+    {
       id: 10,
       brand: 'JAGUAR',
       year: 2012,
@@ -81,7 +269,7 @@ Keyless Go (система безключевого доступа)<br>
 
       mainImg: '/img/cars/Volvo XC 60 2015 god/_compressed.jpeg',
       title: 'Volvo XC 60',
-      article: 'MZ-020',
+      article: 'MZ-010',
       engine: '2.0 дизель',
       leasing: 135,
 
@@ -138,7 +326,7 @@ USB-выход<br>
 
       mainImg: '/img/cars/Volvo XC 90 2008 god/_compressed.jpeg',
       title: 'Volvo XC 90',
-      article: 'MZ-013',
+      article: 'MZ-009',
       engine: '2.4 дизель',
       leasing: 85,
 
@@ -269,7 +457,7 @@ Webasto (подогреватель двигателя)<br>
 
       mainImg: '/img/cars/Ford S Max 2010 god/_compressed.jpeg',
       title: 'Ford S-Max',
-      article: 'MZ-012',
+      article: 'MZ-007',
       engine: '2.0 дизель',
       leasing: 75,
 
@@ -331,7 +519,7 @@ Bluetooth / Handsfree<br>
 
       mainImg: '/img/cars/BMW X3 2010 god/_compressed.jpeg',
       title: 'Bmw X3',
-      article: 'MZ-011',
+      article: 'MZ-006',
       engine: '2.0 дизель',
       leasing: 75,
 
@@ -386,7 +574,7 @@ Bluetooth-аудио<br>
 
       mainImg: '/img/cars/BMW 740 2013 god/_compressed.jpeg',
       title: 'Bmw 740',
-      article: 'MZ-18',
+      article: 'MZ-005',
       engine: '3.0 дизель',
       leasing: 130,
 
@@ -453,7 +641,7 @@ LED / биксеноновые фары<br>
 
       mainImg: '/img/cars/bmw 520 2014 g/_compressed.jpeg',
       title: 'Bmw 520',
-      article: 'MZ-18',
+      article: 'MZ-004',
       engine: '2.0 дизель',
       leasing: 90,
 
@@ -514,7 +702,7 @@ Auto Hold функция<br>
 
       mainImg: '/img/cars/Kia Sorento 2021 god/_compressed.jpeg',
       title: 'Kia Sorento',
-      article: 'MZ-025',
+      article: 'MZ-003',
       engine: '1.6 гибрид',
       leasing: 340,
 
@@ -599,7 +787,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
 
       mainImg: '/img/cars/Audi A5 2017 god/_compressed.jpeg',
       title: 'Audi A5',
-      article: 'MZ-016',
+      article: 'MZ-002',
       engine: '3.0 дизель',
       leasing: 245,
 
@@ -668,7 +856,7 @@ CarPlay / Android Auto<br>
 
       mainImg: '/img/cars/MB GL350 2014 god/_compressed.jpeg',
       title: 'Mercedes GL350',
-      article: 'MZ-015',
+      article: 'MZ-001',
       engine: '3.0 дизель',
       leasing: 230,
 
@@ -726,6 +914,197 @@ Keyless Go (бесключевой доступ и запуск)<br>
     },
   ],
   lv: [
+    {
+      id: 13,
+      brand: 'BMW',
+      year: 2015,
+      price: 9990,
+      mileage: 219514,
+      fuel: 'Dīzelis',
+      transmission: 'Automātiskā',
+      availability: 'Uz vietas',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Bmw 116 (F20) 2015 god/_compressed.jpg',
+      title: 'Bmw 116 (F20)',
+      article: 'MZ-014',
+      engine: '1.5 dīzelis',
+      leasing: 120,
+
+      imgs: [
+        '/img/cars/Bmw 116 (F20) 2015 god/1.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/2.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/3.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/4.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/5.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/6.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (2).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (3).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (4).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (6).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/12.jpg',
+      ],
+      vin: 'WBA1V710505B90247',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>BMW 116d (F20). Uzticams B motors, 85 kW. Auto no Italijas, bez nobraukuma Latvijā.</p>
+      <p>Teicamā vizuālā un tehniskā stāvoklī. Tīra, nerūsējusi apakša.</p>
+      <p>Komplektācija:</p>
+      <p>- Halogēnie lukturi<br>
+- Manuālā klimata kontrole ar kondicioniera funkciju<br>
+- Lietus sensori<br>
+- Tekstila salons<br>
+- Kruīza kontrole<br>
+- Multifunkcionāla stūre<br>
+- Borta dators<br>
+- Aizmugurējie parkošanās sensori<br>
+- Start-stop sistēma<br>
+- Eiropas mēroga navigācija<br>
+- Radio/CD/USB/MP3<br>
+- M+S riepas ar ziemas protektoru (sniegpārsliņas marķējums) uz 17 collu diskiem<br>
+- Hands free (bluetooth) – iespēja pieslēgt telefonu un klausīties mūziku<br>
+- 2 oriģinālās atslēgas un citas opcijas</p>
+      <p>Kopts salons, mašīnā nav smēķēts.</p>
+      <p>Vispārējā informācija:</p>
+      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8224), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 120 EUR/men</p>
+      <p>Auto var apskatīties un iegādāties jebkurā dienā, iepriekš vienojoties par tikšanās laiku.</p>
+      <p>Par visiem jautājumiem lūdzu zvanīt.</p>
+      `
+    },
+    {
+      id: 12,
+      brand: 'BMW',
+      year: 2014,
+      price: 13990,
+      mileage: 248801,
+      fuel: 'Dīzelis',
+      transmission: 'Automātiskā',
+      availability: 'Uz vietas',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/BMW 220d (F22) 2014 god/_compressed.jpg',
+      title: 'Bmw 220d (F22)',
+      article: 'MZ-013',
+      engine: '2.0 dīzelis',
+      leasing: 150,
+
+      imgs: [
+        '/img/cars/BMW 220d (F22) 2014 god/1.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/2.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/3.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/4.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/5.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/6.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/7.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (1).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (2).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (3).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (4).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (5).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (6).jpg',
+      ],
+      vin: 'WBA1H110X0VZ98918',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>BMW 220d (F22). 135 kW/184 ZS. Auto no Nīderlandes.</p>
+      <p>Tīrs virsbūves stāvoklis, bez pārkrāsojumiem. Skaista balta krāsa.</p>
+      <p>Bagātīga komplektācija:</p>
+      <p>- Xenon/LED lukturi<br>
+- Start-Stop automātiskā sistēma<br>
+- Keyless Go (bezatslēgas piekļuve)<br>
+- M-stūre ar pārslēgiem<br>
+- Automātiskās gaismas<br>
+- Klimata kontrole ar kondicionieri<br>
+- Ādas salons ar apsildāmiem Recaro sēdekļiem<br>
+- Melns griestu apšuvums<br>
+- Lietus sensori<br>
+- Gaismas sveiciens uz durvju rokturiem<br>
+- Kruīza kontrole<br>
+- Mehāniskais piekabes āķis<br>
+- Tīrs un nerūsējis auto apakšā<br>
+- 8-pakāpju automāts (Sport-Automatic)<br>
+- Borta dators<br>
+- Stāvvietas sensori priekšējie un aizmugurējie<br>
+- Eiropas navigācija<br>
+- Hands-free (Bluetooth) – iespējams pieslēgt tālruni un klausīties mūziku<br>
+- Oriģinālie BMW 18 collu diski ar BMW vasaras riepām (RSC)<br>
+- 2 oriģinālās atslēgas, servisa grāmata un citas opcijas</p>
+      <p>Kopts interjers, automašīnā nesmēķēt.</p>
+      <p>Vispārējā informācija:</p>
+      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8151), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 150 EUR/men</p>
+      <p>Auto var apskatīties un iegādāties jebkurā dienā, iepriekš vienojoties par tikšanās laiku.</p>
+      <p>Par visiem jautājumiem lūdzu zvanīt.</p>
+      `
+    },
+    {
+      id: 11,
+      brand: 'BMW',
+      year: 2012,
+      price: 9990,
+      mileage: 247813,
+      fuel: 'Dīzelis',
+      transmission: 'Automātiskā',
+      availability: 'Uz vietas',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Bmw 318 (F30) 2012 god/_compressed.jpg',
+      title: 'Bmw 318 (F30)',
+      article: 'MZ-012',
+      engine: '2.0 dīzelis',
+      leasing: 120,
+
+      imgs: [
+        '/img/cars/Bmw 318 (F30) 2012 god/1.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/2.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/3.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/4.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/5.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/6.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/7.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (3).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (4).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (5).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (6).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/12.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/13.jpg',
+      ],
+      vin: 'WBA3D11070F389395',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>BMW F30 318d. Motors 105 kW. Auto no Eiropas, bez nobraukuma Latvijā.</p>
+      <p>Teicamā vizuālā un tehniskā stāvoklī. Reta krāsa.</p>
+      <p>Komplektācija:</p>
+      <p>- Xenon (LED) lukturi<br>
+- Klimata kontrole ar kondicioniera funkciju<br>
+- Lietus sensori<br>
+- Tekstila salons (Recaro) ar sēdekļu apsildi<br>
+- Kruīza kontrole<br>
+- Multifunkcionāla stūre ar apsildi<br>
+- Borta dators<br>
+- Aizmugurējie parkošanās sensori<br>
+- Start-stop sistēma<br>
+- Eiropas mēroga navigācija<br>
+- Radio/CD/USB/MP3<br>
+- Vasaras riepas uz BMW 18 collu diskiem<br>
+- Hands free (bluetooth) – iespēja pieslēgt telefonu un klausīties mūziku<br>
+- 2 oriģinālās atslēgas un citas opcijas<br>
+Kopts salons, mašīnā nav smēķēts.</p>
+      <p>Vispārējā informācija:</p>
+      <p>Общая информация:</p>
+      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8223), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 120 EUR/men</p>
+      <p>Auto var apskatīties un iegādāties jebkurā dienā, iepriekš vienojoties par tikšanās laiku.</p>
+      <p>Par visiem jautājumiem lūdzu zvanīt.</p>
+      `
+    },
     {
       id: 10,
       brand: 'JAGUAR',
@@ -807,7 +1186,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
 
       mainImg: '/img/cars/Volvo XC 60 2015 god/_compressed.jpeg',
       title: 'Volvo XC 60',
-      article: 'MZ-020',
+      article: 'MZ-010',
       engine: '2.0 dīzelis',
       leasing: 135,
 
@@ -864,7 +1243,7 @@ Jumta reliņi<br>
 
       mainImg: '/img/cars/Volvo XC 90 2008 god/_compressed.jpeg',
       title: 'Volvo XC 90',
-      article: 'MZ-013',
+      article: 'MZ-009',
       engine: '2.4 dīzelis',
       leasing: 85,
 
@@ -997,7 +1376,7 @@ Apsildāmi spoguļi</p>
 
       mainImg: '/img/cars/Ford S Max 2010 god/_compressed.jpeg',
       title: 'Ford S-Max',
-      article: 'MZ-012',
+      article: 'MZ-007',
       engine: '2.0 dīzelis',
       leasing: 75,
 
@@ -1057,7 +1436,7 @@ Lietus sensors<br>
 
       mainImg: '/img/cars/BMW X3 2010 god/_compressed.jpeg',
       title: 'Bmw X3',
-      article: 'MZ-011',
+      article: 'MZ-006',
       engine: '2.0 dīzelis',
       leasing: 75,
 
@@ -1109,7 +1488,7 @@ Lietus sensors<br>
 
       mainImg: '/img/cars/BMW 740 2013 god/_compressed.jpeg',
       title: 'Bmw 740',
-      article: 'MZ-18',
+      article: 'MZ-005',
       engine: '3.0 dīzelis',
       leasing: 130,
 
@@ -1176,7 +1555,7 @@ Lietus sensors<br>
 
       mainImg: '/img/cars/bmw 520 2014 g/_compressed.jpeg',
       title: 'Bmw 520',
-      article: 'MZ-18',
+      article: 'MZ-004',
       engine: '2.0 dīzelis',
       leasing: 90,
 
@@ -1236,7 +1615,7 @@ Pilna servisa vēsture no pirmā līdz pēdējam kilometram, motoram mainītas �
 
       mainImg: '/img/cars/Kia Sorento 2021 god/_compressed.jpeg',
       title: 'Kia Sorento',
-      article: 'MZ-025',
+      article: 'MZ-003',
       engine: '1.6 hibrīds',
       leasing: 340,
 
@@ -1318,7 +1697,7 @@ Ideāls auto ceļošanai gan mazām, gan lielām distancēm, pārdod licenzēts 
 
       mainImg: '/img/cars/Audi A5 2017 god/_compressed.jpeg',
       title: 'Audi A5',
-      article: 'MZ-016',
+      article: 'MZ-002',
       engine: '3.0 dīzelis',
       leasing: 245,
 
@@ -1387,7 +1766,7 @@ Audi Drive Select</p>
 
       mainImg: '/img/cars/MB GL350 2014 god/_compressed.jpeg',
       title: 'Mercedes GL350',
-      article: 'MZ-015',
+      article: 'MZ-001',
       engine: '3.0 dīzelis',
       leasing: 230,
 
@@ -1444,6 +1823,197 @@ El. reg. visas sēdekļu rindas<br>
     },
   ],
   eng: [
+    {
+      id: 13,
+      brand: 'BMW',
+      year: 2015,
+      price: 9990,
+      mileage: 219514,
+      fuel: 'Diesel',
+      transmission: 'Automatic',
+      availability: 'In stock',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Bmw 116 (F20) 2015 god/_compressed.jpg',
+      title: 'Bmw 116 (F20)',
+      article: 'MZ-014',
+      engine: '1.5 diesel',
+      leasing: 120,
+
+      imgs: [
+        '/img/cars/Bmw 116 (F20) 2015 god/1.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/2.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/3.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/4.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/5.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/6.jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (2).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (3).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (4).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/11 (6).jpg',
+        '/img/cars/Bmw 116 (F20) 2015 god/12.jpg',
+      ],
+      vin: 'WBA1V710505B90247',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>BMW 116d (F20). Reliable B engine, 85 kW. Car from Italy, no mileage in Latvia.</p>
+      <p>In excellent visual and technical condition. Clean, rust-free underbody.</p>
+      <p>Equipment:</p>
+      <p>- Halogen headlights<br>
+- Manual climate control with air conditioning<br>
+- Rain sensor<br>
+- Textile interior<br>
+- Cruise control<br>
+- Multifunctional steering wheel<br>
+- Onboard computer<br>
+- Rear parking sensors<br>
+- Start-stop system<br>
+- Europe-wide navigation<br>
+- Radio/CD/USB/MP3<br>
+- M+S tires with winter tread (snowflake marking) on 17-inch rims<br>
+- Hands free (bluetooth) – connect your phone and listen to music<br>
+- 2 original keys and other features</p>
+      <p>Well-maintained interior, non-smoking car.</p>
+      <p>General Information:</p>
+      <p>- car on registration, plates number OE-8224, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 120 EUR/month.</p>
+      <p>Car are possible to watch and buy in any time, just need agree meeting time in advance.</p>
+      <p>For all inquiries, please don’t hesitate to call us.</p>
+      `
+    },
+    {
+      id: 12,
+      brand: 'BMW',
+      year: 2014,
+      price: 13990,
+      mileage: 248801,
+      fuel: 'Diesel',
+      transmission: 'Automatic',
+      availability: 'In stock',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/BMW 220d (F22) 2014 god/_compressed.jpg',
+      title: 'Bmw 220d (F22)',
+      article: 'MZ-013',
+      engine: '2.0 diesel',
+      leasing: 150,
+
+      imgs: [
+        '/img/cars/BMW 220d (F22) 2014 god/1.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/2.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/3.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/4.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/5.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/6.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/7.jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (1).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (2).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (3).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (4).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (5).jpg',
+        '/img/cars/BMW 220d (F22) 2014 god/10 (6).jpg',
+      ],
+      vin: 'WBA1H110X0VZ98918',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>BMW 220d (F22). 135 kW/184 hp. Car from the Netherlands.</p>
+      <p>Clean body, no repaint. Beautiful white color.</p>
+      <p>Rich and full equipment:</p>
+      <p>- Xenon/LED headlights<br>
+- Start-Stop automatic system<br>
+- Keyless Go (keyless entry)<br>
+- M steering wheel with paddles<br>
+- Automatic lights<br>
+- Climate control with air conditioning<br>
+- Leather interior with heated Recaro seats<br>
+- Black roof lining<br>
+- Rain sensor<br>
+- Light greeting on door handles<br>
+- Cruise control
+- Mechanical tow hook<br>
+- Clean and rust-free underbody
+- 8-speed automatic (Sport-Automatic)<br>
+- Onboard computer<br>
+- Parking sensors (front and rear)<br>
+- European navigation<br>
+- Hands-free (Bluetooth) – connect your phone and listen to music<br>
+- Original BMW 18-inch rims with BMW summer tires (RSC)<br>
+- 2 original keys, service book, and other features</p>
+      <p>Well maintained interior, no smoking in the car.</p>
+      <p>General Information:</p>
+      <p>- car on registration, plates number OE-8151, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 150 EUR/month.</p>
+      <p>Car are possible to watch and buy in any time, just need agree meeting time in advance.</p>
+      <p>For all inquiries, please don’t hesitate to call us.</p>
+      `
+    },
+    {
+      id: 11,
+      brand: 'BMW',
+      year: 2012,
+      price: 9990,
+      mileage: 247813,
+      fuel: 'Diesel',
+      transmission: 'Automatic',
+      availability: 'In stock',
+      isNew: false,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Bmw 318 (F30) 2012 god/_compressed.jpg',
+      title: 'Bmw 318 (F30)',
+      article: 'MZ-012',
+      engine: '2.0 diesel',
+      leasing: 120,
+
+      imgs: [
+        '/img/cars/Bmw 318 (F30) 2012 god/1.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/2.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/3.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/4.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/5.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/6.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/7.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (3).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (4).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (5).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/11 (6).jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/12.jpg',
+        '/img/cars/Bmw 318 (F30) 2012 god/13.jpg',
+      ],
+      vin: 'WBA3D11070F389395',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>BMW F30 318d. Engine 105 kW. Car from Europe, no mileage in Latvia.</p>
+      <p>In excellent visual and technical condition. Rare color for this model.</p>
+      <p>Equipment:</p>
+      <p>- Xenon (LED) headlights<br>
+- Climate control with air conditioning<br>
+- Rain sensor<br>
+- Textile interior (Recaro) with heated seats<br>
+- Cruise control<br>
+- Multifunctional heated steering wheel<br>
+- Onboard computer<br>
+- Rear parking sensors<br>
+- Start-stop system<br>
+- Europe-wide navigation<br>
+- Radio/CD/USB/MP3<br>
+- Summer tires on BMW 18-inch rims<br>
+- Hands free (bluetooth) – connect your phone and listen to music<br>
+- 2 original keys and other features<br>
+Well-maintained interior, non-smoking car.</p>
+      <p>Vispārējā informācija:</p>
+      <p>General Information:</p>
+      <p>- car on registration, plates number OE-8223, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 120 EUR/month.</p>
+      <p>Car are possible to watch and buy in any time, just need agree meeting time in advance.</p>
+      <p>For all inquiries, please don’t hesitate to call us.</p>
+      `
+    },
     {
       id: 10,
       brand: 'JAGUAR',
@@ -1525,7 +2095,7 @@ Piano Black trim</p>
 
       mainImg: '/img/cars/Volvo XC 60 2015 god/_compressed.jpeg',
       title: 'Volvo XC 60',
-      article: 'MZ-020',
+      article: 'MZ-010',
       engine: '2.0 diesel',
       leasing: 135,
 
@@ -1582,7 +2152,7 @@ Roof rails<br>
 
       mainImg: '/img/cars/Volvo XC 90 2008 god/_compressed.jpeg',
       title: 'Volvo XC 90',
-      article: 'MZ-013',
+      article: 'MZ-009',
       engine: '2.4 diesel',
       leasing: 85,
 
@@ -1714,7 +2284,7 @@ Heated mirrors</p>
 
       mainImg: '/img/cars/Ford S Max 2010 god/_compressed.jpeg',
       title: 'Ford S-Max',
-      article: 'MZ-012',
+      article: 'MZ-007',
       engine: '2.0 diesel',
       leasing: 75,
 
@@ -1776,7 +2346,7 @@ Rain sensor<br>
 
       mainImg: '/img/cars/BMW X3 2010 god/_compressed.jpeg',
       title: 'Bmw X3',
-      article: 'MZ-011',
+      article: 'MZ-006',
       engine: '2.0 diesel',
       leasing: 75,
 
@@ -1829,7 +2399,7 @@ Sold by a licensed car dealership. Your old car can be used as part of the payme
 
       mainImg: '/img/cars/BMW 740 2013 god/_compressed.jpeg',
       title: 'Bmw 740',
-      article: 'MZ-18',
+      article: 'MZ-005',
       engine: '3.0 diesel',
       leasing: 130,
 
@@ -1896,7 +2466,7 @@ Wood interior trim</p>
 
       mainImg: '/img/cars/bmw 520 2014 g/_compressed.jpeg',
       title: 'Bmw 520',
-      article: 'MZ-18',
+      article: 'MZ-004',
       engine: '2.0 diesel',
       leasing: 90,
 
@@ -1957,7 +2527,7 @@ Black headliner</p>
 
       mainImg: '/img/cars/Kia Sorento 2021 god/_compressed.jpeg',
       title: 'Kia Sorento',
-      article: 'MZ-025',
+      article: 'MZ-003',
       engine: '1.6 hybrid',
       leasing: 340,
 
@@ -2043,7 +2613,7 @@ Sold by a licensed car dealership. Your old car can be used as part of the payme
 
       mainImg: '/img/cars/Audi A5 2017 god/_compressed.jpeg',
       title: 'Audi A5',
-      article: 'MZ-016',
+      article: 'MZ-002',
       engine: '3.0 diesel',
       leasing: 245,
 
@@ -2113,7 +2683,7 @@ Audi Drive Select</p>
 
       mainImg: '/img/cars/MB GL350 2014 god/_compressed.jpeg',
       title: 'Mercedes GL350',
-      article: 'MZ-015',
+      article: 'MZ-001',
       engine: '3.0 diesel',
       leasing: 230,
 

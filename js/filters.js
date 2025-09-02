@@ -1,5 +1,125 @@
 import cars from './cars.js'
 
+// ============================== Выбор бренда (только один) ==============================
+function updateSelectTopBrand() {
+  const selectTop = document.querySelector('.catalog__brand-choise')
+  const checkedRadio = document.querySelector(".catalog__select-list input[type='radio']:checked")
+  if (checkedRadio) {
+    const label = checkedRadio.parentElement.querySelector('span')
+    selectTop.textContent = label.textContent
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const radios = document.querySelectorAll(".catalog__select-list input[type='radio']")
+
+  updateSelectTopBrand()
+
+  radios.forEach(radio => radio.addEventListener('change', updateSelectTopBrand))
+})
+
+
+// ============================== Списки фильтров ==============================
+const titleList = document.querySelectorAll('.catalog__select-top')
+
+titleList.forEach(item => {
+  item.addEventListener('click', (e) => {
+    const catalogSelect = e.target.closest('.catalog__select')
+    catalogSelect.classList.toggle('active')
+  })
+})
+
+// ============================== Диапазон года выпуска ==============================
+const rangeMinYear = document.getElementById('rangeMin--year')
+const rangeMaxYear = document.getElementById('rangeMax--year')
+const minInputRangeYear = document.getElementById('minInputRange--year')
+const maxInputRangeYear = document.getElementById('maxInputRange--year')
+const progressYear = document.querySelector('.catalog__range-progress--year')
+
+let minGap = 1
+const minYear = 2007
+const maxYear = 2021
+
+function updateProgressYear() {
+  let minVal = parseInt(rangeMinYear.value)
+  let maxVal = parseInt(rangeMaxYear.value)
+
+  progressYear.style.left = ((minVal - minYear) / (maxYear - minYear)) * 100 + "%"
+  progressYear.style.right = 100 - ((maxVal - minYear) / (maxYear - minYear)) * 100 + "%"
+
+  minInputRangeYear.value = minVal
+  maxInputRangeYear.value = maxVal
+}
+
+rangeMinYear.addEventListener('input', () => {
+  if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
+    rangeMinYear.value = parseInt(rangeMaxYear.value) - minGap
+  }
+})
+
+rangeMaxYear.addEventListener('input', () => {
+  if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
+    rangeMaxYear.value = parseInt(rangeMinYear.value) + minGap
+  }
+})
+
+minInputRangeYear.addEventListener('change', () => {
+  let val = parseInt(minInputRangeYear.value)
+  rangeMinYear.value = Math.max(minYear, Math.min(val, parseInt(rangeMaxYear.value) - minGap))
+})
+
+maxInputRangeYear.addEventListener('change', () => {
+  let val = parseInt(maxInputRangeYear.value)
+  rangeMaxYear.value = Math.min(maxYear, Math.max(val, parseInt(rangeMinYear.value) + minGap))
+})
+
+updateProgressYear()
+
+// ============================== Диапазон цены ==============================
+const rangeMinPrice = document.getElementById('rangeMin--price')
+const rangeMaxPrice = document.getElementById('rangeMax--price')
+const minInputRangePrice = document.getElementById('minInputRange--price')
+const maxInputRangePrice = document.getElementById('maxInputRange--price')
+const progressPrice = document.querySelector('.catalog__range-progress--price')
+
+const minPrice = 6790
+const maxPrice = 31990
+
+function updateProgressPrice() {
+  let minVal = parseInt(rangeMinPrice.value)
+  let maxVal = parseInt(rangeMaxPrice.value)
+
+  progressPrice.style.left = ((minVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
+  progressPrice.style.right = 100 - ((maxVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
+
+  minInputRangePrice.value = minVal
+  maxInputRangePrice.value = maxVal
+}
+
+rangeMinPrice.addEventListener('input', () => {
+  if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
+    rangeMinPrice.value = parseInt(rangeMaxPrice.value) - minGap
+  }
+})
+
+rangeMaxPrice.addEventListener('input', () => {
+  if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
+    rangeMaxPrice.value = parseInt(rangeMinPrice.value) + minGap
+  }
+})
+
+minInputRangePrice.addEventListener('change', () => {
+  let val = parseInt(minInputRangePrice.value)
+  rangeMinPrice.value = Math.max(minPrice, Math.min(val, parseInt(rangeMaxPrice.value) - minGap))
+})
+
+maxInputRangePrice.addEventListener('change', () => {
+  let val = parseInt(maxInputRangePrice.value)
+  rangeMaxPrice.value = Math.min(maxPrice, Math.max(val, parseInt(rangeMinPrice.value) + minGap))
+})
+
+updateProgressPrice()
+
 // ============================== Фильтрация ==============================
 const carsPerPage = 12 // количество карточек на странице
 let currentIndex = 0 // текущий индекс
@@ -44,7 +164,7 @@ function renderCars(lang) {
   slice.forEach(car => {
     cardsContainer.insertAdjacentHTML('beforeend', `
       <div class="catalog__card-wrapper">
-        <a href="/product/${currentLang === 'ru' ? 'index.html' : currentLang === 'lv' ? 'lv.html' : 'eng.html'}?id=${car.id}" target="_blank" class="catalog__card">
+        <a href="/product/${currentLang === 'ru' ? 'index.html' : currentLang === 'lv' ? 'lv.html' : 'eng.html'}?id=${car.id}" class="catalog__card">
           <div class="catalog__card-img-wrapper">
             <img class="catalog__card-img" src="${car.mainImg}" alt="car-img">
 
@@ -69,7 +189,7 @@ function renderCars(lang) {
           <div class="catalog__card-info">
             <span><img src="img/calendar-2.svg" alt="calendar">${car.year}</span>
             <span><img src="img/transmission.svg" alt="transmission">${car.transmission}</span>
-            <span><img src="img/speedometer.svg" alt="speedometer">${car.mileage.toLocaleString('de-DE')}</span>
+            <span><img src="img/speedometer.svg" alt="speedometer">${car.mileage.toLocaleString('ru-RU')}</span>
             <span><img src="img/engine.svg" alt="engine">${car.engine}</span>
           </div>
 
@@ -217,17 +337,17 @@ function clearFilters() {
   updateSelectTopBrand()
 
   // Сброс года
-  document.getElementById('minInputRange--year').value = 1990
-  document.getElementById('maxInputRange--year').value = 2025
-  document.getElementById('rangeMin--year').value = 1990
-  document.getElementById('rangeMax--year').value = 2025
+  document.getElementById('minInputRange--year').value = minYear
+  document.getElementById('maxInputRange--year').value = maxYear
+  document.getElementById('rangeMin--year').value = minYear
+  document.getElementById('rangeMax--year').value = maxYear
   updateProgressYear()
 
   // Сброс цены
-  document.getElementById('minInputRange--price').value = 500
-  document.getElementById('maxInputRange--price').value = 100000
-  document.getElementById('rangeMin--price').value = 500
-  document.getElementById('rangeMax--price').value = 100000
+  document.getElementById('minInputRange--price').value = minPrice
+  document.getElementById('maxInputRange--price').value = maxPrice
+  document.getElementById('rangeMin--price').value = minPrice
+  document.getElementById('rangeMax--price').value = maxPrice
   updateProgressPrice()
 
   // Сброс всех чекбоксов
@@ -279,7 +399,21 @@ document.querySelectorAll(
     el.addEventListener('input', applyFilters)
   })
 
-// Фильтры года и цены применяются в функции updateProgressYear и updateProgressPrice
+// Ползунки года
+document.querySelectorAll('#rangeMin--year, #rangeMax--year, #minInputRange--year, #maxInputRange--year').forEach(el => {
+  el.addEventListener('input', () => {
+    updateProgressYear()
+    applyFilters()
+  })
+})
+
+// Ползунки цены
+document.querySelectorAll('#rangeMin--price, #rangeMax--price, #minInputRange--price, #maxInputRange--price').forEach(el => {
+  el.addEventListener('input', () => {
+    updateProgressPrice()
+    applyFilters()
+  })
+})
 
 // Функция определения видимости кнопки "Сбросить фильтры"
 function toggleClearBtnVisibility() {
@@ -300,10 +434,10 @@ function toggleClearBtnVisibility() {
   const hasFilters =
     query ||
     (brandInput && brandInput.value !== 'all') ||
-    minYearVal !== 1990 ||
-    maxYearVal !== 2025 ||
-    minPriceVal !== 500 ||
-    maxPriceVal !== 100000 ||
+    minYearVal !== minYear ||
+    maxYearVal !== maxYear ||
+    minPriceVal !== minPrice ||
+    maxPriceVal !== maxPrice ||
     mileageChecks.length > 0 ||
     fuelChecks.length > 0 ||
     transChecks.length > 0 ||
@@ -316,135 +450,3 @@ function toggleClearBtnVisibility() {
     clearBtn.style.display = 'none'
   }
 }
-
-// ============================== Выбор бренда (только один) ==============================
-function updateSelectTopBrand() {
-  const selectTop = document.querySelector('.catalog__brand-choise')
-  const checkedRadio = document.querySelector(".catalog__select-list input[type='radio']:checked")
-  if (checkedRadio) {
-    const label = checkedRadio.parentElement.querySelector('span')
-    selectTop.textContent = label.textContent
-  }
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  const radios = document.querySelectorAll(".catalog__select-list input[type='radio']")
-
-  updateSelectTopBrand()
-
-  radios.forEach(radio => radio.addEventListener('change', updateSelectTopBrand))
-})
-
-
-// ============================== Списки фильтров ==============================
-const titleList = document.querySelectorAll('.catalog__select-top')
-
-titleList.forEach(item => {
-  item.addEventListener('click', (e) => {
-    const catalogSelect = e.target.closest('.catalog__select')
-    catalogSelect.classList.toggle('active')
-  })
-})
-
-// ============================== Диапазон года выпуска ==============================
-const rangeMinYear = document.getElementById('rangeMin--year')
-const rangeMaxYear = document.getElementById('rangeMax--year')
-const minInputRangeYear = document.getElementById('minInputRange--year')
-const maxInputRangeYear = document.getElementById('maxInputRange--year')
-const progressYear = document.querySelector('.catalog__range-progress--year')
-
-let minGap = 1
-const minYear = 1990
-const maxYear = 2025
-
-function updateProgressYear() {
-  let minVal = parseInt(rangeMinYear.value)
-  let maxVal = parseInt(rangeMaxYear.value)
-
-  progressYear.style.left = ((minVal - minYear) / (maxYear - minYear)) * 100 + "%"
-  progressYear.style.right = 100 - ((maxVal - minYear) / (maxYear - minYear)) * 100 + "%"
-
-  minInputRangeYear.value = minVal
-  maxInputRangeYear.value = maxVal
-
-  applyFilters()
-}
-
-rangeMinYear.addEventListener('input', () => {
-  if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
-    rangeMinYear.value = parseInt(rangeMaxYear.value) - minGap
-  }
-  updateProgressYear()
-})
-
-rangeMaxYear.addEventListener('input', () => {
-  if (parseInt(rangeMaxYear.value) - parseInt(rangeMinYear.value) <= minGap) {
-    rangeMaxYear.value = parseInt(rangeMinYear.value) + minGap
-  }
-  updateProgressYear()
-})
-
-minInputRangeYear.addEventListener('change', () => {
-  let val = parseInt(minInputRangeYear.value)
-  rangeMinYear.value = Math.max(minYear, Math.min(val, parseInt(rangeMaxYear.value) - minGap))
-  updateProgressYear()
-})
-
-maxInputRangeYear.addEventListener('change', () => {
-  let val = parseInt(maxInputRangeYear.value)
-  rangeMaxYear.value = Math.min(maxYear, Math.max(val, parseInt(rangeMinYear.value) + minGap))
-  updateProgressYear()
-})
-
-updateProgressYear()
-
-// ============================== Диапазон цены ==============================
-const rangeMinPrice = document.getElementById('rangeMin--price')
-const rangeMaxPrice = document.getElementById('rangeMax--price')
-const minInputRangePrice = document.getElementById('minInputRange--price')
-const maxInputRangePrice = document.getElementById('maxInputRange--price')
-const progressPrice = document.querySelector('.catalog__range-progress--price')
-
-const minPrice = 500
-const maxPrice = 100000
-
-function updateProgressPrice() {
-  let minVal = parseInt(rangeMinPrice.value)
-  let maxVal = parseInt(rangeMaxPrice.value)
-
-  progressPrice.style.left = ((minVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
-  progressPrice.style.right = 100 - ((maxVal - minPrice) / (maxPrice - minPrice)) * 100 + "%"
-
-  minInputRangePrice.value = minVal
-  maxInputRangePrice.value = maxVal
-
-  applyFilters()
-}
-
-rangeMinPrice.addEventListener('input', () => {
-  if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
-    rangeMinPrice.value = parseInt(rangeMaxPrice.value) - minGap
-  }
-  updateProgressPrice()
-})
-
-rangeMaxPrice.addEventListener('input', () => {
-  if (parseInt(rangeMaxPrice.value) - parseInt(rangeMinPrice.value) <= minGap) {
-    rangeMaxPrice.value = parseInt(rangeMinPrice.value) + minGap
-  }
-  updateProgressPrice()
-})
-
-minInputRangePrice.addEventListener('change', () => {
-  let val = parseInt(minInputRangePrice.value)
-  rangeMinPrice.value = Math.max(minPrice, Math.min(val, parseInt(rangeMaxPrice.value) - minGap))
-  updateProgressPrice()
-})
-
-maxInputRangePrice.addEventListener('change', () => {
-  let val = parseInt(maxInputRangePrice.value)
-  rangeMaxPrice.value = Math.min(maxPrice, Math.max(val, parseInt(rangeMinPrice.value) + minGap))
-  updateProgressPrice()
-})
-
-updateProgressPrice()
