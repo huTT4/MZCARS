@@ -2178,7 +2178,7 @@ body:has(.burger.active) {
   border: 1px solid #d8d8d8;
   padding: 20px 30px;
   border-radius: 5px;
-  max-width: 360px;
+  width: 100%;
 }
 
 .product__calculator-title {
@@ -2341,6 +2341,12 @@ body:has(.burger.active) {
 .product__info li span {
   font-weight: 500;
   font-size: 20px;
+  color: #2d2d2d;
+}
+
+.product__info li div {
+  font-weight: 500;
+  font-size: 17px;
   color: #2d2d2d;
 }
 
@@ -2557,10 +2563,6 @@ body:has(.burger.active) {
 
   .product__left {
     gap: 15px;
-  }
-
-  .product__calculator {
-    max-width: 100%;
   }
 }
 

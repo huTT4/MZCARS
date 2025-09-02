@@ -42,13 +42,14 @@ if (!car) {
   `
 
   // Ссылки
+  const linksContainer = document.querySelector('.product__links')
   const videoLink = document.querySelector('[data-car-link-video]')
   const reportLink = document.querySelector('[data-car-link-report]')
 
   // Видео
   if (car.linkVideo && car.linkVideo.trim() !== '') {
     videoLink.href = car.linkVideo
-    videoLink.style.display = ''
+    videoLink.style.display = 'flex'
   } else {
     videoLink.style.display = 'none'
   }
@@ -56,9 +57,15 @@ if (!car) {
   // Отчет
   if (car.linkReport && car.linkReport.trim() !== '') {
     reportLink.href = car.linkReport
-    reportLink.style.display = ''
+    reportLink.style.display = 'flex'
   } else {
     reportLink.style.display = 'none'
+  }
+
+  if ((car.linkVideo && car.linkVideo.trim() !== '') && (car.linkReport && car.linkReport.trim() !== '')) {
+    linksContainer.style.display = 'flex'
+  } else {
+    linksContainer.style.display = 'none'
   }
 
   // Справа
