@@ -17,7 +17,7 @@ const cars = {
       title: 'Bmw 116 (F20)',
       article: 'MZ-014',
       engine: '1.5 дизель',
-      leasing: 151,
+      leasing: 150,
 
       imgs: [
         '/img/cars/Bmw 116 (F20) 2015 god/1.jpg',
@@ -56,7 +56,7 @@ const cars = {
 - 2 ориг. ключа и др. опции.</p>
       <p>Ухоженный салон, в авто не курили.</p>
       <p>Общая информация:</p>
-      <p>- машина на учете (гос.номер OE-8224), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 151 EUR/мес.</p>
+      <p>- машина на учете (гос.номер OE-8224), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 150 EUR/мес.</p>
       <p>Посмотреть и купить машину можно в любой день, только заранее нужно договориться по встрече.</p>
       `
     },
@@ -143,7 +143,7 @@ const cars = {
       title: 'Bmw 318 (F30)',
       article: 'MZ-012',
       engine: '2.0 дизель',
-      leasing: 151,
+      leasing: 150,
 
       imgs: [
         '/img/cars/Bmw 318 (F30) 2012 god/1.jpg',
@@ -183,7 +183,7 @@ const cars = {
 - 2 ориг. ключа и др. опции.</p>
       <p>Ухоженный салон, в авто не курили.</p>
       <p>Общая информация:</p>
-      <p>- машина на учете (гос.номер OE-8223), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 151 EUR/мес.</p>
+      <p>- машина на учете (гос.номер OE-8223), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 150 EUR/мес.</p>
       <p>Посмотреть и купить машину можно в любой день, только заранее нужно договориться по встрече.</p>
       <p>По всем вопросам, пожалуйста звоните.</p>
       `
@@ -205,7 +205,7 @@ const cars = {
       title: 'Jaguar XF',
       article: 'MZ-011',
       engine: '3.0 дизель',
-      leasing: 136,
+      leasing: 135,
 
       imgs: [
         '/img/cars/Jaguar XF 2012 goda/1 (1).jpeg',
@@ -271,7 +271,7 @@ Keyless Go (система безключевого доступа)<br>
       title: 'Volvo XC 60',
       article: 'MZ-010',
       engine: '2.0 дизель',
-      leasing: 181,
+      leasing: 180,
 
       imgs: [
         '/img/cars/Volvo XC 60 2015 god/1 (1).jpeg',
@@ -328,7 +328,7 @@ USB-выход<br>
       title: 'Volvo XC 90',
       article: 'MZ-009',
       engine: '2.4 дизель',
-      leasing: 127,
+      leasing: 126,
 
       imgs: [
         '/img/cars/Volvo XC 90 2008 god/1.jpeg',
@@ -391,7 +391,7 @@ USB-выход<br>
       title: 'Volkswagen Touareg',
       article: 'MZ-008',
       engine: '3.0 дизель',
-      leasing: 112,
+      leasing: 111,
 
       imgs: [
         '/img/cars/Volkswagen Touareg 2007 god/1.jpeg',
@@ -459,7 +459,7 @@ Webasto (подогреватель двигателя)<br>
       title: 'Ford S-Max',
       article: 'MZ-007',
       engine: '2.0 дизель',
-      leasing: 103,
+      leasing: 102,
 
       imgs: [
         '/img/cars/Ford S Max 2010 god/1.jpeg',
@@ -521,7 +521,7 @@ Bluetooth / Handsfree<br>
       title: 'Bmw X3',
       article: 'MZ-006',
       engine: '2.0 дизель',
-      leasing: 103,
+      leasing: 105,
 
       imgs: [
         '/img/cars/BMW X3 2010 god/1.jpeg',
@@ -643,7 +643,7 @@ LED / биксеноновые фары<br>
       title: 'Bmw 520',
       article: 'MZ-004',
       engine: '2.0 дизель',
-      leasing: 151,
+      leasing: 150,
 
       imgs: [
         '/img/cars/bmw 520 2014 g/1.jpeg',
@@ -704,7 +704,7 @@ Auto Hold функция<br>
       title: 'Kia Sorento',
       article: 'MZ-003',
       engine: '1.6 гибрид',
-      leasing: 483,
+      leasing: 482,
 
       imgs: [
         '/img/cars/Kia Sorento 2021 god/1.jpeg',
@@ -789,7 +789,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
       title: 'Audi A5',
       article: 'MZ-002',
       engine: '3.0 дизель',
-      leasing: 347,
+      leasing: 346,
 
       imgs: [
         '/img/cars/Audi A5 2017 god/1.jpeg',
@@ -858,7 +858,7 @@ CarPlay / Android Auto<br>
       title: 'Mercedes GL350',
       article: 'MZ-001',
       engine: '3.0 дизель',
-      leasing: 332,
+      leasing: 331,
 
       imgs: [
         '/img/cars/MB GL350 2014 god/1.jpeg',
@@ -931,7 +931,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
       title: 'Bmw 116 (F20)',
       article: 'MZ-014',
       engine: '1.5 dīzelis',
-      leasing: 151,
+      leasing: 150,
 
       imgs: [
         '/img/cars/Bmw 116 (F20) 2015 god/1.jpg',
@@ -969,7 +969,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
 - 2 oriģinālās atslēgas un citas opcijas</p>
       <p>Kopts salons, mašīnā nav smēķēts.</p>
       <p>Vispārējā informācija:</p>
-      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8224), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 151 EUR/men</p>
+      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8224), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 150 EUR/men</p>
       <p>Auto var apskatīties un iegādāties jebkurā dienā, iepriekš vienojoties par tikšanās laiku.</p>
       <p>Par visiem jautājumiem lūdzu zvanīt.</p>
       `
@@ -1059,7 +1059,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
       title: 'Bmw 318 (F30)',
       article: 'MZ-012',
       engine: '2.0 dīzelis',
-      leasing: 151,
+      leasing: 150,
 
       imgs: [
         '/img/cars/Bmw 318 (F30) 2012 god/1.jpg',
@@ -1100,7 +1100,7 @@ Keyless Go (бесключевой доступ и запуск)<br>
 Kopts salons, mašīnā nav smēķēts.</p>
       <p>Vispārējā informācija:</p>
       <p>Общая информация:</p>
-      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8223), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 151 EUR/men</p>
+      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8223), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 150 EUR/men</p>
       <p>Auto var apskatīties un iegādāties jebkurā dienā, iepriekš vienojoties par tikšanās laiku.</p>
       <p>Par visiem jautājumiem lūdzu zvanīt.</p>
       `
@@ -1122,7 +1122,7 @@ Kopts salons, mašīnā nav smēķēts.</p>
       title: 'Jaguar XF',
       article: 'MZ-011',
       engine: '3.0 dīzelis',
-      leasing: 136,
+      leasing: 135,
 
       imgs: [
         '/img/cars/Jaguar XF 2012 goda/1 (1).jpeg',
@@ -1188,7 +1188,7 @@ Kopts salons, mašīnā nav smēķēts.</p>
       title: 'Volvo XC 60',
       article: 'MZ-010',
       engine: '2.0 dīzelis',
-      leasing: 181,
+      leasing: 180,
 
       imgs: [
         '/img/cars/Volvo XC 60 2015 god/1 (1).jpeg',
@@ -1245,7 +1245,7 @@ Jumta reliņi<br>
       title: 'Volvo XC 90',
       article: 'MZ-009',
       engine: '2.4 dīzelis',
-      leasing: 127,
+      leasing: 126,
 
       imgs: [
         '/img/cars/Volvo XC 90 2008 god/1.jpeg',
@@ -1308,7 +1308,7 @@ Jumta reliņi<br>
       title: 'Volkswagen Touareg',
       article: 'MZ-008',
       engine: '3.0 dīzelis',
-      leasing: 112,
+      leasing: 111,
 
       imgs: [
         '/img/cars/Volkswagen Touareg 2007 god/1.jpeg',
@@ -1378,7 +1378,7 @@ Apsildāmi spoguļi</p>
       title: 'Ford S-Max',
       article: 'MZ-007',
       engine: '2.0 dīzelis',
-      leasing: 103,
+      leasing: 102,
 
       imgs: [
         '/img/cars/Ford S Max 2010 god/1.jpeg',
@@ -1438,7 +1438,7 @@ Lietus sensors<br>
       title: 'Bmw X3',
       article: 'MZ-006',
       engine: '2.0 dīzelis',
-      leasing: 103,
+      leasing: 105,
 
       imgs: [
         '/img/cars/BMW X3 2010 god/1.jpeg',
@@ -1557,7 +1557,7 @@ Lietus sensors<br>
       title: 'Bmw 520',
       article: 'MZ-004',
       engine: '2.0 dīzelis',
-      leasing: 151,
+      leasing: 150,
 
       imgs: [
         '/img/cars/bmw 520 2014 g/1.jpeg',
@@ -1617,7 +1617,7 @@ Pilna servisa vēsture no pirmā līdz pēdējam kilometram, motoram mainītas �
       title: 'Kia Sorento',
       article: 'MZ-003',
       engine: '1.6 hibrīds',
-      leasing: 483,
+      leasing: 482,
 
       imgs: [
         '/img/cars/Kia Sorento 2021 god/1.jpeg',
@@ -1699,7 +1699,7 @@ Ideāls auto ceļošanai gan mazām, gan lielām distancēm, pārdod licenzēts 
       title: 'Audi A5',
       article: 'MZ-002',
       engine: '3.0 dīzelis',
-      leasing: 347,
+      leasing: 346,
 
       imgs: [
         '/img/cars/Audi A5 2017 god/1.jpeg',
@@ -1768,7 +1768,7 @@ Audi Drive Select</p>
       title: 'Mercedes GL350',
       article: 'MZ-001',
       engine: '3.0 dīzelis',
-      leasing: 332,
+      leasing: 331,
 
       imgs: [
         '/img/cars/MB GL350 2014 god/1.jpeg',
@@ -1840,7 +1840,7 @@ El. reg. visas sēdekļu rindas<br>
       title: 'Bmw 116 (F20)',
       article: 'MZ-014',
       engine: '1.5 diesel',
-      leasing: 151,
+      leasing: 150,
 
       imgs: [
         '/img/cars/Bmw 116 (F20) 2015 god/1.jpg',
@@ -1878,7 +1878,7 @@ El. reg. visas sēdekļu rindas<br>
 - 2 original keys and other features</p>
       <p>Well-maintained interior, non-smoking car.</p>
       <p>General Information:</p>
-      <p>- car on registration, plates number OE-8224, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 151 EUR/month.</p>
+      <p>- car on registration, plates number OE-8224, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 150 EUR/month.</p>
       <p>Car are possible to watch and buy in any time, just need agree meeting time in advance.</p>
       <p>For all inquiries, please don’t hesitate to call us.</p>
       `
@@ -1968,7 +1968,7 @@ El. reg. visas sēdekļu rindas<br>
       title: 'Bmw 318 (F30)',
       article: 'MZ-012',
       engine: '2.0 diesel',
-      leasing: 151,
+      leasing: 150,
 
       imgs: [
         '/img/cars/Bmw 318 (F30) 2012 god/1.jpg',
@@ -2009,7 +2009,7 @@ El. reg. visas sēdekļu rindas<br>
 Well-maintained interior, non-smoking car.</p>
       <p>Vispārējā informācija:</p>
       <p>General Information:</p>
-      <p>- car on registration, plates number OE-8223, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 151 EUR/month.</p>
+      <p>- car on registration, plates number OE-8223, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 150 EUR/month.</p>
       <p>Car are possible to watch and buy in any time, just need agree meeting time in advance.</p>
       <p>For all inquiries, please don’t hesitate to call us.</p>
       `
@@ -2031,7 +2031,7 @@ Well-maintained interior, non-smoking car.</p>
       title: 'Jaguar XF',
       article: 'MZ-011',
       engine: '3.0 diesel',
-      leasing: 136,
+      leasing: 135,
 
       imgs: [
         '/img/cars/Jaguar XF 2012 goda/1 (1).jpeg',
@@ -2097,7 +2097,7 @@ Piano Black trim</p>
       title: 'Volvo XC 60',
       article: 'MZ-010',
       engine: '2.0 diesel',
-      leasing: 181,
+      leasing: 180,
 
       imgs: [
         '/img/cars/Volvo XC 60 2015 god/1 (1).jpeg',
@@ -2154,7 +2154,7 @@ Roof rails<br>
       title: 'Volvo XC 90',
       article: 'MZ-009',
       engine: '2.4 diesel',
-      leasing: 127,
+      leasing: 126,
 
       imgs: [
         '/img/cars/Volvo XC 90 2008 god/1.jpeg',
@@ -2217,7 +2217,7 @@ Front armrest with storage compartment</p>
       title: 'Volkswagen Touareg',
       article: 'MZ-008',
       engine: '3.0 diesel',
-      leasing: 112,
+      leasing: 111,
 
       imgs: [
         '/img/cars/Volkswagen Touareg 2007 god/1.jpeg',
@@ -2286,7 +2286,7 @@ Heated mirrors</p>
       title: 'Ford S-Max',
       article: 'MZ-007',
       engine: '2.0 diesel',
-      leasing: 103,
+      leasing: 102,
 
       imgs: [
         '/img/cars/Ford S Max 2010 god/1.jpeg',
@@ -2348,7 +2348,7 @@ Rain sensor<br>
       title: 'Bmw X3',
       article: 'MZ-006',
       engine: '2.0 diesel',
-      leasing: 103,
+      leasing: 105,
 
       imgs: [
         '/img/cars/BMW X3 2010 god/1.jpeg',
@@ -2468,7 +2468,7 @@ Wood interior trim</p>
       title: 'Bmw 520',
       article: 'MZ-004',
       engine: '2.0 diesel',
-      leasing: 151,
+      leasing: 150,
 
       imgs: [
         '/img/cars/bmw 520 2014 g/1.jpeg',
@@ -2529,7 +2529,7 @@ Black headliner</p>
       title: 'Kia Sorento',
       article: 'MZ-003',
       engine: '1.6 hybrid',
-      leasing: 483,
+      leasing: 482,
 
       imgs: [
         '/img/cars/Kia Sorento 2021 god/1.jpeg',
@@ -2615,7 +2615,7 @@ Sold by a licensed car dealership. Your old car can be used as part of the payme
       title: 'Audi A5',
       article: 'MZ-002',
       engine: '3.0 diesel',
-      leasing: 347,
+      leasing: 346,
 
       imgs: [
         '/img/cars/Audi A5 2017 god/1.jpeg',
@@ -2685,7 +2685,7 @@ Audi Drive Select</p>
       title: 'Mercedes GL350',
       article: 'MZ-001',
       engine: '3.0 diesel',
-      leasing: 332,
+      leasing: 331,
 
       imgs: [
         '/img/cars/MB GL350 2014 god/1.jpeg',

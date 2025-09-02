@@ -1373,6 +1373,12 @@ body:has(.burger.active) {
   outline: none;
 }
 
+.form__inputs input:disabled {
+  border-color: #a3a3a3;
+  background: #d2d2d2;
+  color: #2d2d2d;
+}
+
 .form__inputs input:focus {
   border-color: #616161;
 }
@@ -1453,6 +1459,7 @@ body:has(.burger.active) {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fff;
+  cursor: default;
 }
 
 .form__btn {
@@ -1805,8 +1812,11 @@ body:has(.burger.active) {
 }
 
 .footer__logo {
-  max-width: 208px;
   margin-bottom: 44px;
+}
+
+.footer__logo img {
+  max-width: 208px;
 }
 
 .footer__info {
@@ -1886,6 +1896,12 @@ body:has(.burger.active) {
   font-size: 16px;
   color: #fff;
   white-space: nowrap;
+  width: fit-content;
+  transition: .15s;
+}
+
+.footer__address:hover {
+  color: #b20f1c;
 }
 
 .footer__address img {
@@ -1945,8 +1961,11 @@ body:has(.burger.active) {
   }
 
   .footer__logo {
-    max-width: 175px;
     margin-bottom: 35px;
+  }
+
+  .footer__logo img {
+    max-width: 175px;
   }
 
   .footer__nav a {
@@ -3085,8 +3104,11 @@ body:has(.burger.active) {
 
   /* ============================== FOOTER ============================== */
   .footer__logo {
-    max-width: 150px;
     margin-bottom: 33px;
+  }
+
+  .footer__logo img {
+    max-width: 150px;
   }
 
   .footer__content {
@@ -3124,10 +3146,6 @@ body:has(.burger.active) {
 
   .footer__info {
     gap: 30px 15px;
-  }
-
-  .footer__map {
-    width: 50%;
   }
 
   .lang img {

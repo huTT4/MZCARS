@@ -268,4 +268,5 @@ updateProgressTerm()
 
 // ============================== Выводим артикул в поле формы ==============================
 const articleFormInput = document.querySelector('input[name="carId"]')
-articleFormInput.value = car.article
+articleFormInput.value = `${lang === 'ru' ? 'Арт. ' : 'Art. '}` + car.article
+articleFormInput.disabled = true

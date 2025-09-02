@@ -226,3 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
     contactForm.addEventListener('submit', handleFormSubmit)
   }
 })
+
+// ============================== Отключаем возможность перехода по ссылке ==============================
+const formLinks = document.querySelectorAll('.form__checkbox a')
+formLinks.forEach(link => link.addEventListener('click', e => e.preventDefault()))
