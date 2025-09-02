@@ -226,9 +226,7 @@ Fancybox.bind("[data-fancybox='gallery']", {
   placeFocusBack: false
 })
 
-// ============================== Диапазон суммы и срока кулькулятора ==============================
-const rangeAmount = document.getElementById('range-amount')
-const progressAmount = document.querySelector('.catalog__range-progress--amount')
+// ============================== Калькулятор (переменные) ==============================
 const outputAmount = document.querySelector("[data-calc-amount]")
 
 const rangeTerm = document.getElementById('range-term')
@@ -237,35 +235,20 @@ const outputTerm = document.querySelector("[data-calc-term]")
 
 const outputFinish = document.querySelector('[data-calc-finish]')
 
-const minAmount = 1000
-const maxAmount = car.price
-
-rangeAmount.max = maxAmount
-rangeAmount.value = maxAmount
+outputAmount.textContent = car.price
 
 const minTerm = 12
 const maxTerm = 84
 
-// ============================== Высчитываем сумму калькулятора ==============================
+// ============================== Калькулятор (логика) ==============================
 function updateMonthlyPayment() {
-  const C = parseFloat(rangeAmount.value) // цена
-  const n = parseInt(rangeTerm.value)     // срок в месяцах
-  const r = 0.08                          // 8% годовых
+  const C = parseFloat(outputAmount.textContent) // цена
+  const n = parseInt(rangeTerm.value)            // срок в месяцах
+  const r = 0.08                                 // 8% годовых
   const monthlyRate = r / 12
 
   const payment = (C * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -n))
   outputFinish.textContent = payment.toFixed(2)
-}
-
-function updateProgressAmount() {
-  const val = parseInt(rangeAmount.value)
-
-  const percent = ((val - minAmount) / (maxAmount - minAmount)) * 100
-  progressAmount.style.width = percent + "%"
-
-  outputAmount.textContent = val
-
-  updateMonthlyPayment()
 }
 
 function updateProgressTerm() {
@@ -279,8 +262,6 @@ function updateProgressTerm() {
   updateMonthlyPayment()
 }
 
-rangeAmount.addEventListener('input', updateProgressAmount)
 rangeTerm.addEventListener('input', updateProgressTerm)
 
-updateProgressAmount()
 updateProgressTerm()
