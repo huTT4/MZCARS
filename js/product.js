@@ -244,7 +244,7 @@ const maxTerm = 84
 function updateMonthlyPayment() {
   const C = parseFloat(outputAmount.textContent) // цена
   const n = parseInt(rangeTerm.value)            // срок в месяцах
-  const r = 0.08                                 // 8% годовых
+  const r = 0.07                                 // 8% годовых
   const monthlyRate = r / 12
 
   const payment = (C * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -n))
@@ -265,3 +265,7 @@ function updateProgressTerm() {
 rangeTerm.addEventListener('input', updateProgressTerm)
 
 updateProgressTerm()
+
+// ============================== Выводим артикул в поле формы ==============================
+const articleFormInput = document.querySelector('input[name="carId"]')
+articleFormInput.value = car.article
