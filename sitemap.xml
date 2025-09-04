@@ -86,6 +86,11 @@
 	<priority>0.8</priority>
 </url>
 <url>
+	<loc>https://www.mzcars.lv/product/index.html?id=14</loc>
+	<lastmod>2025-09-04</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
 	<loc>https://www.mzcars.lv/product/lv.html?id=0</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
@@ -156,6 +161,11 @@
 	<priority>0.8</priority>
 </url>
 <url>
+	<loc>https://www.mzcars.lv/product/lv.html?id=14</loc>
+	<lastmod>2025-09-04</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
 	<loc>https://www.mzcars.lv/product/index.html?id=0</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
@@ -223,6 +233,11 @@
 <url>
 	<loc>https://www.mzcars.lv/product/eng.html?id=13</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/eng.html?id=14</loc>
+	<lastmod>2025-09-04</lastmod>
 	<priority>0.8</priority>
 </url>
 </urlset>

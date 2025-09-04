@@ -82,7 +82,7 @@ const minInputRangePrice = document.getElementById('minInputRange--price')
 const maxInputRangePrice = document.getElementById('maxInputRange--price')
 const progressPrice = document.querySelector('.catalog__range-progress--price')
 
-const minPrice = 6790
+const minPrice = 4990
 const maxPrice = 31990
 
 function updateProgressPrice() {

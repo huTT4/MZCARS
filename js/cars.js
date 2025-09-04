@@ -1,6 +1,64 @@
 const cars = {
   ru: [
     {
+      id: 14,
+      brand: 'AUDI',
+      year: 2008,
+      price: 4990,
+      mileage: 120164,
+      fuel: 'Бензин',
+      transmission: 'Механическая',
+      availability: 'В наличии',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Audi A3 2008 god/_compressed.jpeg',
+      title: 'Audi A3',
+      article: 'MZ-015',
+      engine: '1.6 бензин',
+      leasing: 75,
+
+      imgs: [
+        '/img/cars/Audi A3 2008 god/1.jpeg',
+        '/img/cars/Audi A3 2008 god/2.jpeg',
+        '/img/cars/Audi A3 2008 god/3.jpeg',
+        '/img/cars/Audi A3 2008 god/4.jpeg',
+        '/img/cars/Audi A3 2008 god/6.jpeg',
+        '/img/cars/Audi A3 2008 god/7.jpeg',
+        '/img/cars/Audi A3 2008 god/8.jpeg',
+        '/img/cars/Audi A3 2008 god/9.jpeg',
+        '/img/cars/Audi A3 2008 god/10.jpeg',
+        '/img/cars/Audi A3 2008 god/11.jpeg',
+        '/img/cars/Audi A3 2008 god/12.jpeg',
+        '/img/cars/Audi A3 2008 god/13.jpeg',
+        '/img/cars/Audi A3 2008 god/14.jpeg',
+        '/img/cars/Audi A3 2008 god/15.jpeg',
+        '/img/cars/Audi A3 2008 god/17.jpeg',
+        '/img/cars/Audi A3 2008 god/18.jpeg',
+        '/img/cars/Audi A3 2008 god/20 (1).jpeg',
+        '/img/cars/Audi A3 2008 god/20 (2).jpeg',
+      ],
+      vin: 'WAUZZZ8P68A189355',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>120 000 км — 100% оригинальный пробег, подтверждён всеми техническими осмотрами. Абсолютно без коррозии. Только что привезён из Италии. Комплектация S Line. Надёжный бензиновый двигатель</p>
+      <p>Биксеноновые фары<br>
+Климат-контроль<br>
+Электростеклоподъёмники<br>
+Электроскладывающиеся зеркала<br>
+Литые диски<br>
+2 ключа<br>
+Люк на крыше<br>
+Обогрев зеркал<br>
+Датчик дождя<br>
+Система стабилизации ESP</p>
+      <p>Идеальное предложение для тех, кто ищет экономичный и простой автомобиль с низкими эксплуатационными расходами.</p>
+      <p>Продаёт лицензированная компания по продаже автомобилей. Ваш старый автомобиль может быть засчитан как часть оплаты.</p>
+      `
+    },
+    {
       id: 13,
       brand: 'BMW',
       year: 2015,
@@ -915,6 +973,64 @@ Keyless Go (бесключевой доступ и запуск)<br>
   ],
   lv: [
     {
+      id: 14,
+      brand: 'AUDI',
+      year: 2008,
+      price: 4990,
+      mileage: 120164,
+      fuel: 'Benzīns',
+      transmission: 'Mehāniska',
+      availability: 'Uz vietas',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Audi A3 2008 god/_compressed.jpeg',
+      title: 'Audi A3',
+      article: 'MZ-015',
+      engine: '1.6 benzīns',
+      leasing: 75,
+
+      imgs: [
+        '/img/cars/Audi A3 2008 god/1.jpeg',
+        '/img/cars/Audi A3 2008 god/2.jpeg',
+        '/img/cars/Audi A3 2008 god/3.jpeg',
+        '/img/cars/Audi A3 2008 god/4.jpeg',
+        '/img/cars/Audi A3 2008 god/6.jpeg',
+        '/img/cars/Audi A3 2008 god/7.jpeg',
+        '/img/cars/Audi A3 2008 god/8.jpeg',
+        '/img/cars/Audi A3 2008 god/9.jpeg',
+        '/img/cars/Audi A3 2008 god/10.jpeg',
+        '/img/cars/Audi A3 2008 god/11.jpeg',
+        '/img/cars/Audi A3 2008 god/12.jpeg',
+        '/img/cars/Audi A3 2008 god/13.jpeg',
+        '/img/cars/Audi A3 2008 god/14.jpeg',
+        '/img/cars/Audi A3 2008 god/15.jpeg',
+        '/img/cars/Audi A3 2008 god/17.jpeg',
+        '/img/cars/Audi A3 2008 god/18.jpeg',
+        '/img/cars/Audi A3 2008 god/20 (1).jpeg',
+        '/img/cars/Audi A3 2008 god/20 (2).jpeg',
+      ],
+      vin: 'WAUZZZ8P68A189355',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>120000km 100% oriģinālais nobraukums, pierādāms ar visām tehnsikajām apskatēm, absolūti bez korozijas, tikko ievests no Itālijas, S Line, uzticamais benzīna motors. </p>
+      <p>Bixenona gaismas<br>
+Klimata kontrole<br>
+El. logu pacelāji<br>
+El. nolokāmi spoguli<br>
+Lietie diski<br>
+2 atslēgas<br>
+Jumta lūka<br>
+Spoguļu apsilde<br>
+Lietus sensors<br>
+ESP stabilitātes kontrole</p>
+      <p>Ideāls piedāvājums, kas meklē ekonomisku un vienkāršu automašīnu, kam ir zemas ekspluatācijas izmaksas. </p>
+      <p>Pārdod licenzēts auto tirzniecības uzņēmums, jūsu vecais auto var kalpot kā daļa apmaksas.</p>
+      `
+    },
+    {
       id: 13,
       brand: 'BMW',
       year: 2015,
@@ -1823,6 +1939,64 @@ El. reg. visas sēdekļu rindas<br>
     },
   ],
   eng: [
+    {
+      id: 14,
+      brand: 'AUDI',
+      year: 2008,
+      price: 4990,
+      mileage: 120164,
+      fuel: 'Petrol',
+      transmission: 'Mechanical',
+      availability: 'In stock',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Audi A3 2008 god/_compressed.jpeg',
+      title: 'Audi A3',
+      article: 'MZ-015',
+      engine: '1.6 petrol',
+      leasing: 75,
+
+      imgs: [
+        '/img/cars/Audi A3 2008 god/1.jpeg',
+        '/img/cars/Audi A3 2008 god/2.jpeg',
+        '/img/cars/Audi A3 2008 god/3.jpeg',
+        '/img/cars/Audi A3 2008 god/4.jpeg',
+        '/img/cars/Audi A3 2008 god/6.jpeg',
+        '/img/cars/Audi A3 2008 god/7.jpeg',
+        '/img/cars/Audi A3 2008 god/8.jpeg',
+        '/img/cars/Audi A3 2008 god/9.jpeg',
+        '/img/cars/Audi A3 2008 god/10.jpeg',
+        '/img/cars/Audi A3 2008 god/11.jpeg',
+        '/img/cars/Audi A3 2008 god/12.jpeg',
+        '/img/cars/Audi A3 2008 god/13.jpeg',
+        '/img/cars/Audi A3 2008 god/14.jpeg',
+        '/img/cars/Audi A3 2008 god/15.jpeg',
+        '/img/cars/Audi A3 2008 god/17.jpeg',
+        '/img/cars/Audi A3 2008 god/18.jpeg',
+        '/img/cars/Audi A3 2008 god/20 (1).jpeg',
+        '/img/cars/Audi A3 2008 god/20 (2).jpeg',
+      ],
+      vin: 'WAUZZZ8P68A189355',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>120,000 km — 100% original mileage, verified by all technical inspections. Absolutely rust-free. Just imported from Italy. S Line package. Reliable petrol engine.</p>
+      <p>Bi-xenonheadlights <br>
+Climatecontrol<br> 
+Powerwindows<br>
+Powerfoldingmirrors<br>
+Alloywheels<br>
+2keys<br>
+Sunroo<br>
+f Heatedmirrors<br>
+Rain sensor<br>
+ESPstabilitycontrol</p>
+      <p>An ideal offer for those looking for an economical and simple car with low running costs.</p>
+      <p>Sold by a licensed car dealership. Your old car can be used as part of the payment.</p>
+      `
+    },
     {
       id: 13,
       brand: 'BMW',
