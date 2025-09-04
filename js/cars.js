@@ -43,8 +43,10 @@ const cars = {
       linkVideo: '',
       linkReport: '',
       descr: `
-      <p>120 000 км — 100% оригинальный пробег, подтверждён всеми техническими осмотрами. Абсолютно без коррозии. Только что привезён из Италии. Комплектация S Line. Надёжный бензиновый двигатель</p>
-      <p>Биксеноновые фары<br>
+      <p>120 000 км — 100% оригинальный пробег, подтверждён всеми техническими осмотрами. Абсолютно без коррозии.</p>
+      <p>Только что привезён из Италии. Комплектация S Line.</p>
+      <p>Надёжный бензиновый двигатель<br>
+Биксеноновые фары<br>
 Климат-контроль<br>
 Электростеклоподъёмники<br>
 Электроскладывающиеся зеркала<br>
@@ -1015,7 +1017,8 @@ Keyless Go (бесключевой доступ и запуск)<br>
       linkVideo: '',
       linkReport: '',
       descr: `
-      <p>120000km 100% oriģinālais nobraukums, pierādāms ar visām tehnsikajām apskatēm, absolūti bez korozijas, tikko ievests no Itālijas, S Line, uzticamais benzīna motors. </p>
+      <p>120000km 100% oriģinālais nobraukums, pierādāms ar visām tehnsikajām apskatēm. Absolūti bez korozijas.</p>
+      <p>Tikko ievests no Itālijas, S Line, uzticamais benzīna motors.</p>
       <p>Bixenona gaismas<br>
 Klimata kontrole<br>
 El. logu pacelāji<br>
@@ -1026,7 +1029,7 @@ Jumta lūka<br>
 Spoguļu apsilde<br>
 Lietus sensors<br>
 ESP stabilitātes kontrole</p>
-      <p>Ideāls piedāvājums, kas meklē ekonomisku un vienkāršu automašīnu, kam ir zemas ekspluatācijas izmaksas. </p>
+      <p>Ideāls piedāvājums, kas meklē ekonomisku un vienkāršu automašīnu, kam ir zemas ekspluatācijas izmaksas.</p>
       <p>Pārdod licenzēts auto tirzniecības uzņēmums, jūsu vecais auto var kalpot kā daļa apmaksas.</p>
       `
     },
@@ -1982,9 +1985,9 @@ El. reg. visas sēdekļu rindas<br>
       linkVideo: '',
       linkReport: '',
       descr: `
-      <p>120,000 km — 100% original mileage, verified by all technical inspections. Absolutely rust-free. Just imported from Italy. S Line package. Reliable petrol engine.</p>
-      <p>Bi-xenonheadlights <br>
-Climatecontrol<br> 
+      <p>120,000 km — 100% original mileage, verified by all technical inspections. Absolutely rust-free.</p>
+      <p>Just imported from Italy. S Line package. Reliable petrol engine.<br>
+Climatecontrol<br>
 Powerwindows<br>
 Powerfoldingmirrors<br>
 Alloywheels<br>

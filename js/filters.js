@@ -399,18 +399,17 @@ document.querySelectorAll(
     el.addEventListener('input', applyFilters)
   })
 
-// Ползунки года
-document.querySelectorAll('#rangeMin--year, #rangeMax--year, #minInputRange--year, #maxInputRange--year').forEach(el => {
-  el.addEventListener('input', () => {
+// Ползнуки года и цены (инпут - change, ползунок - input)
+document.querySelectorAll('#minInputRange--year, #maxInputRange--year, #minInputRange--price, #maxInputRange--price').forEach(el => {
+  el.addEventListener('change', () => {
     updateProgressYear()
     applyFilters()
   })
 })
 
-// Ползунки цены
-document.querySelectorAll('#rangeMin--price, #rangeMax--price, #minInputRange--price, #maxInputRange--price').forEach(el => {
+document.querySelectorAll('#rangeMin--year, #rangeMax--year, #rangeMin--price, #rangeMax--price').forEach(el => {
   el.addEventListener('input', () => {
-    updateProgressPrice()
+    updateProgressYear()
     applyFilters()
   })
 })
