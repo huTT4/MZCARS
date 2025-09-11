@@ -164,7 +164,7 @@ function renderCars(lang) {
   slice.forEach(car => {
     cardsContainer.insertAdjacentHTML('beforeend', `
       <div class="catalog__card-wrapper">
-        <a href="/product/${currentLang === 'ru' ? 'index.html' : currentLang === 'lv' ? 'lv.html' : 'eng.html'}?id=${car.id}" class="catalog__card">
+        <a href="/product/${currentLang === 'ru' ? 'ru.html' : currentLang === 'lv' ? 'index.html' : 'eng.html'}?id=${car.id}" class="catalog__card">
           <div class="catalog__card-img-wrapper">
             <img class="catalog__card-img" src="${car.mainImg}" alt="car-img">
 
@@ -403,6 +403,7 @@ document.querySelectorAll(
 document.querySelectorAll('#minInputRange--year, #maxInputRange--year, #minInputRange--price, #maxInputRange--price').forEach(el => {
   el.addEventListener('change', () => {
     updateProgressYear()
+    updateProgressPrice()
     applyFilters()
   })
 })
@@ -410,6 +411,7 @@ document.querySelectorAll('#minInputRange--year, #maxInputRange--year, #minInput
 document.querySelectorAll('#rangeMin--year, #rangeMax--year, #rangeMin--price, #rangeMax--price').forEach(el => {
   el.addEventListener('input', () => {
     updateProgressYear()
+    updateProgressPrice()
     applyFilters()
   })
 })

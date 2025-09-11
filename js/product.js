@@ -91,23 +91,10 @@ if (!car) {
   renderRelatedCars(carId, lang)
 }
 
-document.querySelectorAll('.lang__list-link').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault()
-    const newLang = link.dataset.lang
-    let page = 'index.html'
-
-    if (newLang === 'lv') page = 'lv.html'
-    if (newLang === 'eng') page = 'eng.html'
-
-    window.location.href = `/product/${page}?&id=${carId}`
-  })
-})
-
 function createCatalogCard(car) {
   return `
       <div class="catalog__card-wrapper catalog__card-wrapper--product">
-        <a href="/product/${lang === 'ru' ? 'index.html' : lang === 'lv' ? 'lv.html' : 'eng.html'}?id=${car.id}" class="catalog__card">
+        <a href="/product/${lang === 'ru' ? 'ru.html' : lang === 'lv' ? 'index.html' : 'eng.html'}?id=${car.id}" class="catalog__card">
           <div class="catalog__card-img-wrapper">
             <img class="catalog__card-img" src="${car.mainImg}" alt="car-img">
 
@@ -186,6 +173,20 @@ function renderRelatedCars(currentCarId, lang) {
     container.insertAdjacentHTML('beforeend', createCatalogCard(car))
   })
 }
+
+// ============================== Переключение языка ==============================
+document.querySelectorAll('.lang__list-link').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault()
+    const newLang = link.dataset.lang
+    let page = 'index.html'
+
+    if (newLang === 'ru') page = 'ru.html'
+    if (newLang === 'eng') page = 'eng.html'
+
+    window.location.href = `/product/${page}?&id=${carId}`
+  })
+})
 
 // ============================== Информация о цене (при наведении) ==============================
 const productInfo = document.querySelector('.product__price-left-info')

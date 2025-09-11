@@ -1,6 +1,208 @@
 const cars = {
   ru: [
     {
+      id: 18,
+      brand: 'JEEP',
+      year: 2019,
+      price: 24990,
+      mileage: 139000,
+      fuel: 'Дизель',
+      transmission: 'Автомат',
+      availability: 'В наличии',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Jeep Grand Cherokee 2019 god/_compressed.jpeg',
+      title: 'Jeep Grand Cherokee',
+      article: 'MZ-019',
+      engine: '3.0 дизель',
+      leasing: 377,
+
+      imgs: [
+        '/img/cars/Jeep Grand Cherokee 2019 god/1.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/2.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/3.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/4.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/5.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/6.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/7.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/8.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/9.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/10.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/12.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/13.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/14.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/15.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/16.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/17.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/18.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/19.jpeg',
+      ],
+      vin: '1C4RJFCM1JC491135',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Grand Cherokee Overland 3.0 Дизель, 100% оригинальный пробег, одна из самых полных комплектаций:</p>
+      <p>-Адаптивная пневмоподвеска<br>
+-Кожаная отделка панели<br>
+-Комфортный салон<br>
+-Подогрев сидений<br>
+-Вентиляция сидений<br>
+-Подогрев руля<br>
+-Адаптивный круиз-контроль<br>
+-Камера заднего вида<br>
+-Подогрев задних сидений<br>
+-LED фары<br>
+-Электрический багажник<br>
+-Память настроек сидений<br>
+-Система бесключевого доступа (Keyless Go)<br>
+-Ассистент мёртвых зон<br>
+-Ассистент удержания в полосе<br>
+-Поддержка CarPlay / Android Auto</p>
+      <p>Продаёт лицензированная автоторговая компания. Ваш старый автомобиль может быть использован как часть оплаты.</p>
+      `
+    },
+    {
+      id: 17,
+      brand: 'MERCEDES',
+      year: 2011,
+      price: 12390,
+      mileage: 139000,
+      fuel: 'Дизель',
+      transmission: 'Автомат',
+      availability: 'В наличии',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/MB ML 350 cdi 2011 god/_compressed.jpeg',
+      title: 'MB ML 350 cdi',
+      article: 'MZ-018',
+      engine: '3.0 дизель',
+      leasing: 187,
+
+      imgs: [
+        '/img/cars/MB ML 350 cdi 2011 god/1.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/2.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/3.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/4.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/5.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/6.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/7.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/9.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/10.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/12.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/13.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/14.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/15.jpeg',
+      ],
+      vin: 'Скоро',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Описание будет доступно скоро.</p>
+      `
+    },
+    {
+      id: 16,
+      brand: 'BMW',
+      year: 2012,
+      price: 14390,
+      mileage: 168000,
+      fuel: 'Дизель',
+      transmission: 'Автомат',
+      availability: 'В наличии',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/BMW 535d 2012 god/_compressed.jpeg',
+      title: 'BMW X5 (F11) 535d',
+      article: 'MZ-017',
+      engine: '3.0 дизель',
+      leasing: 217,
+
+      imgs: [
+        '/img/cars/BMW 535d 2012 god/1.jpeg',
+        '/img/cars/BMW 535d 2012 god/2.jpeg',
+        '/img/cars/BMW 535d 2012 god/3.jpeg',
+        '/img/cars/BMW 535d 2012 god/4.jpeg',
+        '/img/cars/BMW 535d 2012 god/5.jpeg',
+        '/img/cars/BMW 535d 2012 god/6.jpeg',
+        '/img/cars/BMW 535d 2012 god/7.jpeg',
+        '/img/cars/BMW 535d 2012 god/8.jpeg',
+        '/img/cars/BMW 535d 2012 god/9.jpeg',
+        '/img/cars/BMW 535d 2012 god/10.jpeg',
+        '/img/cars/BMW 535d 2012 god/12.jpeg',
+        '/img/cars/BMW 535d 2012 god/13.jpeg',
+        '/img/cars/BMW 535d 2012 god/14.jpeg',
+        '/img/cars/BMW 535d 2012 god/16.jpeg',
+        '/img/cars/BMW 535d 2012 god/17.jpeg',
+        '/img/cars/BMW 535d 2012 god/18.jpeg',
+        '/img/cars/BMW 535d 2012 god/19.jpeg',
+        '/img/cars/BMW 535d 2012 god/20.jpeg',
+      ],
+      vin: 'Скоро',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Описание будет доступно скоро.</p>
+      `
+    },
+    {
+      id: 15,
+      brand: 'BMW',
+      year: 2017,
+      price: 23990,
+      mileage: 259000,
+      fuel: 'Дизель',
+      transmission: 'Автомат',
+      availability: 'В наличии',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/BMW X5 (F15) 2017 god/_compressed.jpeg',
+      title: 'Bmw X5 (F15)',
+      article: 'MZ-016',
+      engine: '3.0 дизель',
+      leasing: 362,
+
+      imgs: [
+        '/img/cars/BMW X5 (F15) 2017 god/1.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/2.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/3.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/4.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/5.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/6.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/7.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/8.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/9.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/10.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/11.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/12.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/13.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/14.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/15.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/16.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/17.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/18.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/19.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/20.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/21.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/22.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/23.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/24.jpeg',
+      ],
+      vin: 'Скоро',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Описание будет доступно скоро.</p>
+      `
+    },
+    {
       id: 14,
       brand: 'AUDI',
       year: 2008,
@@ -64,7 +266,7 @@ const cars = {
       id: 13,
       brand: 'BMW',
       year: 2015,
-      price: 9990,
+      price: 9900,
       mileage: 219514,
       fuel: 'Дизель',
       transmission: 'Автомат',
@@ -77,7 +279,7 @@ const cars = {
       title: 'Bmw 116 (F20)',
       article: 'MZ-014',
       engine: '1.5 дизель',
-      leasing: 150,
+      leasing: 149,
 
       imgs: [
         '/img/cars/Bmw 116 (F20) 2015 god/1.jpg',
@@ -116,7 +318,7 @@ const cars = {
 - 2 ориг. ключа и др. опции.</p>
       <p>Ухоженный салон, в авто не курили.</p>
       <p>Общая информация:</p>
-      <p>- машина на учете (гос.номер OE-8224), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 150 EUR/мес.</p>
+      <p>- машина на учете (гос.номер OE-8224), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 149 EUR/мес.</p>
       <p>Посмотреть и купить машину можно в любой день, только заранее нужно договориться по встрече.</p>
       `
     },
@@ -190,7 +392,7 @@ const cars = {
       id: 11,
       brand: 'BMW',
       year: 2012,
-      price: 9990,
+      price: 9900,
       mileage: 247813,
       fuel: 'Дизель',
       transmission: 'Автомат',
@@ -203,7 +405,7 @@ const cars = {
       title: 'Bmw 318 (F30)',
       article: 'MZ-012',
       engine: '2.0 дизель',
-      leasing: 150,
+      leasing: 149,
 
       imgs: [
         '/img/cars/Bmw 318 (F30) 2012 god/1.jpg',
@@ -243,7 +445,7 @@ const cars = {
 - 2 ориг. ключа и др. опции.</p>
       <p>Ухоженный салон, в авто не курили.</p>
       <p>Общая информация:</p>
-      <p>- машина на учете (гос.номер OE-8223), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 150 EUR/мес.</p>
+      <p>- машина на учете (гос.номер OE-8223), тех осмотр по нулям, быстрое переоформление<br>- с нашим постоянным партнером E-Lizings.lv, доступы выгодные преложения по авто кредиту от 149 EUR/мес.</p>
       <p>Посмотреть и купить машину можно в любой день, только заранее нужно договориться по встрече.</p>
       <p>По всем вопросам, пожалуйста звоните.</p>
       `
@@ -690,7 +892,7 @@ LED / биксеноновые фары<br>
       id: 3,
       brand: 'BMW',
       year: 2014,
-      price: 9990,
+      price: 9900,
       mileage: 374150,
       fuel: 'Дизель',
       transmission: 'Автомат',
@@ -703,7 +905,7 @@ LED / биксеноновые фары<br>
       title: 'Bmw 520',
       article: 'MZ-004',
       engine: '2.0 дизель',
-      leasing: 150,
+      leasing: 149,
 
       imgs: [
         '/img/cars/bmw 520 2014 g/1.jpeg',
@@ -975,6 +1177,208 @@ Keyless Go (бесключевой доступ и запуск)<br>
   ],
   lv: [
     {
+      id: 18,
+      brand: 'JEEP',
+      year: 2019,
+      price: 24990,
+      mileage: 139000,
+      fuel: 'Dīzelis',
+      transmission: 'Automātiskā',
+      availability: 'Uz vietas',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Jeep Grand Cherokee 2019 god/_compressed.jpeg',
+      title: 'Jeep Grand Cherokee',
+      article: 'MZ-019',
+      engine: '3.0 dīzelis',
+      leasing: 377,
+
+      imgs: [
+        '/img/cars/Jeep Grand Cherokee 2019 god/1.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/2.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/3.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/4.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/5.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/6.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/7.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/8.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/9.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/10.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/12.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/13.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/14.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/15.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/16.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/17.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/18.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/19.jpeg',
+      ],
+      vin: '1C4RJFCM1JC491135',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Grand Cherokee Overland 3.0 Dīzelis, 100% oriģinālais nobraukums ar vienu no pilnākajām komplektācijām</p>
+      <p>-Adaptīva pneimo piekare<br>
+-Ādas panelis<br>
+-Komforta salons<br>
+-Sēdekļu apsilde<br>
+-Sēdekļu ventilācija<br>
+-Stūres apsilde<br>
+-Adaptīvā kruīza kontrole<br>
+-Atpakaļskata kamera<br>
+-Sēdekļu apsilde aizmugurē<br>
+-Led lukturi<br>
+-El. bagāžnieks<br>
+-Sēdekļu atmiņa<br>
+-Keyless Go<br>
+-Aklo zonu asistents<br>
+-Joslu asistents<br>
+-Carplay/Android auto</p>
+      <p>Pārdod licenzēts auto tirzniecības uzņēmums, jūsu vecais auto var kalpot kā daļa apmaksas.</p>
+      `
+    },
+    {
+      id: 17,
+      brand: 'MERCEDES',
+      year: 2011,
+      price: 12390,
+      mileage: 139000,
+      fuel: 'Dīzelis',
+      transmission: 'Automātiskā',
+      availability: 'Uz vietas',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/MB ML 350 cdi 2011 god/_compressed.jpeg',
+      title: 'MB ML 350 cdi',
+      article: 'MZ-018',
+      engine: '3.0 dīzelis',
+      leasing: 187,
+
+      imgs: [
+        '/img/cars/MB ML 350 cdi 2011 god/1.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/2.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/3.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/4.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/5.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/6.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/7.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/9.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/10.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/12.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/13.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/14.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/15.jpeg',
+      ],
+      vin: 'Drīzumā',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Apraksts drīz būs pieejams.</p>
+      `
+    },
+    {
+      id: 16,
+      brand: 'BMW',
+      year: 2012,
+      price: 14390,
+      mileage: 168000,
+      fuel: 'Dīzelis',
+      transmission: 'Automātiskā',
+      availability: 'Uz vietas',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/BMW 535d 2012 god/_compressed.jpeg',
+      title: 'BMW X5 (F11) 535d',
+      article: 'MZ-017',
+      engine: '3.0 dīzelis',
+      leasing: 217,
+
+      imgs: [
+        '/img/cars/BMW 535d 2012 god/1.jpeg',
+        '/img/cars/BMW 535d 2012 god/2.jpeg',
+        '/img/cars/BMW 535d 2012 god/3.jpeg',
+        '/img/cars/BMW 535d 2012 god/4.jpeg',
+        '/img/cars/BMW 535d 2012 god/5.jpeg',
+        '/img/cars/BMW 535d 2012 god/6.jpeg',
+        '/img/cars/BMW 535d 2012 god/7.jpeg',
+        '/img/cars/BMW 535d 2012 god/8.jpeg',
+        '/img/cars/BMW 535d 2012 god/9.jpeg',
+        '/img/cars/BMW 535d 2012 god/10.jpeg',
+        '/img/cars/BMW 535d 2012 god/12.jpeg',
+        '/img/cars/BMW 535d 2012 god/13.jpeg',
+        '/img/cars/BMW 535d 2012 god/14.jpeg',
+        '/img/cars/BMW 535d 2012 god/16.jpeg',
+        '/img/cars/BMW 535d 2012 god/17.jpeg',
+        '/img/cars/BMW 535d 2012 god/18.jpeg',
+        '/img/cars/BMW 535d 2012 god/19.jpeg',
+        '/img/cars/BMW 535d 2012 god/20.jpeg',
+      ],
+      vin: 'Drīzumā',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Apraksts drīz būs pieejams.</p>
+      `
+    },
+    {
+      id: 15,
+      brand: 'BMW',
+      year: 2017,
+      price: 23990,
+      mileage: 259000,
+      fuel: 'Dīzelis',
+      transmission: 'Automātiskā',
+      availability: 'Uz vietas',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/BMW X5 (F15) 2017 god/_compressed.jpeg',
+      title: 'Bmw X5 (F15)',
+      article: 'MZ-016',
+      engine: '3.0 dīzelis',
+      leasing: 362,
+
+      imgs: [
+        '/img/cars/BMW X5 (F15) 2017 god/1.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/2.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/3.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/4.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/5.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/6.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/7.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/8.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/9.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/10.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/11.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/12.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/13.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/14.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/15.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/16.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/17.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/18.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/19.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/20.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/21.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/22.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/23.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/24.jpeg',
+      ],
+      vin: 'Drīzumā',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Apraksts drīz būs pieejams.</p>
+      `
+    },
+    {
       id: 14,
       brand: 'AUDI',
       year: 2008,
@@ -1037,7 +1441,7 @@ ESP stabilitātes kontrole</p>
       id: 13,
       brand: 'BMW',
       year: 2015,
-      price: 9990,
+      price: 9900,
       mileage: 219514,
       fuel: 'Dīzelis',
       transmission: 'Automātiskā',
@@ -1050,7 +1454,7 @@ ESP stabilitātes kontrole</p>
       title: 'Bmw 116 (F20)',
       article: 'MZ-014',
       engine: '1.5 dīzelis',
-      leasing: 150,
+      leasing: 149,
 
       imgs: [
         '/img/cars/Bmw 116 (F20) 2015 god/1.jpg',
@@ -1088,7 +1492,7 @@ ESP stabilitātes kontrole</p>
 - 2 oriģinālās atslēgas un citas opcijas</p>
       <p>Kopts salons, mašīnā nav smēķēts.</p>
       <p>Vispārējā informācija:</p>
-      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8224), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 150 EUR/men</p>
+      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8224), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 149 EUR/men</p>
       <p>Auto var apskatīties un iegādāties jebkurā dienā, iepriekš vienojoties par tikšanās laiku.</p>
       <p>Par visiem jautājumiem lūdzu zvanīt.</p>
       `
@@ -1165,7 +1569,7 @@ ESP stabilitātes kontrole</p>
       id: 11,
       brand: 'BMW',
       year: 2012,
-      price: 9990,
+      price: 9900,
       mileage: 247813,
       fuel: 'Dīzelis',
       transmission: 'Automātiskā',
@@ -1178,7 +1582,7 @@ ESP stabilitātes kontrole</p>
       title: 'Bmw 318 (F30)',
       article: 'MZ-012',
       engine: '2.0 dīzelis',
-      leasing: 150,
+      leasing: 149,
 
       imgs: [
         '/img/cars/Bmw 318 (F30) 2012 god/1.jpg',
@@ -1219,7 +1623,7 @@ ESP stabilitātes kontrole</p>
 Kopts salons, mašīnā nav smēķēts.</p>
       <p>Vispārējā informācija:</p>
       <p>Общая информация:</p>
-      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8223), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 150 EUR/men</p>
+      <p>- svaiga tehniskā apskate (viss pa nullēm), auto ir reģistrēts (valsts numurs OE-8223), ātra pārreģistrācija<br>- ar mūsu pastāvīgo partneri Elizings.lv piedāvājam izdevīgus auto kredītus % no 149 EUR/men</p>
       <p>Auto var apskatīties un iegādāties jebkurā dienā, iepriekš vienojoties par tikšanās laiku.</p>
       <p>Par visiem jautājumiem lūdzu zvanīt.</p>
       `
@@ -1663,7 +2067,7 @@ Lietus sensors<br>
       id: 3,
       brand: 'BMW',
       year: 2014,
-      price: 9990,
+      price: 9900,
       mileage: 374150,
       fuel: 'Dīzelis',
       transmission: 'Automātiskā',
@@ -1676,7 +2080,7 @@ Lietus sensors<br>
       title: 'Bmw 520',
       article: 'MZ-004',
       engine: '2.0 dīzelis',
-      leasing: 150,
+      leasing: 149,
 
       imgs: [
         '/img/cars/bmw 520 2014 g/1.jpeg',
@@ -1943,6 +2347,208 @@ El. reg. visas sēdekļu rindas<br>
   ],
   eng: [
     {
+      id: 18,
+      brand: 'JEEP',
+      year: 2019,
+      price: 24990,
+      mileage: 139000,
+      fuel: 'Diesel',
+      transmission: 'Automatic',
+      availability: 'In stock',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/Jeep Grand Cherokee 2019 god/_compressed.jpeg',
+      title: 'Jeep Grand Cherokee',
+      article: 'MZ-019',
+      engine: '3.0 diesel',
+      leasing: 377,
+
+      imgs: [
+        '/img/cars/Jeep Grand Cherokee 2019 god/1.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/2.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/3.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/4.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/5.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/6.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/7.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/8.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/9.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/10.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/12.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/13.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/14.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/15.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/16.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/17.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/18.jpeg',
+        '/img/cars/Jeep Grand Cherokee 2019 god/19.jpeg',
+      ],
+      vin: '1C4RJFCM1JC491135',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Grand Cherokee Overland 3.0 Diesel, 100% original mileage, one of the most fully equipped configurations:</p>
+      <p>-Adaptive air suspension<br>
+-Leather dashboard trim<br>
+-Comfort interior<br>
+-Heated seats<br>
+-Seat ventilation<br>
+-Heated steering wheel<br>
+-Adaptive cruise control<br>
+-Rearview camera<br>
+-Rear seat heating<br>
+-LED headlights<br>
+-Electric tailgate<br>
+-Seat memory<br>
+-Keyless Go system<br>
+-Blind spot assist<br>
+-Lane keeping assist<br>
+-CarPlay / Android Auto support</p>
+      <p>Sold by a licensed car dealership. Your old car can be used as part of the payment.</p>
+      `
+    },
+    {
+      id: 17,
+      brand: 'MERCEDES',
+      year: 2011,
+      price: 12390,
+      mileage: 139000,
+      fuel: 'Diesel',
+      transmission: 'Automatic',
+      availability: 'In stock',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/MB ML 350 cdi 2011 god/_compressed.jpeg',
+      title: 'MB ML 350 cdi',
+      article: 'MZ-018',
+      engine: '3.0 diesel',
+      leasing: 187,
+
+      imgs: [
+        '/img/cars/MB ML 350 cdi 2011 god/1.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/2.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/3.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/4.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/5.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/6.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/7.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/9.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/10.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/12.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/13.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/14.jpeg',
+        '/img/cars/MB ML 350 cdi 2011 god/15.jpeg',
+      ],
+      vin: 'Soon',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Description will be available soon.</p>
+      `
+    },
+    {
+      id: 16,
+      brand: 'BMW',
+      year: 2012,
+      price: 14390,
+      mileage: 168000,
+      fuel: 'Diesel',
+      transmission: 'Automatic',
+      availability: 'In stock',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/BMW 535d 2012 god/_compressed.jpeg',
+      title: 'BMW X5 (F11) 535d',
+      article: 'MZ-017',
+      engine: '3.0 diesel',
+      leasing: 217,
+
+      imgs: [
+        '/img/cars/BMW 535d 2012 god/1.jpeg',
+        '/img/cars/BMW 535d 2012 god/2.jpeg',
+        '/img/cars/BMW 535d 2012 god/3.jpeg',
+        '/img/cars/BMW 535d 2012 god/4.jpeg',
+        '/img/cars/BMW 535d 2012 god/5.jpeg',
+        '/img/cars/BMW 535d 2012 god/6.jpeg',
+        '/img/cars/BMW 535d 2012 god/7.jpeg',
+        '/img/cars/BMW 535d 2012 god/8.jpeg',
+        '/img/cars/BMW 535d 2012 god/9.jpeg',
+        '/img/cars/BMW 535d 2012 god/10.jpeg',
+        '/img/cars/BMW 535d 2012 god/12.jpeg',
+        '/img/cars/BMW 535d 2012 god/13.jpeg',
+        '/img/cars/BMW 535d 2012 god/14.jpeg',
+        '/img/cars/BMW 535d 2012 god/16.jpeg',
+        '/img/cars/BMW 535d 2012 god/17.jpeg',
+        '/img/cars/BMW 535d 2012 god/18.jpeg',
+        '/img/cars/BMW 535d 2012 god/19.jpeg',
+        '/img/cars/BMW 535d 2012 god/20.jpeg',
+      ],
+      vin: 'Soon',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Description will be available soon.</p>
+      `
+    },
+    {
+      id: 15,
+      brand: 'BMW',
+      year: 2017,
+      price: 23990,
+      mileage: 259000,
+      fuel: 'Diesel',
+      transmission: 'Automatic',
+      availability: 'In stock',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+
+      mainImg: '/img/cars/BMW X5 (F15) 2017 god/_compressed.jpeg',
+      title: 'Bmw X5 (F15)',
+      article: 'MZ-016',
+      engine: '3.0 diesel',
+      leasing: 362,
+
+      imgs: [
+        '/img/cars/BMW X5 (F15) 2017 god/1.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/2.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/3.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/4.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/5.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/6.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/7.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/8.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/9.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/10.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/11.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/12.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/13.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/14.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/15.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/16.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/17.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/18.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/19.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/20.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/21.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/22.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/23.jpeg',
+        '/img/cars/BMW X5 (F15) 2017 god/24.jpeg',
+      ],
+      vin: 'Soon',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Description will be available soon.</p>
+      `
+    },
+    {
       id: 14,
       brand: 'AUDI',
       year: 2008,
@@ -2004,7 +2610,7 @@ ESPstabilitycontrol</p>
       id: 13,
       brand: 'BMW',
       year: 2015,
-      price: 9990,
+      price: 9900,
       mileage: 219514,
       fuel: 'Diesel',
       transmission: 'Automatic',
@@ -2017,7 +2623,7 @@ ESPstabilitycontrol</p>
       title: 'Bmw 116 (F20)',
       article: 'MZ-014',
       engine: '1.5 diesel',
-      leasing: 150,
+      leasing: 149,
 
       imgs: [
         '/img/cars/Bmw 116 (F20) 2015 god/1.jpg',
@@ -2055,7 +2661,7 @@ ESPstabilitycontrol</p>
 - 2 original keys and other features</p>
       <p>Well-maintained interior, non-smoking car.</p>
       <p>General Information:</p>
-      <p>- car on registration, plates number OE-8224, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 150 EUR/month.</p>
+      <p>- car on registration, plates number OE-8224, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 149 EUR/month.</p>
       <p>Car are possible to watch and buy in any time, just need agree meeting time in advance.</p>
       <p>For all inquiries, please don’t hesitate to call us.</p>
       `
@@ -2132,7 +2738,7 @@ ESPstabilitycontrol</p>
       id: 11,
       brand: 'BMW',
       year: 2012,
-      price: 9990,
+      price: 9900,
       mileage: 247813,
       fuel: 'Diesel',
       transmission: 'Automatic',
@@ -2145,7 +2751,7 @@ ESPstabilitycontrol</p>
       title: 'Bmw 318 (F30)',
       article: 'MZ-012',
       engine: '2.0 diesel',
-      leasing: 150,
+      leasing: 149,
 
       imgs: [
         '/img/cars/Bmw 318 (F30) 2012 god/1.jpg',
@@ -2186,7 +2792,7 @@ ESPstabilitycontrol</p>
 Well-maintained interior, non-smoking car.</p>
       <p>Vispārējā informācija:</p>
       <p>General Information:</p>
-      <p>- car on registration, plates number OE-8223, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 150 EUR/month.</p>
+      <p>- car on registration, plates number OE-8223, quick re-registration<br>- together with our long-term partner E-Lizings.lv, we offer attractive car loan deals with competitive rates from 149 EUR/month.</p>
       <p>Car are possible to watch and buy in any time, just need agree meeting time in advance.</p>
       <p>For all inquiries, please don’t hesitate to call us.</p>
       `
@@ -2632,7 +3238,7 @@ Wood interior trim</p>
       id: 3,
       brand: 'BMW',
       year: 2014,
-      price: 9990,
+      price: 9900,
       mileage: 374150,
       fuel: 'Diesel',
       transmission: 'Automatic',
@@ -2645,7 +3251,7 @@ Wood interior trim</p>
       title: 'Bmw 520',
       article: 'MZ-004',
       engine: '2.0 diesel',
-      leasing: 150,
+      leasing: 149,
 
       imgs: [
         '/img/cars/bmw 520 2014 g/1.jpeg',
