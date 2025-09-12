@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 <url>
 	<loc>https://www.mzcars.lv/</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/lv.html</loc>
+	<loc>https://www.mzcars.lv/ru.html</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
@@ -15,6 +17,9 @@
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
+
+
+
 <url>
 	<loc>https://www.mzcars.lv/product/index.html?id=0</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
@@ -91,80 +96,146 @@
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=0</loc>
+	<loc>https://www.mzcars.lv/product/index.html?id=15</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/index.html?id=16</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/index.html?id=17</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/index.html?id=18</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/index.html?id=19</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/index.html?id=20</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+
+
+
+<url>
+	<loc>https://www.mzcars.lv/product/ru.html?id=0</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=1</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=1</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=2</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=2</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=3</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=3</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=4</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=4</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=5</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=5</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=6</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=6</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=7</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=7</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=8</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=8</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=9</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=9</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=10</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=10</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=11</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=11</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=12</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=12</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=13</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=13</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://www.mzcars.lv/product/lv.html?id=14</loc>
+	<loc>https://www.mzcars.lv/product/ru.html?id=14</loc>
 	<lastmod>2025-09-04</lastmod>
 	<priority>0.8</priority>
 </url>
+<url>
+	<loc>https://www.mzcars.lv/product/ru.html?id=15</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/ru.html?id=16</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/ru.html?id=17</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/ru.html?id=18</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/ru.html?id=19</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/ru.html?id=20</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+
+
+
 <url>
 	<loc>https://www.mzcars.lv/product/index.html?id=0</loc>
 	<lastmod>2025-09-01T21:02:03+01:00</lastmod>
@@ -238,6 +309,36 @@
 <url>
 	<loc>https://www.mzcars.lv/product/eng.html?id=14</loc>
 	<lastmod>2025-09-04</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/eng.html?id=15</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/eng.html?id=16</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/eng.html?id=17</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/eng.html?id=18</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/eng.html?id=19</loc>
+	<lastmod>2025-09-12</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.mzcars.lv/product/eng.html?id=20</loc>
+	<lastmod>2025-09-12</lastmod>
 	<priority>0.8</priority>
 </url>
 </urlset>

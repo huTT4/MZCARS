@@ -82,7 +82,9 @@ if (!car) {
   infoSpans[5].textContent = car.vin
 
   if (car.isSold) {
-    document.querySelector('.product__price').style.display = 'none'
+    document.querySelector('[data-car-price]').textContent = lang === 'ru' ? 'Продано' : lang === 'lv' ? 'Pārdots' : 'Sold'
+    document.querySelector('.product__price-left-info').style.display = 'none'
+    document.querySelector('.product__price-right').style.display = 'none'
   }
 
   // Описание
@@ -123,9 +125,9 @@ function createCatalogCard(car) {
             <span><img src="../img/engine.svg" alt="engine">${car.engine}</span>
           </div>
 
-          ${car.isSold ? `<div class="catalog__card-price hidden">
-            <h6>${car.price}€</h6>
-            <div>
+          ${car.isSold ? `<div class="catalog__card-price">
+            <h6>${lang === 'ru' ? 'Продано' : lang === 'lv' ? 'Pārdots' : 'Sold'}</h6>
+            <div class="hidden">
               ${lang === 'ru' ? 'Лизинг от' : lang === 'lv' ? 'Līzings no' : 'Leasing from'}
               <span>${car.leasing}€/${lang === 'ru' ? 'мес' : lang === 'lv' ? 'mēnesī' : 'per month'}</span>
             </div>
@@ -153,7 +155,7 @@ function renderRelatedCars(currentCarId, lang) {
   const carsByLang = cars[lang]
 
   // Фильтруем текущую машину
-  const otherCars = carsByLang.filter(c => String(c.id) !== String(currentCarId))
+  const otherCars = carsByLang.filter(c => String(c.id) !== String(currentCarId) && c.isSold !== true)
 
   // Перемешиваем массив случайным образом
   const shuffled = otherCars.sort(() => 0.5 - Math.random())

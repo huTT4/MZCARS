@@ -193,9 +193,9 @@ function renderCars(lang) {
             <span><img src="img/engine.svg" alt="engine">${car.engine}</span>
           </div>
 
-          ${car.isSold ? `<div class="catalog__card-price hidden">
-            <h6>${car.price}€</h6>
-            <div>
+          ${car.isSold ? `<div class="catalog__card-price">
+            <h6>${currentLang === 'ru' ? 'Продано' : currentLang === 'lv' ? 'Pārdots' : 'Sold'}</h6>
+            <div class="hidden">
               ${currentLang === 'ru' ? 'Лизинг от' : currentLang === 'lv' ? 'Līzings no' : 'Leasing from'}
               <span>${car.leasing}€/${currentLang === 'ru' ? 'мес' : currentLang === 'lv' ? 'mēnesī' : 'per month'}</span>
             </div>
@@ -297,23 +297,13 @@ function applyFilters() {
   if (activeFilter) {
     switch (activeFilter) {
       case 'new':
-        result = result.slice().sort((a, b) => {
-          const numA = parseInt(a.article.match(/\d+/)?.[0] || 0, 10)
-          const numB = parseInt(b.article.match(/\d+/)?.[0] || 0, 10)
-          return numB - numA
-        })
+        result = result.filter(car => car.isNew === true)
         break
       case 'discount':
-        result = result.slice().sort((a, b) => b.discount - a.discount)
+        result = result.filter(car => car.discount > 0)
         break
       case 'sold':
-        result = result.slice().sort((a, b) => {
-          return (b.isSold === true) - (a.isSold === true)
-        })
-        break
-      case 'all':
-      default:
-        result = result.slice()
+        result = result.filter(car => car.isSold === true)
         break
     }
   }
