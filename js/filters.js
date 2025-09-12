@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Функция рендера карточек
 function renderCars(lang) {
-  const carsList = filteredCars || cars[lang] || []
+  const carsList = filteredCars || cars[lang].filter(car => !car.isSold) || []
 
   // Обновляем цифру "Найдено X авто" каждый раз при рендере
   if (foundCountEl) {
@@ -304,6 +304,9 @@ function applyFilters() {
         break
       case 'sold':
         result = result.filter(car => car.isSold === true)
+        break
+      default:
+        result = result.filter(car => !car.isSold)
         break
     }
   }

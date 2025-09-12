@@ -82,7 +82,7 @@ if (!car) {
   infoSpans[5].textContent = car.vin
 
   if (car.isSold) {
-    document.querySelector('[data-car-price]').textContent = lang === 'ru' ? 'Продано' : lang === 'lv' ? 'Pārdots' : 'Sold'
+    document.querySelector('[data-car-price]').innerHTML = `<b>${lang === 'ru' ? 'Продано' : lang === 'lv' ? 'Pārdots' : 'Sold'}</b>`
     document.querySelector('.product__price-left-info').style.display = 'none'
     document.querySelector('.product__price-right').style.display = 'none'
   }
